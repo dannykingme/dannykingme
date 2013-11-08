@@ -25,17 +25,6 @@ audio:not([controls]) {
 template {
   display: none;
 }
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
-}
-a {
-  background: transparent;
-}
 a:focus {
   outline: thin dotted;
 }
@@ -94,9 +83,6 @@ sup {
 }
 sub {
   bottom: -0.25em;
-}
-img {
-  border: 0;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -393,4 +379,13 @@ textarea {
   src: url('#{@src}.eot?#iefix') format('embedded-opentype'), url('#{@src}.woff') format('woff'), url('#{@src}.ttf') format('truetype'), url('#{@src}.svg##{@family}') format('svg');
   font-weight: 100;
   font-style: normal;
+}
+body {
+  margin: 0;
+}
+a {
+  background: transparent;
+}
+img {
+  border: 0;
 }
