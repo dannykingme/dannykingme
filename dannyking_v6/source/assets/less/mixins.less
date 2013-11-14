@@ -24,3 +24,7 @@
   @joined: ~`"@{arguments}".slice(1,-1)`;
   background-image: linear-gradient(to bottom, @joined);
 }
+.scale(@size) {
+    -webkit-transform: scale3d(@size, @size, @size);
+            transform: scale3d(@size, @size, @size);
+}
