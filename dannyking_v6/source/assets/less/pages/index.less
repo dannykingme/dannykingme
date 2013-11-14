@@ -20,5 +20,28 @@ article {
   min-width: 400px;
   margin: @pSpacing * 1% 0 0 @pSpacing * 1%;
   margin: @pSpacing * 1vw 0 0 @pSpacing * 1vw;
+  a {
+    position: relative;
+    z-index: 1;
+    &:hover:before {
+      .scale(1);
+      opacity: 1;
+      transition-duration: .15s;
+    }
+    &:before {
+      @underlineSize: 13;
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: @underlineSize + 100%;
+      height: @underlineSize + 100%;
+      opacity: .34;
+      pointer-events: none;
+      border-bottom: 1px dotted @whiten;
+      top: -(percentage((@underlineSize / 2) / 100));
+      right: -(percentage((@underlineSize / 2) / 100));
+      .scale(0);
+      transition: all .3s cubic-bezier(.21, -.55, .55, 1.44);
+    }
   }
 }
