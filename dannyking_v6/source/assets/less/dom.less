@@ -20,3 +20,12 @@ body {
   min-height: 100vh;
   margin: 0;
 }
+a {
+  color: @linkColor;
+  text-decoration: none;
+  transition: color .3s ease-in-out;
+  &:hover {
+    color: @redLight;
+    transition-duration: .15s;
+  }
+}
