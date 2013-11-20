@@ -15,5 +15,5 @@ gem "therubyracer" #Less dependency
 gem "less"
 
 # GitHub Pages Deployment
-gem "middleman-gh-pages"
+# gem "middleman-gh-pages"
 gem "middleman-deploy"
