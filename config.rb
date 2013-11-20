@@ -72,7 +72,7 @@ end
 activate :deploy do |deploy|
   deploy.method = :git
   # Optional Settings
-  # deploy.remote = "custom-remote" # remote name or git url, default: origin
+  deploy.remote = "https://github.com/dannykingme/dannykingme.git" # remote name or git url, default: origin
   # deploy.branch = "custom-branch" # default: gh-pages
   deploy.build_before = true # default: false
 end
