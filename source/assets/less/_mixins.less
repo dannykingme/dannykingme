@@ -28,3 +28,11 @@
     -webkit-transform: scale3d(@size, @size, @size);
             transform: scale3d(@size, @size, @size);
 }
+.flex(@grow: 0, @shrink: 1, @basis: auto) {
+  -webkit-flex: @grow @shrink @basis;
+          flex: @grow @shrink @basis;
+}
+.flexBox {
+  display: -webkit-flex;
+  display:         flex;
+}
