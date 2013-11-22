@@ -76,3 +76,10 @@ activate :deploy do |deploy|
   # deploy.branch = "custom-branch" # default: gh-pages
   deploy.build_before = true # default: false
 end
+
+# LESS Options
+
+require 'less'
+  configure :build do
+    activate :minify_css
+  end
