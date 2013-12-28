@@ -3,7 +3,9 @@
 
 # TEAM
 
-    Danny King -- Designer/Developer -- @dannykingme
+    Danny King
+    Designer/Developer
+    @dannykingme
 
 # TECHNOLOGY COLOPHON
 
