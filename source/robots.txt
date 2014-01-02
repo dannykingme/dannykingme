@@ -1,3 +1,4 @@
 # robotstxt.org/
 
+http://dannyking.me/sitemap.xml
 User-agent: *
