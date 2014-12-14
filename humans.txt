@@ -1,0 +1,36 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Danny King
+    Designer/Developer
+    @dannykingme
+
+# TECHNOLOGY COLOPHON
+
+  # Front-End
+
+    HTML5, CSS3, jQuery
+
+  # Back-End
+
+    LESS
+    http://lesscss.org/
+    (styling)
+
+    HAML
+    http://haml.info/
+    (markup)
+
+    MiddleMan
+    http://middlemanapp.com/
+    (static page deployment & processing)
+
+    GitHub Pages
+    http://pages.github.com/
+    (hosting and version control via Git)
+
+    Dropbox
+    http://dropbox.com/
+    (continuous backup)
