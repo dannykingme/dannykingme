@@ -12,21 +12,20 @@ html {
   font-family: @baseFamily;
   font-size: @baseFontSize;
   line-height: @baseLineHeight;
-  color: @baseFontColor;
+  color: @white;
   -webkit-font-smoothing: antialiased;
 }
 body {
-  background-color: @blacken;
+  background-color: fade(@black, 93);
   min-height: 100%;
   min-height: 100vh;
   margin: 0;
+  overflow: hidden;
 }
 a {
-  color: @linkColor;
+  color: @redLight;
   text-decoration: none;
-  transition: color .3s ease-in-out;
   &:hover {
-    color: @redLight;
-    transition-duration: .15s;
+    color: @grayLightest;
   }
 }
