@@ -1,0 +1,20 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Danny King
+    Product Designer
+    @dannykingme
+
+# TECHNOLOGY COLOPHON
+
+  # Front-End
+
+    Reactjs, Sass
+
+  # Back-End
+
+    GitHub Pages
+    http://pages.github.com/
+    (hosting and version control via Git)
