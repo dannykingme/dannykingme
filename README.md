@@ -33,7 +33,7 @@ Whenever you run `yarn build`, you will see a cheat sheet with instructions on h
 
 ### `yarn deploy`
 
-Deploys to GitHub Pages.
+[Deploys to GitHub Pages](https://create-react-app.dev/docs/deployment/).
 
 ### `yarn eject`
 
