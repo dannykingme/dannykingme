@@ -11,7 +11,7 @@
 
   # Front-End
 
-    React, Sass
+    Reactjs, Sass
 
   # Back-End
 
