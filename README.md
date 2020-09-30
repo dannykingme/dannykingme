@@ -44,3 +44,30 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Notes
+
+Notes from Create React App:
+
+### Manifest
+
+manifest.json provides metadata used when your web app is installed on a
+user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+
+### Public URL
+
+Notice the use of `%PUBLIC_URL%` in `index.html`.
+It will be replaced with the URL of the `public` folder during the build.
+Only files inside the `public` folder can be referenced from the HTML.
+
+Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+work correctly both with client-side routing and a non-root public URL.
+Learn how to configure a non-root public URL by running `npm run build`.
+
+### Template
+
+`index.html` is a template.
+If you open it directly in the browser, you will see an empty page.
+
+You can add webfonts, meta tags, or analytics to that file.
+The build step will place the bundled scripts into the <body> tag.
