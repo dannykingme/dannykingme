@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import bkg from './bkg.jpg'; // eslint-disable-line no-unused-vars
+import './bkg.jpg';
 import './App.scss';
 
 const Link = ({ children, href, className, ...other }) => {
