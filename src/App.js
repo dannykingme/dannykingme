@@ -43,7 +43,7 @@ const Storyline = () => {
       <Story offset="15%" href="https://circleci.com/blog/adaptive-placeholders/">Invented Adaptive Placeholders</Story> {/* apr 2014 */}
       <Story offset="26%" href="https://precursorapp.com/">Founded Precursor</Story> {/* jan 2015 */}
       <Story offset="33.5%" href="https://wearesumux.appspot.com/">UX Engineer at Google</Story> {/* oct 2015 */}
-      <Story offset="43.5%" href="https://www.google.com/search?q=flowers&oq=flowers&sclient=mobile-gws-wiz-serp">Shipped product to 2 billion users</Story> {/* jul 2016 */}
+      <Story offset="43.5%" href="https://www.google.com/search?q=flowers">Shipped product to 2 billion users</Story> {/* jul 2016 */}
       <Story offset="53.5%" href="https://www.paygarden.com/">Head of Product at PayGarden</Story> {/* may 2017 */}
       <Story offset="59%" href="https://twitch.paygarden.com/">Created Twitch donation product</Story> {/* nov 2017 */}
       <Story offset="71%" href="https://secure.paygarden.com/pay/site/ltm/privateinternet?uid=1">Redefined anonymous gift card payments</Story> {/* sep 2018 */}
