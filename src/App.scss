@@ -63,6 +63,11 @@ body {
       background-size: 100% 100%;
       border-radius: $border_radius;
     }
+    &:active {
+      transition-duration: $now;
+      background-image: linear-gradient(to bottom, transparentize($focus, 0.25), transparentize($focus, 0.25));
+      border-radius: $border_radius;
+    }
   }
   h1 {
     font-size: 3em;
