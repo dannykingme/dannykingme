@@ -73,8 +73,8 @@ $deform: cubic-bezier(0.39, 0.575, 0.565, 1);
 $tile:     (1rem  * 4);
 $tile_xl:  ($tile * $tile);
 $tile_xxl: ($tile * $tile * $tile);
-$tile_xxs: ($tile / $tile / $tile);
-$tile_xs:  ($tile / $tile);
+$tile_xxs: ($tile * 0.0625);
+$tile_xs:  ($tile * 0.25);
 
 $padding: ($tile_xs * $font_height) + rem;
 $margin: ($tile_xs * $font_height) + rem;
