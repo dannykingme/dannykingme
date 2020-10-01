@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import './bkg.jpg';
-import './App.scss';
+import './app.scss';
 
 const Link = ({ children, href, className, ...other }) => {
   return (
@@ -30,7 +30,7 @@ const Story = ({ children, href, offset }) => {
     <div className="story" style={{ 'left': offset }}>
       <div className="story-dash" />
       <div className="story-title">
-        <LinkEx href={href}>{children}</LinkEx>
+        <LinkEx className="story-link" href={href}>{children}</LinkEx>
       </div>
     </div>
   );

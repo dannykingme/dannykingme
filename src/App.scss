@@ -1,42 +1,31 @@
+@import 'common.scss';
+
 html {
-  min-height: 100vh;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.25em;
-  line-height: 1.5em;
-  color: #ffffff;
+  color: $white;
+  font: $font;
+  text-size-adjust: 100%;
+  font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparentize($black, 1);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  min-height: 100vh;
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.93);
   overflow: hidden;
 }
 
-a {
-  color: #d45555;
+.link {
+  color: $white;
   text-decoration: none;
   &:hover {
-    color: #eeeeee;
+    color: $gray_200;
   }
 }
 
-.link {
-  color: #ffffff;
-  margin-left: -2px;
-  padding: 0 2px;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  box-shadow: 0 -1px rgba(255, 255, 255, 0) inset;
-  transition: background 100ms cubic-bezier(0.39, 0.575, 0.565, 1), box-shadow 100ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  &:hover {
-    color: #ffffff;
-    background-size: 100% 1px;
-    box-shadow: 0 -1px rgba(255, 255, 255, 0.34) inset;
-  }
+.app {
+  background-color: $background;
+  min-height: 100vh;
 }
 
 .background {
@@ -48,8 +37,7 @@ a {
   background-image: url('./bkg.jpg');
   background-size: cover;
   background-position: center;
-  z-index: -1;
-  animation: background 750ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation: ($run_slower * 1.5) $now $fadein both image;
 }
 
 .section {
@@ -57,19 +45,37 @@ a {
 }
 
 .article {
+  font-size: 20px;
+  line-height: 30px;
   display: block;
   flex: 0 1 25em;
   margin: 15vw 15vw 0 15vw;
-  animation: snippet 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 250ms both;
+  .link {
+    margin-left: -2px;
+    padding: 0 2px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    box-shadow: 0 -1px rgba(255, 255, 255, 0) inset;
+    transition: background $run_fast $deform, box-shadow $run_fast $fadein;
+    &:hover {
+      color: $white;
+      background-size: 100% 1px;
+      box-shadow: 0 -1px $gray_800 inset;
+    }
+  }
   h1 {
     font-size: 3em;
     line-height: 1;
     font-weight: 300;
     margin: 0 0 .5rem;
     margin-left: -0.08em;
+    animation: $run_slower $run $fadein both snippet;
   }
   p {
     margin: 0 0 .5em;
+    animation: $run_slower ($run + $run_faster) $fadein both snippet;
   }
 }
 
@@ -88,24 +94,25 @@ a {
 .storytime-wrapper {
   position: relative;
   width: 100%;
-  margin: 4rem 0;
+  margin: $tile 0;
 }
 
 .timeline {
   display: flex;
   align-items: center;
+  animation: $run_slower $now $fadein backwards slip_in_b2t;
 }
 
 .flex-line {
   flex: 1;
-  height: 1px;
-  background: rgba(255, 255, 255, .34);
+  height: 2px;
+  background: darken(white, 80%);
+  background: $gray_800;
 }
 
 .time {
-  color: rgba(255, 255, 255, .34);
-  font-size: 14px;
-  font-family: "Roboto Mono", monospace;
+  color: $gray_800;
+  font: $code;
   margin: 0 .25rem;
 }
 
@@ -114,6 +121,7 @@ a {
 }
 
 .story {
+  line-height: 1;
   display: flex;
   align-items: center;
   position: absolute;
@@ -124,38 +132,43 @@ a {
 }
 
 .story-dash {
-  width: 4rem;
-  height: 1px;
-  margin-left: 1px;
-  margin-right: .25rem;
-  background: rgba(255, 255, 255, .34);
+  width: $tile;
+  height: 2px;
+  margin-left: -2px;
+  background: $gray_800;
 }
 
 .story-title {
   white-space: nowrap;
-  .link {
-    padding: 0.25rem;
+}
+
+.story-link {
+  padding: 0.25rem 1rem;
+  border: 2px solid $gray_800;
+  border-radius: $tile;
+  &:hover {
+    border-color: white;
   }
 }
 
-@keyframes background {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 1%, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
+@keyframes fade_in {
+  0% { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slip_in_b2t {
+  0% { opacity: 0; transform: translate(0, $tile); }
+  to { opacity: 1; transform: translate(0); }
+}
+
+@keyframes image {
+  0% { opacity: 0; transform: translate3d(0, 1%, 0); }
+  to { opacity: 1; transform: none; }
 }
 
 @keyframes snippet {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 10%, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
+  0% { opacity: 0; transform: translate3d(0, 10%, 0); }
+  to { opacity: 1; transform: none; }
 }
+
+@include animate_stories;
