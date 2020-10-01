@@ -57,8 +57,7 @@ body {
     background-size: 100% 1px;
     background-repeat: no-repeat;
     background-position: bottom;
-    box-shadow: 0 -1px $focus inset;
-    transition: background $run_fast $deform, box-shadow $run_fast $fadein;
+    transition: background $run_fast $fadein;
     &:hover {
       color: $white;
       background-size: 100% 100%;
