@@ -70,14 +70,23 @@ $deform: cubic-bezier(0.39, 0.575, 0.565, 1);
 
 // size
 
-$tile:     (1rem  * 4);
-$tile_xl:  ($tile * $tile);
-$tile_xxl: ($tile * $tile * $tile);
-$tile_xxs: ($tile * 0.0625);
-$tile_xs:  ($tile * 0.25);
+$tile_base: 4;
+$tile_unit: 1rem;
 
-$padding: ($tile_xs * $font_height) + rem;
-$margin: ($tile_xs * $font_height) + rem;
+// $tile:     ($tile_base * $tile_unit);
+// $tile_xl:  ($tile_base * $tile);
+// $tile_xxl: ($tile_base * $tile_base * $tile);
+// $tile_xxs: ($tile_base / $tile_base / $tile);
+// $tile_xs:  ($tile_base / $tile);
+
+$tile:     4rem;
+$tile_xl:  16rem;
+$tile_xxl: 64rem;
+$tile_xxs: 1rem;
+$tile_xs:  .25rem;
+
+$padding: ($tile_xs * $font_height);
+$margin: ($tile_xs * $font_height);
 
 $z_index_up: 1;
 $z_index_down: -1;
@@ -124,8 +133,20 @@ $outline: $outline_color $outline_style $outline_width;
   }
 }
 
-@mixin s512 {
-  @media screen and (max-width: (512 - 1px)) {
+@mixin m512 {
+  @media screen and (max-width: 511px) {
+    @content;
+  }
+}
+
+@mixin touch {
+  body.mobile & {
+    @content;
+  }
+}
+
+@mixin mouse {
+  body:not(.mobile) & {
     @content;
   }
 }
