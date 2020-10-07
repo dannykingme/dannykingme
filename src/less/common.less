@@ -1,0 +1,394 @@
+// NOTE
+// Do not write styles in this less file.
+// This should only contain less-specific,
+// functional elements. I.e., nothing in
+// here should print out as actual styles.
+
+@white: #ffffff;
+@gray_50: #fafafa;
+@gray_100: #f5f5f5;
+@gray_200: #eeeeee;
+@gray_300: #e0e0e0;
+@gray_400: #bdbdbd;
+@gray_500: #9e9e9e;
+@gray_600: #757575;
+@gray_700: #616161;
+@gray_800: #424242;
+@gray_900: #212121;
+@black: #000000;
+
+@red: #fd5750;
+@orange: #fd8650;
+@yellow: #fde550;
+@green: #97fc4f;
+@cyan: #6cfcaf;
+@blue: #6db6fc;
+@purple: #9a57fc;
+@pink: #fd57e1;
+
+@background: @black;
+@primary: @white;
+@focus: #069bfa; // deep_blue
+
+// type
+
+@font_sans: "Roboto", sans-serif;
+@font_mono: "Roboto Mono", monospace;
+@font_slab: "Roboto Slab", serif;
+
+@font_weight: normal;
+@font_size: 16px;
+
+@font_tiny: 13px;
+@font_height: 1.5;
+@font_color: @white;
+@font_family: @font_sans;
+
+@font: @font_weight @font_size / @font_height @font_family;
+@code: @font_weight @font_tiny / 20px @font_mono;
+
+// time
+
+@now: 0ms;
+@run: 250ms;
+@run_faster: @run / 10;
+@run_fast: @run / 2.5;
+@run_slow: @run * 1.5;
+@run_slower: @run * 2;
+@sooner: @run_faster;
+@soon: @run_fast;
+@late: @run_slow;
+@later: @run_slower;
+
+// timing
+
+@fadein: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+@bounce: cubic-bezier(0.55, 0, 0.55, 1.44);
+@deform: cubic-bezier(0.39, 0.575, 0.565, 1);
+
+// size
+
+@tile: (1rem * 4);
+@tile_xl: (@tile * @tile);
+@tile_xxl: (@tile * @tile * @tile);
+@tile_xxs: (@tile / @tile / @tile);
+@tile_xs: (@tile / @tile);
+
+@padding: unit(@tile_xs * @font_height, rem);
+@margin: unit(@tile_xs * @font_height, rem);
+
+@z_index_up: 1;
+@z_index_down: -1;
+
+@border_width: 1px;
+@border_style: solid;
+@border_color: @gray_300;
+@border_radius: @tile_xxs;
+@border: @border_width @border_style @border_color;
+
+@outline_width: 2px;
+@outline_style: solid;
+@outline_color: @focus;
+@outline_offset: 1px;
+@outline: @outline_color @outline_style @outline_width;
+
+.2048 (@rules) {
+  @media screen and (max-width: (2048 - 1px)) {
+    @rules();
+  }
+}
+.1600 (@rules) {
+  @media screen and (max-width: (1600 - 1px)) {
+    @rules();
+  }
+}
+.1280 (@rules) {
+  @media screen and (max-width: (1280 - 1px)) {
+    @rules();
+  }
+}
+.1024 (@rules) {
+  @media screen and (max-width: (1024 - 1px)) {
+    @rules();
+  }
+}
+.768 (@rules) {
+  @media screen and (max-width: (768 - 1px)) {
+    @rules();
+  }
+}
+.512 (@rules) {
+  @media screen and (max-width: (512 - 1px)) {
+    @rules();
+  }
+}
+
+.touch(@rules) {
+  body.mobile & {
+    @rules();
+  }
+}
+
+.mouse(@rules) {
+  body:not(.mobile) & {
+    @rules();
+  }
+}
+
+// get @target using @overlay on @background
+.composite(@t; @o: @black; @b: @white) {
+  @a: (red(@t) - red(@b)) / (red(@o) - red(@b));
+  @composite: rgba(red(@o), red(@o), red(@o), @a);
+}
+
+.outline(@color: @border_color; @width: @border_width) {
+  box-shadow+: 0 @width @color;
+  box-shadow+: 0 -@width @color;
+  box-shadow+: @width 0 @color;
+  box-shadow+: -@width 0 @color;
+}
+
+.inline(@color: @border_color; @width: @border_width) {
+  box-shadow+: 0 @width @color inset;
+  box-shadow+: 0 -@width @color inset;
+  box-shadow+: @width 0 @color inset;
+  box-shadow+: -@width 0 @color inset;
+}
+
+.midline(@color: @border_color; @width: @border_width) {
+  box-shadow+: 0 -@width @color inset;
+  box-shadow+: 0 -@width @color;
+  box-shadow+: @width 0 @color;
+  box-shadow+: -@width 0 @color;
+}
+
+.edge(@color: @border_color; @width: @border_width) {
+  .edge-top {
+    box-shadow: 0 @width @color inset;
+  }
+  .edge-right {
+    box-shadow: -@width 0 @color inset;
+  }
+  .edge-bottom {
+    box-shadow: 0 -@width @color inset;
+  }
+  .edge-left {
+    box-shadow: @width 0 @color inset;
+  }
+}
+
+.h0(@props) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @props();
+  }
+}
+
+.h1(@weight: 700; @size: 2.5em; @line: 1.25) {
+  font: @weight 4em/1.25 @font_family;
+}
+
+.h2(@weight: 700; @size: 2em; @line: 1.5) {
+  font: @weight 2.25em/1.5 @font_family;
+}
+
+.h3(@weight: 700; @size: 1.5em; @line: 1 + (1 / 3)) {
+  font: @weight 2em/1.25 @font_family;
+}
+
+.h4(@weight: 700; @size: 1.25em; @line: 1 + (1 / 3)) {
+  font: @weight 1.5em/1.25 @font_family;
+}
+
+.h5(@weight: 400; @size: 1em; @line: 1.5) {
+  font: @weight 1em/1.5 @font_family;
+}
+
+.h6(@weight: 400; @size: 0.75em; @line: 1.5) {
+  font: @weight 0.75em/1.5 @font_family;
+}
+
+.cascade(@i; @s: @run_faster) when (@i > 0) {
+  .cascade((@i - 1) ; @s);
+  &:nth-of-type(@{i}) {
+    animation-delay: @s * (@i - 1);
+  }
+}
+
+//
+// Animation sequence template
+//
+
+.animate_stories() {
+  .animate_titles();
+  .animate_dashes();
+}
+
+.animate_titles(@prev: @run) {
+  @run1: (@run), (@prev);
+  @run2: (@run), ((extract(@run1, 1) * 0.89) + extract(@run1, 2));
+  @run3: (@run), ((extract(@run2, 1) * 0.34) + extract(@run2, 2));
+  @run4: (@run), ((extract(@run3, 1) * 0.21) + extract(@run3, 2));
+  @run5: (@run), ((extract(@run4, 1) * 0.13) + extract(@run4, 2));
+  @run6: (@run), ((extract(@run5, 1) * 0.08) + extract(@run5, 2));
+  @run7: (@run), ((extract(@run6, 1) * 0.05) + extract(@run6, 2));
+  @run8: (@run), ((extract(@run7, 1) * 0.03) + extract(@run7, 2));
+  .story:nth-child(1) .story-title {
+    animation: @run1 @fadein backwards slip_in_b2t;
+  }
+  .story:nth-child(2) .story-title {
+    animation: @run2 @fadein backwards slip_in_b2t;
+  }
+  .story:nth-child(3) .story-title {
+    animation: @run3 @fadein backwards slip_in_b2t;
+  }
+  .story:nth-child(4) .story-title {
+    animation: @run4 @fadein backwards slip_in_b2t;
+  }
+  .story:nth-child(5) .story-title {
+    animation: @run5 @fadein backwards slip_in_b2t;
+  }
+  .story:nth-child(6) .story-title {
+    animation: @run6 @fadein backwards slip_in_b2t;
+  }
+  .story:nth-child(7) .story-title {
+    animation: @run7 @fadein backwards slip_in_b2t;
+  }
+  .story:nth-child(8) .story-title {
+    animation: @run8 @fadein backwards slip_in_b2t;
+  }
+
+  @animate_titles: (extract(@run8, 1) + (extract(@run8, 2)));
+}
+
+.animate_dashes(@prev: 750ms) {
+  @run1: (@run), (@prev);
+  @run2: (@run), ((extract(@run1, 1) * 0.89) + extract(@run1, 2));
+  @run3: (@run), ((extract(@run2, 1) * 0.34) + extract(@run2, 2));
+  @run4: (@run), ((extract(@run3, 1) * 0.21) + extract(@run3, 2));
+  @run5: (@run), ((extract(@run4, 1) * 0.13) + extract(@run4, 2));
+  @run6: (@run), ((extract(@run5, 1) * 0.08) + extract(@run5, 2));
+  @run7: (@run), ((extract(@run6, 1) * 0.05) + extract(@run6, 2));
+  @run8: (@run), ((extract(@run7, 1) * 0.03) + extract(@run7, 2));
+  .story:nth-child(1) .story-dash {
+    animation: @run1 @fadein backwards fade_in;
+  }
+  .story:nth-child(2) .story-dash {
+    animation: @run2 @fadein backwards fade_in;
+  }
+  .story:nth-child(3) .story-dash {
+    animation: @run3 @fadein backwards fade_in;
+  }
+  .story:nth-child(4) .story-dash {
+    animation: @run4 @fadein backwards fade_in;
+  }
+  .story:nth-child(5) .story-dash {
+    animation: @run5 @fadein backwards fade_in;
+  }
+  .story:nth-child(6) .story-dash {
+    animation: @run6 @fadein backwards fade_in;
+  }
+  .story:nth-child(7) .story-dash {
+    animation: @run7 @fadein backwards fade_in;
+  }
+  .story:nth-child(8) .story-dash {
+    animation: @run8 @fadein backwards fade_in;
+  }
+
+  @animate_dashes: (extract(@run8, 1) + (extract(@run8, 2)));
+}
+
+.animate_overlays() {
+  // .animate_overlay(1s);
+  // .animate_overlay(@now);
+  // .animate_overlay_contact(@animate_overlay);
+  // .animate_overlay_contact(@now);
+}
+
+// .animate_overlay(@prev: @now) {
+//   @run1: (@run_slow) (@prev);
+//   // @run2: (@run_slower * 2) (@prev);
+//   @run2: (@run_slow) (@prev);
+//   @run3: (@run) ((extract(@run2, 1) * 0.89) + extract(@run2, 2));
+//   @run4: (@run) ((extract(@run3, 1) * 0.34) + extract(@run3, 2));
+//   .overlay {
+//     animation: @run1 @fadein backwards fade_in;
+//   }
+//   .overlay-background {
+//     animation: @run2 @fadein backwards overlay;
+//   }
+//   .overlay-foreground {
+//     animation: @run3 @fadein backwards fade_in;
+//   }
+//   .overlay-close {
+//     animation: @run4 @bounce backwards grow_in;
+//   }
+
+//   @animate_overlay: (extract(@run1, 1) + (extract(@run1, 2)));
+// }
+
+.animate_overlay(@prev: @now) {
+  @run1: (@run_slow) (@prev);
+  // @run2: (@run_slower * 2) (@prev);
+  @run2: (@run_slow) (@prev);
+  @run3: (@run) ((extract(@run2, 1) * 0.89) + extract(@run2, 2));
+  @run4: (@run) ((extract(@run3, 1) * 0.34) + extract(@run3, 2));
+  .overlay {
+    animation: @run1 @fadein backwards fade_in;
+  }
+  .overlay-background {
+    animation: @run2 @fadein backwards overlay;
+  }
+  .overlay-foreground {
+    animation: @run3 @fadein backwards fade_in;
+  }
+  .overlay-close {
+    animation: @run4 @bounce backwards grow_in;
+  }
+
+  @animate_overlay: (extract(@run1, 1) + (extract(@run1, 2)));
+}
+
+.animate_overlay_contact(@prev: @now) {
+  @run1: (@run) (@prev);
+  @run2: (@run) ((extract(@run1, 1) * 0.13) + extract(@run1, 2));
+  @run3: (@run_slow) ((extract(@run2, 1) * 0.34) + extract(@run2, 2));
+  @run4: (@run_slow) ((extract(@run3, 1) * 0.21) + extract(@run3, 2));
+  @run5: (@run_slow) ((extract(@run4, 1) * 0.13) + extract(@run4, 2));
+  @run6: (@run_slow) ((extract(@run5, 1) * 0.08) + extract(@run5, 2));
+  @run7: (@run_fast) ((extract(@run6, 1) * 0.05) + extract(@run6, 2));
+  @run8: (@run_slower) ((extract(@run7, 1) * 0.03) + extract(@run7, 2));
+  .contact-overlay h1 {
+    animation: @run1 @fadein backwards slip_in_l2r;
+  }
+  .contact-overlay p {
+    animation: @run2 @fadein backwards slip_in_l2r;
+  }
+  .contact-overlay .input:nth-child(1) {
+    animation: @run3 @fadein backwards slip_in_l2r;
+  }
+  .contact-overlay .input:nth-child(2) {
+    animation: @run3 @fadein backwards slip_in_l2r;
+  }
+  .contact-overlay .input:nth-child(3) {
+    animation: @run4 @fadein backwards slip_in_l2r;
+  }
+  .contact-overlay .input:nth-child(4) {
+    animation: @run4 @fadein backwards slip_in_l2r;
+  }
+  .contact-overlay .input:nth-child(5) {
+    animation: @run4 @fadein backwards slip_in_l2r;
+  }
+  .contact-overlay .input:nth-child(6) {
+    animation: @run4 @fadein backwards slip_in_l2r;
+  }
+  .contact-overlay .buttons {
+    animation: @run4 @fadein backwards slip_in_l2r;
+  }
+
+  @animate_overlay_contact: (extract(@run4, 1) + (extract(@run4, 2)));
+}
