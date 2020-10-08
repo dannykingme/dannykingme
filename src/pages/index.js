@@ -1,7 +1,7 @@
 import React, { Component } from "react"
-import { Helmet } from "react-helmet"
+// import { Helmet } from "react-helmet"
 import classNames from "classnames"
-import { Portal, Overlay } from "../components/common"
+// import { Portal, Overlay } from "../components/common"
 import bkg from "../images/bkg.jpg"
 import "../less/app.less"
 
@@ -27,30 +27,30 @@ const LinkEx = ({ children, href, className, ...other }) => {
   )
 }
 
-const PressOverlay = ({ close }) => (
-  <Overlay page onClose={close} className="overlay-press">
-    <h1>Press</h1>
-    <h5>Precursor</h5>
-    <p>
-      <strong>Aug 2015 </strong>
-      >>
-      <a href="https://teamtreehouse.com/library/episode-98-css-blend-modes-parallax-scrolling-adaptive-placeholders">
-        https://teamtreehouse.com/library/episode-98-css-blend-modes-parallax-scrolling-adaptive-placeholders
-      </a>
-    </p>
-  </Overlay>
-)
+// const PressOverlay = ({ close }) => (
+//   <Overlay page onClose={close} className="overlay-press">
+//     <h1>Press</h1>
+//     <h5>Precursor</h5>
+//     <p>
+//       <strong>Aug 2015 </strong>
+//       >>
+//       <a href="https://teamtreehouse.com/library/episode-98-css-blend-modes-parallax-scrolling-adaptive-placeholders">
+//         https://teamtreehouse.com/library/episode-98-css-blend-modes-parallax-scrolling-adaptive-placeholders
+//       </a>
+//     </p>
+//   </Overlay>
+// )
 
-const PressLink = () => (
-  <Portal closeOnOutsideClick closeOnEsc>
-    {({ openPortal, closePortal, isOpen, portal }) => [
-      <button onClick={openPortal} key="foo">
-        Press
-      </button>,
-      portal(<PressOverlay close={closePortal} />)
-    ]}
-  </Portal>
-)
+// const PressLink = () => (
+//   <Portal closeOnOutsideClick closeOnEsc>
+//     {({ openPortal, closePortal, isOpen, portal }) => [
+//       <button onClick={openPortal} key="foo">
+//         Press
+//       </button>,
+//       portal(<PressOverlay close={closePortal} />)
+//     ]}
+//   </Portal>
+// )
 
 const Story = ({ children, href, offset }) => {
   return (
@@ -112,12 +112,12 @@ class IndexPage extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      overlay: false
+      // overlay: false
     }
   }
   handleTweetText(text) {
     this.setState({
-      hotTweet: text
+      // hotTweet: text
     })
   }
   render() {
