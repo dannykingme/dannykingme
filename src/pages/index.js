@@ -2,7 +2,7 @@ import React, { Component } from "react"
 // import { Helmet } from "react-helmet"
 import classNames from "classnames"
 // import { Portal, Overlay } from "../components/common"
-import bkg from "../images/bkg.jpg"
+import background from "../images/background.jpg"
 import "../less/app.less"
 
 const Link = ({ children, href, className, ...other }) => {
@@ -126,7 +126,7 @@ class IndexPage extends Component {
     return (
       <div className="app">
         <div className="background">
-          <img className="background-image" src={bkg} alt="" />
+          <img className="background-image" src={background} alt="" />
         </div>
         <div className="storytime">
           <div className="storytime-wrapper">
