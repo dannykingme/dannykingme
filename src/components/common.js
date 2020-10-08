@@ -4,24 +4,28 @@
 import React from "react"
 import PropTypes from "prop-types"
 import classNames from "classnames"
-// import { Link as RouterLink } from 'react-router-dom';
 import { PortalWithState as CommonPortal } from "react-portal"
 import BodyClassName from "react-body-classname"
-import CommonInput from "./input"
-import CommonIcon from "./icon"
-import CommonButton from "./button"
+import input from "./input"
+import icon from "./icon"
+import button from "./button"
 
-export const Icon = CommonIcon
-// export const Link = RouterLink;
-export const Button = CommonButton
+export const Icon = icon
+export const Button = button
 export const Portal = CommonPortal
 
-export const Spacer = ({ size }) => <div style={{ height: size }} />
+export const Input = ({ ...props }) => <input {...props} />
+
+Input.defaultProps = {
+  spellCheck: false,
+  autoCapitalize: "off",
+  autoComplete: "off",
+  autoCorrect: "off"
+}
 
 export const Hyperlink = ({ className, href, children, ...rest }) => {
-  const cx = classNames(className, "hyperlink")
   return (
-    <a className={cx} href={href} {...rest}>
+    <a className={classNames(className, "hyperlink")} href={href} {...rest}>
       {children}
     </a>
   )
@@ -47,7 +51,6 @@ export const Overlay = ({ children, className, onClose, ...rest }) => {
       onClose()
     }
   }
-  console.log(rest.page)
   return (
     <BodyClassName className="overlay-active">
       <div
@@ -112,15 +115,6 @@ export const Box = ({ children, className, ...rest }) => {
     )
   }
   return edges
-}
-
-export const Input = ({ ...props }) => <CommonInput {...props} />
-
-Input.defaultProps = {
-  spellCheck: false,
-  autoCapitalize: "off",
-  autoComplete: "off",
-  autoCorrect: "off"
 }
 
 // export const Markdown = ({ content }) => (
