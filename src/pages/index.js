@@ -125,14 +125,6 @@ class IndexPage extends Component {
     // const { hotTweet } = this.state;
     return (
       <div className="app">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>My Title</title>
-          <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300;400;500&display=swap"
-            rel="stylesheet"
-          />
-        </Helmet>
         <div className="background">
           <img className="background-image" src={bkg} alt="" />
         </div>
