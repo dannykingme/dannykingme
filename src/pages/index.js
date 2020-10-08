@@ -172,7 +172,7 @@ class IndexPage extends Component {
               <span>, and </span>
               <LinkEx href="https://github.com/dannykingme">GitHub</LinkEx>
               <span>. </span>
-              <PressLink />
+              {/*<PressLink />*/}
             </p>
           </article>
         </section>

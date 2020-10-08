@@ -35,34 +35,11 @@ Hyperlink.defaultProps = {
 Hyperlink.propTypes = {
   className: PropTypes.string,
   href: PropTypes.string.isRequired
-  // children: PropTypes.string.isRequired,
 }
 
 export const Buttons = ({ className, ...rest }) => (
   <div className={classNames("buttons", className)} {...rest} />
 )
-
-// export const Overlay = ({ children, className, onClose }) => {
-//   const handleClose = () => {
-//     if (onClose) {
-//       onClose()
-//     }
-//   }
-//   return (
-//     <BodyClassName className="overlay-active">
-//       <div className={classNames("overlay", className)}>
-//         <button
-//           className="overlay-close"
-//           disabled={!onClose}
-//           onClick={handleClose}
-//         >
-//           <Icon times />
-//         </button>
-//         <div className="small content">{children}</div>
-//       </div>
-//     </BodyClassName>
-//   )
-// }
 
 export const Overlay = ({ children, className, onClose, ...rest }) => {
   const handleClose = () => {

@@ -2,9 +2,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 
 import React from "react"
-// import PropTypes from 'prop-types';
-// import piles from './piles.json';
-// import paths from './paths.json';
 import classNames from "classnames"
 import { Icon, Spinner } from "./common"
 

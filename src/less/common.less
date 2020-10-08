@@ -304,36 +304,10 @@
 
 .animate_overlays() {
   // .animate_overlay(1s);
-  // .animate_overlay(@now);
-  // .animate_overlay_contact(@animate_overlay);
-  // .animate_overlay_contact(@now);
 }
-
-// .animate_overlay(@prev: @now) {
-//   @run1: (@run_slow) (@prev);
-//   // @run2: (@run_slower * 2) (@prev);
-//   @run2: (@run_slow) (@prev);
-//   @run3: (@run) ((extract(@run2, 1) * 0.89) + extract(@run2, 2));
-//   @run4: (@run) ((extract(@run3, 1) * 0.34) + extract(@run3, 2));
-//   .overlay {
-//     animation: @run1 @fadein backwards fade_in;
-//   }
-//   .overlay-background {
-//     animation: @run2 @fadein backwards overlay;
-//   }
-//   .overlay-foreground {
-//     animation: @run3 @fadein backwards fade_in;
-//   }
-//   .overlay-close {
-//     animation: @run4 @bounce backwards grow_in;
-//   }
-
-//   @animate_overlay: (extract(@run1, 1) + (extract(@run1, 2)));
-// }
 
 .animate_overlay(@prev: @now) {
   @run1: (@run_slow) (@prev);
-  // @run2: (@run_slower * 2) (@prev);
   @run2: (@run_slow) (@prev);
   @run3: (@run) ((extract(@run2, 1) * 0.89) + extract(@run2, 2));
   @run4: (@run) ((extract(@run3, 1) * 0.34) + extract(@run3, 2));
