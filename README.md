@@ -1,5 +1,3 @@
-# dannyking.me
-
 ## Available Scripts
 
 ### `gatsby develop`
