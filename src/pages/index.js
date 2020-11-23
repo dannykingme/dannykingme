@@ -46,7 +46,9 @@ const PressOverlay = ({ close }) => {
         <div className="small content" onClick={handleClick}>
           <h1 className="nth">Press</h1>
           {press.map((item, i) => [
-            <h5 className="nth">{item.section}</h5>,
+            <h5 className="nth" key={item.section}>
+              {item.section}
+            </h5>,
             item.articles
               .sort((a, b) => a.date - b.date)
               .map((item, i) => (
