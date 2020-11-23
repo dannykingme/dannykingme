@@ -53,22 +53,9 @@ export const Overlay = ({ children, className, onClose, ...rest }) => {
   }
   return (
     <BodyClassName className="overlay-active">
-      <div
-        className={classNames("overlay", className, rest.page && "page")}
-        {...rest}
-      >
-        <div
-          className={classNames(
-            "overlay-background",
-            rest.page && "small content"
-          )}
-        />
-        <div
-          className={classNames(
-            "overlay-foreground",
-            rest.page && "small content"
-          )}
-        >
+      <div className={classNames("overlay", className)} {...rest}>
+        <div className={classNames("overlay-background")} />
+        <div className={classNames("overlay-foreground")}>
           {children}
           <button
             className="overlay-close"

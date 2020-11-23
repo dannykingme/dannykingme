@@ -609,16 +609,6 @@
   //   }
   // }
   animation: @run_slow @now @fadein backwards fade_in;
-  &.page {
-    .overlay-background {
-      left: auto;
-      right: 0;
-    }
-    .overlay-foreground {
-      margin-right: 0;
-      // background: @white;
-    }
-  }
 }
 
 .overlay-background {
@@ -639,6 +629,7 @@
 .overlay-foreground {
   color: @gray_800;
   position: relative;
+  width: 100%;
   min-height: 100%;
   .512({
     width: 100%;
@@ -653,6 +644,9 @@
   }
 }
 
+.overlay-container {
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .overlay-close {

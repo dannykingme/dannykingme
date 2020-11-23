@@ -1,9 +1,13 @@
 import React, { Component } from "react"
 // import { Helmet } from "react-helmet"
 import classNames from "classnames"
-// import { Portal, Overlay } from "../components/common"
+import moment from "moment"
+import { Portal, Overlay } from "../components/common"
 import background from "../images/background.jpg"
+import press from "../data/press.json"
 import "../less/app.less"
+
+const pressTime = string => moment(string)
 
 const Link = ({ children, href, className, ...other }) => {
   return (
@@ -27,30 +31,52 @@ const LinkEx = ({ children, href, className, ...other }) => {
   )
 }
 
-// const PressOverlay = ({ close }) => (
-//   <Overlay page onClose={close} className="overlay-press">
-//     <h1>Press</h1>
-//     <h5>Precursor</h5>
-//     <p>
-//       <strong>Aug 2015 </strong>
-//       >>
-//       <a href="https://teamtreehouse.com/library/episode-98-css-blend-modes-parallax-scrolling-adaptive-placeholders">
-//         https://teamtreehouse.com/library/episode-98-css-blend-modes-parallax-scrolling-adaptive-placeholders
-//       </a>
-//     </p>
-//   </Overlay>
-// )
+const PressOverlay = ({ close }) => {
+  const handleClick = e => {
+    e.stopPropagation()
+  }
+  const handleClose = () => {
+    if (close) {
+      close()
+    }
+  }
+  return (
+    <Overlay onClose={close} className="overlay-press">
+      <div className="overlay-container" onClick={handleClose}>
+        <div className="small content" onClick={handleClick}>
+          <h1 className="nth">Press</h1>
+          {press.map((item, i) => [
+            <h5 className="nth">{item.section}</h5>,
+            item.articles
+              .sort((a, b) => a.date - b.date)
+              .map((item, i) => (
+                <div className="press-item nth" key={item.title + i}>
+                  <span className="press-item-date">
+                    {pressTime(item.date).format("DD MMM YYYY")}
+                  </span>
+                  <span> &raquo; </span>
+                  <LinkEx className="press-item-title" href={item.url}>
+                    {item.title}
+                  </LinkEx>
+                </div>
+              ))
+          ])}
+        </div>
+      </div>
+    </Overlay>
+  )
+}
 
-// const PressLink = () => (
-//   <Portal closeOnOutsideClick closeOnEsc>
-//     {({ openPortal, closePortal, isOpen, portal }) => [
-//       <button onClick={openPortal} key="foo">
-//         Press
-//       </button>,
-//       portal(<PressOverlay close={closePortal} />)
-//     ]}
-//   </Portal>
-// )
+const PressLink = () => (
+  <Portal closeOnOutsideClick closeOnEsc>
+    {({ openPortal, closePortal, isOpen, portal }) => [
+      <button className="fancy link" onClick={openPortal} key="foo">
+        press
+      </button>,
+      portal(<PressOverlay close={closePortal} />)
+    ]}
+  </Portal>
+)
 
 const Story = ({ children, href, offset }) => {
   return (
@@ -155,16 +181,26 @@ class IndexPage extends Component {
             <h1>I'm Danny King.</h1>
             <p>
               <span>I build products for designers and developers. </span>
-              <span>I used to write a lot on my </span>
-              <LinkEx href="https://precursorapp.com/blog">blog</LinkEx>
-              <span> but not so much anymore. Here's my </span>
-              <LinkEx href="https://twitter.com/dannykingme">Twitter</LinkEx>
+              <span>Here's my </span>
+              <LinkEx className="fancy" href="https://twitter.com/dannykingme">
+                Twitter
+              </LinkEx>
               <span>, </span>
-              <LinkEx href="https://dribbble.com/dannykingme">dribbble</LinkEx>
+              <LinkEx className="fancy" href="https://dribbble.com/dannykingme">
+                Dribbble
+              </LinkEx>
+              <span>, </span>
+              <LinkEx className="fancy" href="https://github.com/dannykingme">
+                GitHub
+              </LinkEx>
               <span>, and </span>
-              <LinkEx href="https://github.com/dannykingme">GitHub</LinkEx>
+              <LinkEx className="fancy" href="https://precursorapp.com/blog">
+                blog
+              </LinkEx>
               <span>. </span>
-              {/*<PressLink />*/}
+              <span>I've also been featured in some </span>
+              <PressLink />
+              <span>. </span>
             </p>
           </article>
         </section>

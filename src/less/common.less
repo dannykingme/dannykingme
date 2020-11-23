@@ -214,7 +214,7 @@
 
 .cascade(@i; @s: @run_faster) when (@i > 0) {
   .cascade((@i - 1) ; @s);
-  &:nth-of-type(@{i}) {
+  &:nth-child(@{i}) {
     animation-delay: @s * (@i - 1);
   }
 }

@@ -1,13 +1,5 @@
 // index
 
-.link {
-  color: @white;
-  text-decoration: none;
-  &:hover {
-    color: @gray_200;
-  }
-}
-
 .app {
   background-color: @background;
   min-height: 100vh;
@@ -39,29 +31,6 @@
   display: block;
   flex: 0 1 25em;
   margin: 15vw 15vw 0 15vw;
-  .link {
-    margin-left: -2px;
-    padding: 0 2px;
-    background-image: linear-gradient(to bottom, @focus, @focus);
-    background-size: 100% 1px;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    transition: background @run_fast @fadein;
-    &:hover {
-      color: @white;
-      background-size: 100% 100%;
-      border-radius: @border_radius;
-    }
-    &:active {
-      transition-duration: @now;
-      background-image: linear-gradient(
-        to bottom,
-        fade(@focus, 25),
-        fade(@focus, 25)
-      );
-      border-radius: @border_radius;
-    }
-  }
   h1 {
     font-size: 3em;
     line-height: 1;
@@ -145,6 +114,30 @@
   &:hover {
     border-color: white;
   }
+}
+
+.overlay-press {
+  //
+}
+
+.press-item {
+  margin-bottom: @tile_xxs;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.press-item-date {
+  font: @code;
+}
+
+.press-item-title {
+  //
+}
+
+.nth {
+  .cascade(35);
+  animation: @run @fadein both slip_in_b2t;
 }
 
 // .animate_overlay();
