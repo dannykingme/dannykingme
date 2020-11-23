@@ -121,7 +121,7 @@ const Storyline = () => {
         Head of Product at PayGarden
       </Story>
       <Story date="nov 2017" offset="59%" href="https://twitch.paygarden.com/">
-        Created Twitch donation product
+        Created new Twitch donation model
       </Story>
       <Story
         date="sep 2018"
