@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/404.js"],"names":["NotFound","href"],"mappings":"2FAAA,gCAMeA,UAJE,WACf,OAAO,uBAAGC,KAAM,KAAT","file":"component---src-pages-404-js-ffd7320094032d7bb177.js","sourcesContent":["import React from \"react\"\n\nconst NotFound = () => {\n  return <a href={\"/\"}>oops</a>\n}\n\nexport default NotFound\n"],"sourceRoot":""}
