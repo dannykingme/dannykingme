@@ -7,10 +7,10 @@ import classNames from "classnames"
 import { PortalWithState as CommonPortal } from "react-portal"
 import BodyClassName from "react-body-classname"
 import input from "./input"
-import icon from "./icon"
+// import icon from "./icon" // TODO breaks in production
 import button from "./button"
 
-export const Icon = icon
+// export const Icon = icon // TODO breaks in production (see above)
 export const Button = button
 export const Portal = CommonPortal
 
@@ -62,7 +62,14 @@ export const Overlay = ({ children, className, onClose, ...rest }) => {
             disabled={!onClose}
             onClick={handleClose}
           >
-            <Icon times />
+            <i class="icon icon-times">
+              <svg class="icon-shapes" viewBox="0 0 100 100">
+                <path
+                  class="icon-shape shape-times stroke"
+                  d="M82.5,82.5l-65-65 M82.5,17.5l-65,65"
+                ></path>
+              </svg>
+            </i>
           </button>
         </div>
       </div>
@@ -78,11 +85,11 @@ export const Divider = props => (
   </div>
 )
 
-export const Spinner = ({ className, ...rest }) => (
-  <div className={classNames("spinner", className)} {...rest}>
-    <Icon loading />
-  </div>
-)
+// export const Spinner = ({ className, ...rest }) => (
+//   <div className={classNames("spinner", className)} {...rest}>
+//     <Icon loading />
+//   </div>
+// )
 
 export const Box = ({ children, className, ...rest }) => {
   const edges = (
