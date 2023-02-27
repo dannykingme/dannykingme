@@ -46,43 +46,49 @@ const Home = () => {
         </div>
         <div className="gallery">
           <div className="gallery-content content">
-            <div className="gallery-items">
+            <div className="cards">
               <div
-                className={c('gallery-item', { active: state.netlifyActive })}
+                className={c('card', { active: state.netlifyActive })}
                 onMouseEnter={handleActivateNetlify}
                 onMouseLeave={handleDeactivateNetlify}
               >
-                <div className="gallery-item-background netlify"></div>
-                <div className="gallery-item-thumb">
+                <div className="card-background netlify"></div>
+                <div className="card-thumb">
                   {state.netlifyActive ? (
                     <img src="/netlify-wireframe-animation.gif" alt="" />
                   ) : (
                     <img src="/netlify-wireframe-thumbnail.png" alt="" />
                   )}
                 </div>
+                <div className="card-border">
+                  <div className="card-border-top"></div>
+                  <div className="card-border-bottom"></div>
+                  <div className="card-border-left"></div>
+                  <div className="card-border-right"></div>
+                </div>
               </div>
-              <div className="gallery-item">
-                <div className="gallery-item-thumb">
+              <div className="card">
+                <div className="card-thumb">
                   <img src="/netlify-wireframe-thumbnail.png" alt="" />
                 </div>
               </div>
-              <div className="gallery-item">
-                <div className="gallery-item-thumb">
+              <div className="card">
+                <div className="card-thumb">
                   <img src="/netlify-wireframe-thumbnail.png" alt="" />
                 </div>
               </div>
-              <div className="gallery-item">
-                <div className="gallery-item-thumb">
+              <div className="card">
+                <div className="card-thumb">
                   <img src="/netlify-wireframe-thumbnail.png" alt="" />
                 </div>
               </div>
-              <div className="gallery-item">
-                <div className="gallery-item-thumb">
+              <div className="card">
+                <div className="card-thumb">
                   <img src="/netlify-wireframe-thumbnail.png" alt="" />
                 </div>
               </div>
-              <div className="gallery-item">
-                <div className="gallery-item-thumb">
+              <div className="card">
+                <div className="card-thumb">
                   <img src="/netlify-wireframe-thumbnail.png" alt="" />
                 </div>
               </div>
