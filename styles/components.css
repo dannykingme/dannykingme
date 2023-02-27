@@ -1,0 +1,144 @@
+:root {
+  --cols: 2;
+  --gap: var(--margin);
+  --item-w: 560px;
+
+  /* --item-h: 380px; */
+  --item-h: calc(var(--item-w) * 0.75);
+  --content-width: calc((var(--item-w) * var(--cols)) + var(--gap));
+}
+
+.app {
+  /*  */
+}
+
+.content {
+  width: calc(var(--xxl) * 1.5);
+  width: 1144px;
+  width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  min-width: calc(var(--xl) * 0.75);
+  padding: var(--padding) var(--tile);
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: var(--tile);
+  border-bottom: var(--border);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  color: var(--gray-100);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--gray-900);
+
+  .header {
+    border-bottom-color: var(--gray-800);
+  }
+}
+
+.hero-content {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.hero-title {
+  font-size: var(--xl);
+  font-weight: 600;
+  line-height: 0.9;
+  text-transform: uppercase;
+  position: relative;
+  left: calc(var(--xs) * -0.75);
+  max-width: calc(var(--xl) * 3);
+  margin-left: calc(var(--xxs) * -1);
+
+  &::first-letter {
+    letter-spacing: -1rem;
+  }
+}
+
+.hero-paragraph {
+  font-size: calc(var(--xs) * 1.5);
+  max-width: var(--xxl);
+}
+
+.hero-action {
+  font-size: calc(var(--xs) * 1.5);
+  margin-top: var(--margin);
+}
+
+.gallery {
+  margin-top: var(--tile);
+  margin-bottom: var(--xl);
+}
+
+.gallery-content {
+  min-height: 100vh;
+}
+
+.gallery-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--margin);
+}
+
+.gallery-item {
+  position: relative;
+  height: 380px;
+  height: var(--item-h);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+
+  &.netlify {
+    background-image: linear-gradient(-45deg, #149cab, #5cebdf);
+  }
+
+  &.paygarden {
+    background-image: linear-gradient(-90deg, #249a4e, #2cbb5f);
+    background-image: linear-gradient(
+      30deg,
+      rgb(36 154 78 / 100%) 0%,
+      rgb(36 154 78 / 100%) 13%,
+      rgb(44 187 95 / 100%) 100%
+    );
+  }
+}
+
+.gallery-item-background {
+  position: absolute;
+  top: calc(var(--border-width) * -1);
+  left: calc(var(--border-width) * -1);
+  width: calc(100% + (var(--border-width) * 2));
+  height: calc(100% + (var(--border-width) * 2));
+
+  &.netlify {
+    background-image: linear-gradient(-45deg, #149cab, #5cebdf);
+  }
+}
+
+.gallery-item-thumb {
+  position: absolute;
+  top: calc(var(--border-width) * -1);
+  left: calc(var(--border-width) * -1);
+  width: calc(100% + (var(--border-width) * 2));
+  height: calc(100% + (var(--border-width) * 2));
+}
