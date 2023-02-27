@@ -1,0 +1,127 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes grow-in {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes tile-in-t2b {
+  0% {
+    opacity: 0;
+    transform: translateY(calc(var(--tile) * -1));
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes tile-in-b2t {
+  0% {
+    opacity: 0;
+    transform: translateY(var(--tile));
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes tile-in-l2r {
+  0% {
+    opacity: 0;
+    transform: translate(calc(var(--tile) * -1));
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes tile-in-r2l {
+  0% {
+    opacity: 0;
+    transform: translate(var(--tile));
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.example {
+  --dur1: var(--run);
+  --dur2: var(--run);
+  --dur3: var(--run);
+  --dur4: var(--run);
+  --dur5: var(--run);
+  --dur6: var(--run);
+  --dur7: var(--run);
+  --dur8: var(--run);
+  --dur9: var(--run);
+
+  --del1: 0;
+  --del2: calc((dur1 * 0.34) + del1);
+  --del3: calc((dur2 * 0.21) + del2);
+  --del4: calc((dur3 * 0.13) + del3);
+  --del5: calc((dur4 * 0.08) + del4);
+  --del6: calc((dur5 * 0.05) + del5);
+  --del7: calc((dur6 * 0.03) + del6);
+  --del8: calc((dur7 * 0.02) + del7);
+  --del9: calc((dur8 * 0.01) + del8);
+
+  .example-1 {
+    animation: slip-in-b2t var(--dur1) var(--fadein) var(--del1) backwards;
+  }
+
+  .example-2 {
+    animation: slip-in-b2t var(--dur2) var(--fadein) var(--del2) backwards;
+  }
+
+  .example-3 {
+    animation: slip-in-b2t var(--dur3) var(--fadein) var(--del3) backwards;
+  }
+
+  .example-4 {
+    animation: slip-in-b2t var(--dur4) var(--fadein) var(--del4) backwards;
+  }
+
+  .example-5 {
+    animation: slip-in-b2t var(--dur5) var(--fadein) var(--del5) backwards;
+  }
+
+  .example-6 {
+    animation: slip-in-b2t var(--dur6) var(--fadein) var(--del6) backwards;
+  }
+
+  .example-7 {
+    animation: slip-in-b2t var(--dur7) var(--fadein) var(--del7) backwards;
+  }
+
+  .example-8 {
+    animation: slip-in-b2t var(--dur8) var(--fadein) var(--del8) backwards;
+  }
+
+  .example-9 {
+    animation: slip-in-b2t var(--dur9) var(--fadein) var(--del9) backwards;
+  }
+}
