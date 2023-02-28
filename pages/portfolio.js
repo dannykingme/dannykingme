@@ -52,20 +52,33 @@ const Home = () => {
                 onMouseEnter={handleActivateNetlify}
                 onMouseLeave={handleDeactivateNetlify}
               >
-                <div className="card-background netlify"></div>
+                {state.netlifyActive ? (
+                  <>
+                    <div className="card-background netlify"></div>
+                    <div className="card-mock">
+                      <img src="/netlify-mockup-thumbnail.png" alt="" />
+                    </div>
+                  </>
+                ) : null}
                 <div className="card-thumb">
                   {state.netlifyActive ? (
-                    <img src="/netlify-wireframe-animation.gif" alt="" />
+                    <img src="/test-vid6.gif" alt="" />
                   ) : (
                     <img src="/netlify-wireframe-thumbnail.png" alt="" />
                   )}
                 </div>
-                <div className="card-border">
-                  <div className="card-border-top"></div>
-                  <div className="card-border-bottom"></div>
-                  <div className="card-border-left"></div>
-                  <div className="card-border-right"></div>
-                </div>
+                {/* <div className="card-edge">
+                  <div className="card-edge-top"></div>
+                  <div className="card-edge-bottom"></div>
+                  <div className="card-edge-left"></div>
+                  <div className="card-edge-right"></div>
+                </div> */}
+                {state.netlifyActive ? (
+                  <div className="card-info">
+                    <div className="card-title">Netlify</div>
+                    <div className="card-subtitle">2022</div>
+                  </div>
+                ) : null}
               </div>
               <div className="card">
                 <div className="card-thumb">

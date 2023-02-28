@@ -116,6 +116,17 @@
   border-radius: var(--border-radius);
   overflow: hidden;
 
+  &.active {
+    /* border-color: transparent; */
+    border: none;
+    box-shadow: 0 21px 34px 0 rgb(0 0 0 / 21%);
+    transition-duration: var(--run-fast);
+
+    .card-thumb {
+      animation: 750ms var(--fadein) 250ms both fade-out;
+    }
+  }
+
   &.netlify {
     background-image: linear-gradient(-45deg, #149cab, #5cebdf);
   }
