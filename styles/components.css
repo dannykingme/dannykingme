@@ -38,6 +38,13 @@
   border-bottom: var(--border);
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  height: var(--tile);
+  border-top: var(--border);
+}
+
 .main {
   display: flex;
   flex-direction: column;
