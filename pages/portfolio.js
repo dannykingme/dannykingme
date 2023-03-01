@@ -1,14 +1,46 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Link from 'next/link';
 import c from 'classnames';
 
 const Home = () => {
+  const galleryRef = useRef();
   // const [count, activateNetlify] = useState(false);
   const [state, setState] = useState(() => {
     return {
+      heroActive: null,
       netlifyActive: false,
     };
   });
+  const handleClickHero = () => {
+    // 👇 Will wait until the DOM is updated with the new state
+    // flushSync(() => {
+    //   setPeople((people) => [
+    //     ...people,
+    //     {
+    //       id: uuid(),
+    //       name: uniqueNamesGenerator({
+    //         dictionaries: [names],
+    //       }),
+    //     },
+    //   ]);
+    // });
+
+    // 👇 Scroll to the last element in the list
+    // listRef.current?.lastElementChild?.scrollIntoView();
+    galleryRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+  const handleActivateHero = () => {
+    setState((oldState) => ({
+      ...oldState,
+      heroActive: true,
+    }));
+  };
+  const handleDeactivateHero = () => {
+    setState((oldState) => ({
+      ...oldState,
+      heroActive: false,
+    }));
+  };
   const handleActivateNetlify = () => {
     setState((oldState) => ({
       ...oldState,
@@ -25,34 +57,66 @@ const Home = () => {
     <>
       {/* <div className="header">test</div> */}
       <div className="main">
-        <div className="hero">
+        <div
+          className={c('hero', {
+            active: state.heroActive,
+            inactive: state.heroActive === false,
+          })}
+        >
+          {state.heroActive ? (
+            <div className="curtain">
+              <div className="hero-content content">
+                <div className="hero-name">
+                  <div className="hero-name-first">Danny</div>
+                  <div className="hero-name-last">King</div>
+                </div>
+                <div className="hero-paragraph">
+                  I build products for designers and developers. Here's my
+                  Twitter, Dribbble, GitHub, and blog. I've also been featured
+                  in some press.
+                </div>
+                <div className="hero-action">
+                  <div className="curtain-block">See work</div>
+                  {/* <a href="#" className="link">
+              See work
+            </a> */}
+                </div>
+              </div>
+            </div>
+          ) : null}
           <div className="header">
             <div className="content">
               <div className="header-item">DK</div>
             </div>
           </div>
           <div className="hero-content content">
-            <div className="hero-title">Danny King</div>
+            <div className="hero-name">
+              <div className="hero-name-first">Danny</div>
+              <div className="hero-name-last">King</div>
+            </div>
             <div className="hero-paragraph">
               I build products for designers and developers. Here's my Twitter,
               Dribbble, GitHub, and blog. I've also been featured in some press.
             </div>
             <div className="hero-action">
-              <button className="button">See work</button>
+              <button
+                className="button"
+                onMouseEnter={handleActivateHero}
+                onMouseLeave={handleDeactivateHero}
+                onClick={handleClickHero}
+              >
+                See work
+              </button>
               {/* <a href="#" className="link">
               See work
             </a> */}
             </div>
           </div>
         </div>
-        <div className="gallery">
+        <div className="gallery" ref={galleryRef}>
           <div className="gallery-content content">
             <div className="cards">
-              <div
-                className={c('card', { active: state.netlifyActive })}
-                onMouseEnter={handleActivateNetlify}
-                onMouseLeave={handleDeactivateNetlify}
-              >
+              <div className={c('card', { active: state.netlifyActive })}>
                 {state.netlifyActive ? (
                   <>
                     <div className="card-background netlify"></div>
@@ -80,7 +144,12 @@ const Home = () => {
                     <div className="card-subtitle">2022</div>
                   </div>
                 ) : null}
-                <Link className="card-anchor" href="/netlify"></Link>
+                <Link
+                  className="card-anchor"
+                  href="/netlify"
+                  onMouseEnter={handleActivateNetlify}
+                  onMouseLeave={handleDeactivateNetlify}
+                ></Link>
               </div>
               <div className="card">
                 <div className="card-thumb">

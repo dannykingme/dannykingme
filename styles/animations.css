@@ -64,6 +64,17 @@
   }
 }
 
+@keyframes tile-out-b2t {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(calc(var(--tile) * -1));
+  }
+}
+
 @keyframes shrink-x {
   0% {
     transform: scale(1, 1);
@@ -111,6 +122,24 @@
   }
 }
 
+@keyframes curtain {
+  100% {
+    transform: scale(50);
+  }
+}
+
+@keyframes curtain-header {
+  100% {
+    border-bottom-color: var(--border-color);
+  }
+}
+
+@keyframes curtain-nav {
+  100% {
+    color: var(--font-color);
+  }
+}
+
 /*
 .example {
   --dur1: var(--run);
@@ -124,51 +153,52 @@
   --dur9: var(--run);
 
   --del1: 0;
-  --del2: calc((dur1 * 0.34) + del1);
-  --del3: calc((dur2 * 0.21) + del2);
-  --del4: calc((dur3 * 0.13) + del3);
-  --del5: calc((dur4 * 0.08) + del4);
-  --del6: calc((dur5 * 0.05) + del5);
-  --del7: calc((dur6 * 0.03) + del6);
-  --del8: calc((dur7 * 0.02) + del7);
-  --del9: calc((dur8 * 0.01) + del8);
+  --del2: calc((var(--dur1) * 0.34) + var(--del1));
+  --del3: calc((var(--dur2) * 0.21) + var(--del2));
+  --del4: calc((var(--dur3) * 0.13) + var(--del3));
+  --del5: calc((var(--dur4) * 0.08) + var(--del4));
+  --del6: calc((var(--dur5) * 0.05) + var(--del5));
+  --del7: calc((var(--dur6) * 0.03) + var(--del6));
+  --del8: calc((var(--dur7) * 0.02) + var(--del7));
+  --del9: calc((var(--dur8) * 0.01) + var(--del8));
 
   .example-1 {
-    animation: slip-in-b2t var(--dur1) var(--fadein) var(--del1) backwards;
+    animation: var(--dur1) var(--fadein) var(--del1) backwards slip-in-b2t;
   }
 
   .example-2 {
-    animation: slip-in-b2t var(--dur2) var(--fadein) var(--del2) backwards;
+    animation: var(--dur2) var(--fadein) var(--del2) backwards slip-in-b2t;
   }
 
   .example-3 {
-    animation: slip-in-b2t var(--dur3) var(--fadein) var(--del3) backwards;
+    animation: var(--dur3) var(--fadein) var(--del3) backwards slip-in-b2t;
   }
 
   .example-4 {
-    animation: slip-in-b2t var(--dur4) var(--fadein) var(--del4) backwards;
+    animation: var(--dur4) var(--fadein) var(--del4) backwards slip-in-b2t;
   }
 
   .example-5 {
-    animation: slip-in-b2t var(--dur5) var(--fadein) var(--del5) backwards;
+    animation: var(--dur5) var(--fadein) var(--del5) backwards slip-in-b2t;
   }
 
   .example-6 {
-    animation: slip-in-b2t var(--dur6) var(--fadein) var(--del6) backwards;
+    animation: var(--dur6) var(--fadein) var(--del6) backwards slip-in-b2t;
   }
 
   .example-7 {
-    animation: slip-in-b2t var(--dur7) var(--fadein) var(--del7) backwards;
+    animation: var(--dur7) var(--fadein) var(--del7) backwards slip-in-b2t;
   }
 
   .example-8 {
-    animation: slip-in-b2t var(--dur8) var(--fadein) var(--del8) backwards;
+    animation: var(--dur8) var(--fadein) var(--del8) backwards slip-in-b2t;
   }
 
   .example-9 {
-    animation: slip-in-b2t var(--dur9) var(--fadein) var(--del9) backwards;
+    animation: var(--dur9) var(--fadein) var(--del9) backwards slip-in-b2t;
   }
-} */
+}
+*/
 
 .card.active {
   --dur1: var(--run);
@@ -225,5 +255,63 @@
 
   .example-9 {
     animation: slip-in-b2t var(--dur9) var(--fadein) var(--del9) backwards;
+  }
+}
+
+.hero.active {
+  --dur1: calc(var(--run) * 4);
+  --dur2: var(--run-fast);
+  --dur3: var(--run-fast);
+  --dur4: var(--run-fast);
+  --dur5: var(--run);
+  --dur6: var(--run);
+  --dur7: var(--run);
+  --dur8: var(--run);
+  --dur9: var(--run);
+
+  --del1: 0ms;
+  --del2: calc((var(--dur1) * 0) + var(--del1));
+  --del3: calc((var(--dur2) * 0.55) + var(--del2));
+  --del4: calc((var(--dur3) * 0.34) + var(--del3));
+  --del5: calc((var(--dur4) * 0.55) + var(--del4));
+  --del6: calc((var(--dur5) * 0.34) + var(--del5));
+  --del7: calc((var(--dur6) * 0.21) + var(--del6));
+  --del8: calc((var(--dur7) * 0.34) + var(--del7));
+  --del9: calc((var(--dur8) * 0.21) + var(--del8));
+
+  .curtain-block {
+    animation: var(--dur1) var(--fadein) var(--del1) both curtain;
+  }
+
+  .hero-paragraph {
+    animation: var(--dur2) var(--fadein) var(--del2) both tile-out-b2t;
+  }
+
+  .hero-name-last {
+    animation: var(--dur3) var(--fadein) var(--del3) both tile-out-b2t;
+  }
+
+  .hero-name-first {
+    animation: var(--dur4) var(--fadein) var(--del4) both tile-out-b2t;
+  }
+
+  .curtain .hero-paragraph {
+    animation: var(--dur5) var(--fadein) var(--del5) backwards tile-in-t2b;
+  }
+
+  .curtain .hero-name-last {
+    animation: var(--dur6) var(--fadein) var(--del6) backwards tile-in-t2b;
+  }
+
+  .curtain .hero-name-first {
+    animation: var(--dur7) var(--fadein) var(--del7) backwards tile-in-t2b;
+  }
+
+  .header {
+    animation: var(--dur8) var(--fadein) var(--del8) forwards curtain-header;
+  }
+
+  .header-item {
+    animation: var(--dur9) var(--fadein) var(--del9) forwards curtain-nav;
   }
 }
