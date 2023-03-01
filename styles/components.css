@@ -27,14 +27,16 @@
   background-color: var(--white);
   border: var(--border);
   border-radius: var(--border-radius);
-  transition: var(--run) var(--fadein);
+  transition: var(--run) var(--run) var(--fadein);
 
   &:hover {
     color: var(--white);
     background-color: var(--gray-900);
 
     /* border-color: var(--gray-900); */
-    transition-duration: var(--run-fast);
+
+    /* transition-duration: var(--run-fast); */
+    transition: var(--run-fast) var(--now) var(--fadein);
   }
 }
 

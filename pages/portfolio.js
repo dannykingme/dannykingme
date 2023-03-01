@@ -63,7 +63,7 @@ const Home = () => {
             inactive: state.heroActive === false,
           })}
         >
-          {state.heroActive ? (
+          {state.heroActive || state.heroActive === false ? (
             <div className="curtain">
               <div className="hero-content content">
                 <div className="hero-name">
