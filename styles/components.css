@@ -96,6 +96,7 @@
 }
 
 .hero-name {
+  font-family: 'Roboto Condensed'; /* TODO: add this font */
   font-size: var(--xl);
   font-weight: 600;
   line-height: 0.9;
@@ -107,7 +108,7 @@
   margin-left: calc(var(--xxs) * -1);
 
   &::first-letter {
-    letter-spacing: -1rem;
+    letter-spacing: -0.05em;
   }
 }
 
@@ -120,6 +121,8 @@
 }
 
 .hero-paragraph {
+  font-family: 'Roboto Slab'; /* TODO: add this font */
+  font-family: Bitter; /* TODO: add this font */
   font-size: calc(var(--xs) * 1.5);
   max-width: var(--xxl);
 }
@@ -378,6 +381,10 @@
     &.space {
       margin-bottom: var(--xl);
     }
+  }
+
+  h1 {
+    font-family: Bitter; /* TODO: add this font */
   }
 }
 
