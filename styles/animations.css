@@ -266,18 +266,18 @@
   --dur5: var(--run);
   --dur6: var(--run);
   --dur7: var(--run);
-  --dur8: var(--run);
-  --dur9: var(--run);
+  --dur8: var(--run-faster);
+  --dur9: var(--run-fast);
 
-  --del1: 0ms;
+  --del1: 100ms;
   --del2: calc((var(--dur1) * 0) + var(--del1));
   --del3: calc((var(--dur2) * 0.55) + var(--del2));
   --del4: calc((var(--dur3) * 0.34) + var(--del3));
-  --del5: calc((var(--dur4) * 0.55) + var(--del4));
-  --del6: calc((var(--dur5) * 0.34) + var(--del5));
-  --del7: calc((var(--dur6) * 0.21) + var(--del6));
-  --del8: calc((var(--dur7) * 0.34) + var(--del7));
-  --del9: calc((var(--dur8) * 0.21) + var(--del8));
+  --del5: calc((var(--dur4) * 0.89) + var(--del4));
+  --del6: calc((var(--dur5) * 0.21) + var(--del5));
+  --del7: calc((var(--dur6) * 0.13) + var(--del6));
+  --del8: calc((var(--dur7) * 0.89) + var(--del7));
+  --del9: calc((var(--dur8) * 0.13) + var(--del8));
 
   .curtain-block {
     animation: var(--dur1) var(--fadein) var(--del1) both curtain;
@@ -295,16 +295,16 @@
     animation: var(--dur4) var(--fadein) var(--del4) both tile-out-b2t;
   }
 
-  .curtain .hero-paragraph {
-    animation: var(--dur5) var(--fadein) var(--del5) backwards tile-in-t2b;
+  .curtain .hero-name-first {
+    animation: var(--dur5) var(--fadein) var(--del5) backwards tile-in-b2t;
   }
 
   .curtain .hero-name-last {
-    animation: var(--dur6) var(--fadein) var(--del6) backwards tile-in-t2b;
+    animation: var(--dur6) var(--fadein) var(--del6) backwards tile-in-b2t;
   }
 
-  .curtain .hero-name-first {
-    animation: var(--dur7) var(--fadein) var(--del7) backwards tile-in-t2b;
+  .curtain .hero-paragraph {
+    animation: var(--dur7) var(--fadein) var(--del7) backwards tile-in-b2t;
   }
 
   .header {

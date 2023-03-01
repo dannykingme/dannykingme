@@ -129,7 +129,7 @@
 
 .hero-action {
   font-size: calc(var(--xs) * 1.5);
-  margin-top: var(--margin);
+  margin-top: var(--tile);
 }
 
 .gallery {
@@ -339,6 +339,8 @@
   left: 0;
   width: 100%;
   height: calc(100% - var(--tile));
+  user-select: none;
+  pointer-events: none;
 
   .hero-name-first,
   .hero-name-last,
