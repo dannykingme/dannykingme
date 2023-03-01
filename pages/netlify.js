@@ -123,19 +123,19 @@ const Home = () => {
             </p>
             <div className="media two">
               <img
-                src="https://media.discordapp.net/attachments/684112676661755921/1079861698451751043/lANH7eKqhCmnXLgZUrlPwiyTJZUV4m62s9aaWbfN.png?width=1152&height=920"
+                src="https://media.discordapp.net/attachments/684112676661755921/1080578495236821082/CleanShot_2023-03-01_at_13.53.03.png?width=1227&height=920"
                 alt=""
               />
               <img
-                src="https://media.discordapp.net/attachments/684112676661755921/1079861698451751043/lANH7eKqhCmnXLgZUrlPwiyTJZUV4m62s9aaWbfN.png?width=1152&height=920"
+                src="https://media.discordapp.net/attachments/684112676661755921/1080578495236821082/CleanShot_2023-03-01_at_13.53.03.png?width=1227&height=920"
                 alt=""
               />
               <img
-                src="https://media.discordapp.net/attachments/684112676661755921/1079861698451751043/lANH7eKqhCmnXLgZUrlPwiyTJZUV4m62s9aaWbfN.png?width=1152&height=920"
+                src="https://media.discordapp.net/attachments/684112676661755921/1080578495236821082/CleanShot_2023-03-01_at_13.53.03.png?width=1227&height=920"
                 alt=""
               />
               <img
-                src="https://media.discordapp.net/attachments/684112676661755921/1079861698451751043/lANH7eKqhCmnXLgZUrlPwiyTJZUV4m62s9aaWbfN.png?width=1152&height=920"
+                src="https://media.discordapp.net/attachments/684112676661755921/1080578495236821082/CleanShot_2023-03-01_at_13.53.03.png?width=1227&height=920"
                 alt=""
               />
             </div>
@@ -147,11 +147,11 @@ const Home = () => {
             </p>
             <div className="media two">
               <img
-                src="https://media.discordapp.net/attachments/684112676661755921/1079861698451751043/lANH7eKqhCmnXLgZUrlPwiyTJZUV4m62s9aaWbfN.png?width=1152&height=920"
+                src="https://media.discordapp.net/attachments/684112676661755921/1080578495236821082/CleanShot_2023-03-01_at_13.53.03.png?width=1227&height=920"
                 alt=""
               />
               <img
-                src="https://media.discordapp.net/attachments/684112676661755921/1079861698451751043/lANH7eKqhCmnXLgZUrlPwiyTJZUV4m62s9aaWbfN.png?width=1152&height=920"
+                src="https://media.discordapp.net/attachments/684112676661755921/1080578495236821082/CleanShot_2023-03-01_at_13.53.03.png?width=1227&height=920"
                 alt=""
               />
             </div>
@@ -163,7 +163,7 @@ const Home = () => {
             </p>
             <div className="media">
               <img
-                src="https://media.discordapp.net/attachments/309172197090394112/1079982557103398972/J87dNckwY6on2cJ7XjmshjIXOS6rDavvC3YZKbh9.png?width=1795&height=920"
+                src="https://media.discordapp.net/attachments/684112676661755921/1080578495236821082/CleanShot_2023-03-01_at_13.53.03.png?width=1227&height=920"
                 alt=""
               />
             </div>
