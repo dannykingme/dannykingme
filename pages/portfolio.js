@@ -90,8 +90,24 @@ const Home = () => {
             </div>
           ) : null}
           <div className="header">
-            <div className="content">
-              <div className="header-item">DK</div>
+            <div className="nav">
+              <div className="nav-items content">
+                <Link className="nav-item nav-brand" href="/portfolio">
+                  Danny King
+                </Link>
+                <Link className="nav-item" href="/about">
+                  About
+                </Link>
+                <Link className="nav-item" href="/press">
+                  Press
+                </Link>
+                <Link className="nav-item" href="/resume">
+                  Resume
+                </Link>
+                <Link className="nav-item" href="/contact">
+                  Contact
+                </Link>
+              </div>
             </div>
           </div>
           <div className="hero-content content">
