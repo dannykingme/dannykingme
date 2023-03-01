@@ -449,3 +449,81 @@
     rgb(0 0 0 / 0%) 34%
   ); */
 }
+
+.quotes {
+  display: flex;
+  max-width: calc(var(--xl) * 3);
+  margin-top: var(--tile);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quote {
+  position: relative;
+  margin: var(--margin) var(--margin) var(--margin) 0;
+  padding: var(--padding) var(--padding) calc(var(--tile) / 2) var(--padding);
+  border: var(--border);
+  border-radius: var(--xs);
+}
+
+.quote-head {
+  --size: 3.5rem;
+
+  position: absolute;
+  top: calc(var(--padding) - var(--xxs));
+  left: calc(var(--size) / -2);
+  width: var(--size);
+  height: var(--size);
+
+  img {
+    border-radius: var(--size);
+    border-top: var(--xxs) solid var(--background);
+    border-bottom: var(--xxs) solid var(--background);
+    border-left: var(--xxs) solid transparent;
+    border-right: var(--xxs) solid transparent;
+  }
+}
+
+.quote-body {
+  /*  */
+}
+
+.quote-author {
+  margin-top: var(--xxs);
+
+  /* margin-bottom: var(--xs); */
+  margin-left: var(--xs);
+}
+
+.quote-name {
+  overflow: hidden;
+}
+
+.quote-role {
+  color: var(--gray-500);
+
+  /* font: var(--code); */
+  font-size: var(--font-tiny);
+
+  /* text-transform: uppercase; */
+  overflow: hidden;
+}
+
+.quote-text {
+  /* font: var(--code); */
+  overflow: hidden;
+}
+
+.quote-foot {
+  display: flex;
+  position: absolute;
+  bottom: calc((var(--padding) / 2) * -1);
+  right: var(--padding);
+  height: var(--padding);
+  padding: 0 var(--xxs);
+  background: var(--background);
+
+  img {
+    max-height: 100%;
+  }
+}

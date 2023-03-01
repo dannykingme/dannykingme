@@ -153,6 +153,34 @@ const Home = () => {
               eget varius viverra. Fusce auctor porta libero nec tincidunt.
             </p>
 
+            <div className="quotes">
+              <div className="quote">
+                <div className="quote-head">
+                  <img
+                    src="https://pbs.twimg.com/profile_images/808330818380857346/xGfn8xA-_400x400.jpg"
+                    alt=""
+                  />
+                </div>
+                <div className="quote-body">
+                  <div className="quote-author">
+                    <div className="quote-name">Jason Santa-Maria</div>
+                    <div className="quote-role">Director of Product</div>
+                  </div>
+                  <div className="quote-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nam maximus tortor varius semper luctus. Maecenas
+                      pellentesque lectus eget varius viverra. Fusce auctor
+                      porta libero nec tincidunt.
+                    </p>
+                  </div>
+                </div>
+                <div className="quote-foot">
+                  <img src="/netlify-logo.svg" alt="" />
+                </div>
+              </div>
+            </div>
+
             <div className="section">
               <div className="section-title">
                 <h1>Wireframing</h1>
