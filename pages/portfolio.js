@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import c from 'classnames';
 
 const Home = () => {
@@ -79,6 +80,7 @@ const Home = () => {
                     <div className="card-subtitle">2022</div>
                   </div>
                 ) : null}
+                <Link className="card-anchor" href="/netlify"></Link>
               </div>
               <div className="card">
                 <div className="card-thumb">
