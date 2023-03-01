@@ -3,6 +3,7 @@ import Link from 'next/link';
 import c from 'classnames';
 
 const Home = () => {
+  const cancelAnimation = useRef(0);
   const galleryRef = useRef();
   // const [count, activateNetlify] = useState(false);
   const [state, setState] = useState(() => {
@@ -30,15 +31,19 @@ const Home = () => {
     galleryRef.current.scrollIntoView({ behavior: 'smooth' });
   };
   const handleActivateHero = () => {
+    cancelAnimation.current = 1;
     setState((oldState) => ({
       ...oldState,
       heroActive: true,
     }));
+    setTimeout(() => {
+      cancelAnimation.current = 0;
+    }, 750);
   };
   const handleDeactivateHero = () => {
     setState((oldState) => ({
       ...oldState,
-      heroActive: false,
+      heroActive: cancelAnimation.current ? null : false,
     }));
   };
   const handleActivateNetlify = () => {
