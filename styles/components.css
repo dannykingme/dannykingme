@@ -159,18 +159,15 @@
   position: relative;
   height: 380px;
   height: var(--item-h);
-  /* border: var(--border); */
   border-color: var(--border-color);
   border-radius: var(--border-radius);
   transition: box-shadow var(--run-slower) var(--fadein);
   overflow: hidden;
 
   &.active {
-    /* border-color: transparent; */
     border: none;
     box-shadow: 0 21px 34px 0 rgb(0 0 0 / 21%);
     transition-duration: var(--run-fast);
-    /* border: none; */
     .edge-n,
     .edge-s,
     .edge-w,
