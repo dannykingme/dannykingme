@@ -9,8 +9,7 @@ const Home = () => {
   const [state, setState] = useState(() => {
     return {
       heroActive: null,
-      netlifyActive: false,
-      precursorActive: false,
+      activeCard: null,
     };
   });
   const handleClickHero = () => {
@@ -47,8 +46,15 @@ const Home = () => {
       heroActive: cancelAnimation.current ? null : false,
     }));
   };
+  const handleCardHover = (id) => {
+    setState((oldState) => ({
+      ...oldState,
+      activeCard: id,
+    }));
+  };
   return (
     <>
+      {console.log(state)}
       <div className="main">
         <div
           className={c('hero', {
@@ -120,7 +126,11 @@ const Home = () => {
         </div>
         <div className="gallery" ref={galleryRef}>
           <div className="gallery-content content">
-            <div className="cards">
+            <div
+              className={c('cards', {
+                active: state.activeCard,
+              })}
+            >
               <Card
                 id="netlify"
                 name="Netlify"
@@ -128,6 +138,7 @@ const Home = () => {
                 thumbnail="/card-netlify-thumbnail.png"
                 wireframe="/card-netlify-wireframe.png"
                 animation="/card-netlify-animation.gif"
+                onCardHover={handleCardHover}
               />
               <Card
                 id="precursor"
@@ -136,38 +147,43 @@ const Home = () => {
                 thumbnail="/card-precursor-thumbnail.png"
                 wireframe="/card-precursor-wireframe.png"
                 animation="/card-precursor-animation.gif"
+                onCardHover={handleCardHover}
               />
               <Card
-                id="precursor"
+                id="placeholder3"
                 name="Precursor"
                 date="2014-2015"
                 thumbnail="/card-precursor-thumbnail.png"
                 wireframe="/card-precursor-wireframe.png"
                 animation="/card-precursor-animation.gif"
+                onCardHover={handleCardHover}
               />
               <Card
-                id="netlify"
+                id="placeholder4"
                 name="Netlify"
                 date="2022"
                 thumbnail="/card-netlify-thumbnail.png"
                 wireframe="/card-netlify-wireframe.png"
                 animation="/card-netlify-animation.gif"
+                onCardHover={handleCardHover}
               />
               <Card
-                id="netlify"
+                id="placeholder5"
                 name="Netlify"
                 date="2022"
                 thumbnail="/card-netlify-thumbnail.png"
                 wireframe="/card-netlify-wireframe.png"
                 animation="/card-netlify-animation.gif"
+                onCardHover={handleCardHover}
               />
               <Card
-                id="precursor"
+                id="placeholder6"
                 name="Precursor"
                 date="2014-2015"
                 thumbnail="/card-precursor-thumbnail.png"
                 wireframe="/card-precursor-wireframe.png"
                 animation="/card-precursor-animation.gif"
+                onCardHover={handleCardHover}
               />
             </div>
           </div>
@@ -177,7 +193,15 @@ const Home = () => {
   );
 };
 
-const Card = ({ id, name, date, thumbnail, wireframe, animation }) => {
+const Card = ({
+  id,
+  name,
+  date,
+  thumbnail,
+  wireframe,
+  animation,
+  onCardHover,
+}) => {
   const [state, setState] = useState(() => {
     return {
       active: false,
@@ -188,12 +212,14 @@ const Card = ({ id, name, date, thumbnail, wireframe, animation }) => {
       ...oldState,
       active: true,
     }));
+    onCardHover(id);
   };
   const handleMouseLeave = () => {
     setState((oldState) => ({
       ...oldState,
       active: false,
     }));
+    onCardHover(null);
   };
   return (
     <div
@@ -216,12 +242,12 @@ const Card = ({ id, name, date, thumbnail, wireframe, animation }) => {
           <img src={wireframe} alt="" />
         )}
       </div>
-      {/* <div className="card-edge">
-        <div className="card-edge-top"></div>
-        <div className="card-edge-bottom"></div>
-        <div className="card-edge-left"></div>
-        <div className="card-edge-right"></div>
-      </div> */}
+      <div className="edge">
+        <div className="edge-n"></div>
+        <div className="edge-s"></div>
+        <div className="edge-w"></div>
+        <div className="edge-e"></div>
+      </div>
       {state.active ? (
         <div className="card-info">
           <div className="card-title">{name}</div>

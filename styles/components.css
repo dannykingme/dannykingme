@@ -156,7 +156,8 @@
   position: relative;
   height: 380px;
   height: var(--item-h);
-  border: var(--border);
+  /* border: var(--border); */
+  border-color: var(--border-color);
   border-radius: var(--border-radius);
   transition: box-shadow var(--run-slower) var(--fadein);
   overflow: hidden;
@@ -166,6 +167,13 @@
     border: none;
     box-shadow: 0 21px 34px 0 rgb(0 0 0 / 21%);
     transition-duration: var(--run-fast);
+    /* border: none; */
+    .edge-n,
+    .edge-s,
+    .edge-w,
+    .edge-e {
+      border: none;
+    }
 
     .card-thumb {
       animation: 750ms var(--fadein) 250ms both fade-out;
@@ -306,6 +314,50 @@
   height: 100%;
 }
 
+.edge {
+  pointer-events: none;
+  user-select: none;
+  border-color: inherit;
+  border-radius: inherit;
+}
+
+.edge-n,
+.edge-s,
+.edge-w,
+.edge-e {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-color: inherit;
+  border-radius: inherit;
+}
+
+.edge-n {
+  border-top-style: var(--border-style);
+  border-top-width: var(--border-width);
+  transform-origin: top right;
+}
+
+.edge-s {
+  border-bottom-style: var(--border-style);
+  border-bottom-width: var(--border-width);
+  transform-origin: bottom left;
+}
+
+.edge-w {
+  border-left-style: var(--border-style);
+  border-left-width: var(--border-width);
+  transform-origin: top left;
+}
+
+.edge-e {
+  border-right-style: var(--border-style);
+  border-right-width: var(--border-width);
+  transform-origin: bottom right;
+}
+
 /* .card-edge,
 .card-edge-top,
 .card-edge-bottom,
@@ -316,26 +368,38 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: var(--border-radius);
+  border-radius: inherit;
+}
+
+.card-edge {
+  border-color: var(--border-color);
 }
 
 .card-edge-top {
-  border-top: var(--border);
+  border-top-width: var(--border-width);
+  border-top-style: var(--border-style);
+  border-top-color: inherit;
   transform-origin: top right;
 }
 
 .card-edge-bottom {
-  border-bottom: var(--border);
+  border-bottom-width: var(--border-width);
+  border-bottom-style: var(--border-style);
+  border-bottom-color: inherit;
   transform-origin: bottom left;
 }
 
 .card-edge-left {
-  border-left: var(--border);
+  border-left-width: var(--border-width);
+  border-left-style: var(--border-style);
+  border-left-color: inherit;
   transform-origin: top left;
 }
 
 .card-edge-right {
-  border-right: var(--border);
+  border-right-width: var(--border-width);
+  border-right-style: var(--border-style);
+  border-right-color: inherit;
   transform-origin: bottom right;
 } */
 

@@ -134,6 +134,12 @@
   }
 }
 
+@keyframes to-see-thru {
+  100% {
+    opacity: 0.25;
+  }
+}
+
 @keyframes curtain {
   100% {
     transform: scale(50);
@@ -257,6 +263,70 @@
   }
 }
 */
+
+.cards.active {
+  --dur1: var(--run-slow);
+  --dur2: var(--run);
+  --dur3: var(--run);
+  --dur4: var(--run);
+  --dur5: var(--run);
+  --dur6: var(--run-slow);
+  --dur7: var(--run);
+  --dur8: var(--run);
+  --dur9: var(--run);
+  --dur10: var(--run);
+
+  --del1: 0ms;
+  --del2: calc((var(--dur1) * 0.34) + var(--del1));
+  --del3: calc((var(--dur2) * 0.21) + var(--del2));
+  --del4: calc((var(--dur3) * 0.13) + var(--del3));
+  --del5: calc((var(--dur4) * 0.08) + var(--del4));
+  --del6: calc((var(--dur5) * 0.89) + var(--del5));
+  --del7: calc((var(--dur6) * 0.34) + var(--del6));
+  --del8: calc((var(--dur7) * 0.21) + var(--del7));
+  --del9: calc((var(--dur8) * 0.13) + var(--del8));
+  --del10: calc((var(--dur9) * 0.08) + var(--del9));
+
+  .card:nth-child(1):not(.active) .card-thumb {
+    animation: var(--dur1) var(--fadein) var(--del1) both to-see-thru;
+  }
+
+  .card:nth-child(1):not(.active) .edge-n {
+    animation: var(--dur2) var(--fadein) var(--del2) both shrink-x;
+  }
+
+  .card:nth-child(1):not(.active) .edge-e {
+    animation: var(--dur3) var(--fadein) var(--del3) both shrink-y;
+  }
+
+  .card:nth-child(1):not(.active) .edge-s {
+    animation: var(--dur4) var(--fadein) var(--del4) both shrink-x;
+  }
+
+  .card:nth-child(1):not(.active) .edge-w {
+    animation: var(--dur5) var(--fadein) var(--del5) both shrink-y;
+  }
+
+  .card:nth-child(2):not(.active) .card-thumb {
+    animation: var(--dur6) var(--fadein) var(--del6) both to-see-thru;
+  }
+
+  .card:nth-child(2):not(.active) .edge-n {
+    animation: var(--dur7) var(--fadein) var(--del7) both shrink-x;
+  }
+
+  .card:nth-child(2):not(.active) .edge-e {
+    animation: var(--dur8) var(--fadein) var(--del8) both shrink-y;
+  }
+
+  .card:nth-child(2):not(.active) .edge-s {
+    animation: var(--dur9) var(--fadein) var(--del9) both shrink-x;
+  }
+
+  .card:nth-child(2):not(.active) .edge-w {
+    animation: var(--dur10) var(--fadein) var(--del10) both shrink-y;
+  }
+}
 
 .card.active {
   --dur1: var(--run);
