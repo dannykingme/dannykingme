@@ -75,9 +75,9 @@ const Home = () => {
                   <div className="hero-name-last">King</div>
                 </div>
                 <div className="hero-paragraph">
-                  I build products for designers and developers. Here's my
-                  Twitter, Dribbble, GitHub, and blog. I've also been featured
-                  in some press.
+                  I use code to build developer tools and strengthen
+                  collaboration between designers and engineers. I've shipped
+                  code to billions of users worldwide.
                 </div>
                 <div className="hero-action">
                   <div className="curtain-block">See work</div>
@@ -112,8 +112,9 @@ const Home = () => {
               <div className="hero-name-last">King</div>
             </div>
             <div className="hero-paragraph">
-              I build products for designers and developers. Here's my Twitter,
-              Dribbble, GitHub, and blog. I've also been featured in some press.
+              I use research and prototypes to design products and lead teams.
+              Previously I simplified Search at Google and shaped the future of
+              the web at Netlify.
             </div>
             <div className="hero-action">
               <button
