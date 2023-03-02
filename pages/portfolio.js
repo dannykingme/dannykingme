@@ -10,6 +10,7 @@ const Home = () => {
     return {
       heroActive: null,
       netlifyActive: false,
+      precursorActive: false,
     };
   });
   const handleClickHero = () => {
@@ -56,6 +57,18 @@ const Home = () => {
     setState((oldState) => ({
       ...oldState,
       netlifyActive: false,
+    }));
+  };
+  const handleActivatePrecursor = () => {
+    setState((oldState) => ({
+      ...oldState,
+      precursorActive: true,
+    }));
+  };
+  const handleDeactivatePrecursor = () => {
+    setState((oldState) => ({
+      ...oldState,
+      precursorActive: false,
     }));
   };
   return (
@@ -132,10 +145,14 @@ const Home = () => {
         <div className="gallery" ref={galleryRef}>
           <div className="gallery-content content">
             <div className="cards">
-              <div className={c('card', { active: state.netlifyActive })}>
+              <div
+                className={c('card', 'netlify', {
+                  active: state.netlifyActive,
+                })}
+              >
                 {state.netlifyActive ? (
                   <>
-                    <div className="card-background netlify"></div>
+                    <div className="card-background"></div>
                     <div className="card-mock">
                       <img src="/netlify-mockup-thumbnail.png" alt="" />
                     </div>
@@ -143,7 +160,7 @@ const Home = () => {
                 ) : null}
                 <div className="card-thumb">
                   {state.netlifyActive ? (
-                    <img src="/test-vid6.gif" alt="" />
+                    <img src="/netlify-wireframe-animation.gif" alt="" />
                   ) : (
                     <img src="/netlify-wireframe-thumbnail.png" alt="" />
                   )}
@@ -167,10 +184,44 @@ const Home = () => {
                   onMouseLeave={handleDeactivateNetlify}
                 ></Link>
               </div>
-              <div className="card">
+              <div
+                className={c('card', 'precursor', {
+                  active: state.precursorActive,
+                })}
+              >
+                {state.precursorActive ? (
+                  <>
+                    <div className="card-background"></div>
+                    <div className="card-mock">
+                      <img src="/precursor-mockup-thumbnail.png" alt="" />
+                    </div>
+                  </>
+                ) : null}
                 <div className="card-thumb">
-                  <img src="/netlify-wireframe-thumbnail.png" alt="" />
+                  {state.precursorActive ? (
+                    <img src="/precursor-wireframe-animation.gif" alt="" />
+                  ) : (
+                    <img src="/precursor-wireframe-thumbnail.png" alt="" />
+                  )}
                 </div>
+                {/* <div className="card-edge">
+                  <div className="card-edge-top"></div>
+                  <div className="card-edge-bottom"></div>
+                  <div className="card-edge-left"></div>
+                  <div className="card-edge-right"></div>
+                </div> */}
+                {state.precursorActive ? (
+                  <div className="card-info">
+                    <div className="card-title">Precursor</div>
+                    <div className="card-subtitle">2014-2015</div>
+                  </div>
+                ) : null}
+                <Link
+                  className="card-anchor"
+                  href="/precursor"
+                  onMouseEnter={handleActivatePrecursor}
+                  onMouseLeave={handleDeactivatePrecursor}
+                ></Link>
               </div>
               <div className="card">
                 <div className="card-thumb">
