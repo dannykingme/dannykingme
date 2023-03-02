@@ -125,17 +125,17 @@ const Home = () => {
                 id="netlify"
                 name="Netlify"
                 date="2022"
-                thumbnail="/netlify-mockup-thumbnail.png"
-                wireframe="/netlify-wireframe-thumbnail.png"
-                animation="/netlify-wireframe-animation.gif"
+                thumbnail="/card-netlify-thumbnail.png"
+                wireframe="/card-netlify-wireframe.png"
+                animation="/card-netlify-animation.gif"
               />
               <Card
                 id="precursor"
                 name="Precursor"
                 date="2014-2015"
-                thumbnail="/precursor-mockup-thumbnail.png"
-                wireframe="/precursor-wireframe-thumbnail.png"
-                animation="/precursor-wireframe-animation.gif"
+                thumbnail="/card-precursor-thumbnail.png"
+                wireframe="/card-precursor-wireframe.png"
+                animation="/card-precursor-animation.gif"
               />
               <div className="card">
                 <div className="card-thumb">
