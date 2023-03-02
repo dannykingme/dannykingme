@@ -169,6 +169,34 @@
   }
 }
 
+@keyframes twirl-in {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+}
+
+@keyframes twirl-out {
+  100% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+}
+
+@keyframes twirl-out-rev {
+  100% {
+    opacity: 0;
+    transform: rotateY(-90deg);
+  }
+}
+
+@keyframes twirl-in-rev {
+  0% {
+    opacity: 0;
+    transform: rotateY(-90deg);
+  }
+}
+
 /*
 .example {
   --dur1: var(--run);
