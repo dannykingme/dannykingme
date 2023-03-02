@@ -47,30 +47,6 @@ const Home = () => {
       heroActive: cancelAnimation.current ? null : false,
     }));
   };
-  const handleActivateNetlify = () => {
-    setState((oldState) => ({
-      ...oldState,
-      netlifyActive: true,
-    }));
-  };
-  const handleDeactivateNetlify = () => {
-    setState((oldState) => ({
-      ...oldState,
-      netlifyActive: false,
-    }));
-  };
-  const handleActivatePrecursor = () => {
-    setState((oldState) => ({
-      ...oldState,
-      precursorActive: true,
-    }));
-  };
-  const handleDeactivatePrecursor = () => {
-    setState((oldState) => ({
-      ...oldState,
-      precursorActive: false,
-    }));
-  };
   return (
     <>
       <div className="main">
@@ -145,84 +121,22 @@ const Home = () => {
         <div className="gallery" ref={galleryRef}>
           <div className="gallery-content content">
             <div className="cards">
-              <div
-                className={c('card', 'netlify', {
-                  active: state.netlifyActive,
-                })}
-              >
-                {state.netlifyActive ? (
-                  <>
-                    <div className="card-background"></div>
-                    <div className="card-mock">
-                      <img src="/netlify-mockup-thumbnail.png" alt="" />
-                    </div>
-                  </>
-                ) : null}
-                <div className="card-thumb">
-                  {state.netlifyActive ? (
-                    <img src="/netlify-wireframe-animation.gif" alt="" />
-                  ) : (
-                    <img src="/netlify-wireframe-thumbnail.png" alt="" />
-                  )}
-                </div>
-                {/* <div className="card-edge">
-                  <div className="card-edge-top"></div>
-                  <div className="card-edge-bottom"></div>
-                  <div className="card-edge-left"></div>
-                  <div className="card-edge-right"></div>
-                </div> */}
-                {state.netlifyActive ? (
-                  <div className="card-info">
-                    <div className="card-title">Netlify</div>
-                    <div className="card-subtitle">2022</div>
-                  </div>
-                ) : null}
-                <Link
-                  className="card-anchor"
-                  href="/netlify"
-                  onMouseEnter={handleActivateNetlify}
-                  onMouseLeave={handleDeactivateNetlify}
-                ></Link>
-              </div>
-              <div
-                className={c('card', 'precursor', {
-                  active: state.precursorActive,
-                })}
-              >
-                {state.precursorActive ? (
-                  <>
-                    <div className="card-background"></div>
-                    <div className="card-mock">
-                      <img src="/precursor-mockup-thumbnail.png" alt="" />
-                    </div>
-                  </>
-                ) : null}
-                <div className="card-thumb">
-                  {state.precursorActive ? (
-                    <img src="/precursor-wireframe-animation.gif" alt="" />
-                  ) : (
-                    <img src="/precursor-wireframe-thumbnail.png" alt="" />
-                  )}
-                </div>
-                {/* <div className="card-edge">
-                  <div className="card-edge-top"></div>
-                  <div className="card-edge-bottom"></div>
-                  <div className="card-edge-left"></div>
-                  <div className="card-edge-right"></div>
-                </div> */}
-                {state.precursorActive ? (
-                  <div className="card-info">
-                    <div className="card-title">Precursor</div>
-                    <div className="card-subtitle">2014-2015</div>
-                  </div>
-                ) : null}
-                <Link
-                  className="card-anchor"
-                  href="/precursor"
-                  onMouseEnter={handleActivatePrecursor}
-                  onMouseLeave={handleDeactivatePrecursor}
-                ></Link>
-              </div>
+              <Card
+                id="netlify"
+                name="Netlify"
+                date="2022"
+                thumbnail="/netlify-mockup-thumbnail.png"
+                wireframe="/netlify-wireframe-thumbnail.png"
+                animation="/netlify-wireframe-animation.gif"
+              />
+              <Card
+                id="precursor"
+                name="Precursor"
+                date="2014-2015"
+                thumbnail="/precursor-mockup-thumbnail.png"
+                wireframe="/precursor-wireframe-thumbnail.png"
+                animation="/precursor-wireframe-animation.gif"
+              />
               <div className="card">
                 <div className="card-thumb">
                   <img src="/netlify-wireframe-thumbnail.png" alt="" />
@@ -248,6 +162,67 @@ const Home = () => {
         </div>
       </div>
     </>
+  );
+};
+
+const Card = ({ id, name, date, thumbnail, wireframe, animation }) => {
+  const [state, setState] = useState(() => {
+    return {
+      active: false,
+    };
+  });
+  const handleMouseEnter = () => {
+    setState((oldState) => ({
+      ...oldState,
+      active: true,
+    }));
+  };
+  const handleMouseLeave = () => {
+    setState((oldState) => ({
+      ...oldState,
+      active: false,
+    }));
+  };
+  return (
+    <div
+      className={c('card', id, {
+        active: state.active,
+      })}
+    >
+      {state.active ? (
+        <>
+          <div className="card-background"></div>
+          <div className="card-mock">
+            <img src={thumbnail} alt="" />
+          </div>
+        </>
+      ) : null}
+      <div className="card-thumb">
+        {state.active ? (
+          <img src={animation} alt="" />
+        ) : (
+          <img src={wireframe} alt="" />
+        )}
+      </div>
+      {/* <div className="card-edge">
+        <div className="card-edge-top"></div>
+        <div className="card-edge-bottom"></div>
+        <div className="card-edge-left"></div>
+        <div className="card-edge-right"></div>
+      </div> */}
+      {state.active ? (
+        <div className="card-info">
+          <div className="card-title">{name}</div>
+          <div className="card-subtitle">{date}</div>
+        </div>
+      ) : null}
+      <Link
+        className="card-anchor"
+        href={`/${id}`}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      ></Link>
+    </div>
   );
 };
 
