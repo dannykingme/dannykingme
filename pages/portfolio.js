@@ -137,26 +137,38 @@ const Home = () => {
                 wireframe="/card-precursor-wireframe.png"
                 animation="/card-precursor-animation.gif"
               />
-              <div className="card">
-                <div className="card-thumb">
-                  <img src="/netlify-wireframe-thumbnail.png" alt="" />
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-thumb">
-                  <img src="/netlify-wireframe-thumbnail.png" alt="" />
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-thumb">
-                  <img src="/netlify-wireframe-thumbnail.png" alt="" />
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-thumb">
-                  <img src="/netlify-wireframe-thumbnail.png" alt="" />
-                </div>
-              </div>
+              <Card
+                id="precursor"
+                name="Precursor"
+                date="2014-2015"
+                thumbnail="/card-precursor-thumbnail.png"
+                wireframe="/card-precursor-wireframe.png"
+                animation="/card-precursor-animation.gif"
+              />
+              <Card
+                id="netlify"
+                name="Netlify"
+                date="2022"
+                thumbnail="/card-netlify-thumbnail.png"
+                wireframe="/card-netlify-wireframe.png"
+                animation="/card-netlify-animation.gif"
+              />
+              <Card
+                id="netlify"
+                name="Netlify"
+                date="2022"
+                thumbnail="/card-netlify-thumbnail.png"
+                wireframe="/card-netlify-wireframe.png"
+                animation="/card-netlify-animation.gif"
+              />
+              <Card
+                id="precursor"
+                name="Precursor"
+                date="2014-2015"
+                thumbnail="/card-precursor-thumbnail.png"
+                wireframe="/card-precursor-wireframe.png"
+                animation="/card-precursor-animation.gif"
+              />
             </div>
           </div>
         </div>
