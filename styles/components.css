@@ -184,6 +184,10 @@
         filter: drop-shadow(0 3px 5px rgb(0 0 0 / 34%));
       }
     }
+    &:active {
+      box-shadow: 0 5px 8px 0 rgb(0 0 0 / 21%);
+      transition-duration: var(--run-faster);
+    }
   }
 
   &.netlify {
