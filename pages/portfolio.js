@@ -106,6 +106,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+
           <div className="hero-content content">
             <div className="hero-name">
               <div className="hero-name-first">Danny</div>
