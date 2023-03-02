@@ -60,7 +60,6 @@ const Home = () => {
   };
   return (
     <>
-      {/* <div className="header">test</div> */}
       <div className="main">
         <div
           className={c('hero', {
@@ -82,9 +81,6 @@ const Home = () => {
                 </div>
                 <div className="hero-action">
                   <div className="curtain-block">See work</div>
-                  {/* <a href="#" className="link">
-              See work
-            </a> */}
                 </div>
               </div>
             </div>
@@ -128,9 +124,6 @@ const Home = () => {
               >
                 See work
               </button>
-              {/* <a href="#" className="link">
-              See work
-            </a> */}
             </div>
           </div>
         </div>
