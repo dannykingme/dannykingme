@@ -150,6 +150,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--margin);
+  &.active {
+    border-radius: 0;
+  }
 }
 
 .card {
@@ -349,13 +352,13 @@
 .edge-w {
   border-left-style: var(--border-style);
   border-left-width: var(--border-width);
-  transform-origin: top left;
+  transform-origin: bottom left;
 }
 
 .edge-e {
   border-right-style: var(--border-style);
   border-right-width: var(--border-width);
-  transform-origin: bottom right;
+  transform-origin: top right;
 }
 
 /* .card-edge,
