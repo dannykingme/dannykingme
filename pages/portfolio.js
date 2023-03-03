@@ -150,12 +150,12 @@ const Home = () => {
                 onCardHover={handleCardHover}
               />
               <Card
-                id="placeholder3"
-                name="Precursor"
-                date="2014-2015"
-                thumbnail="/card-precursor-thumbnail.png"
-                wireframe="/card-precursor-wireframe.png"
-                animation="/card-precursor-animation.gif"
+                id="serverless"
+                name="Serverless"
+                date="2016-2017"
+                thumbnail="/card-serverless-thumbnail.png"
+                wireframe="/card-serverless-wireframe.png"
+                animation="/card-serverless-animation.gif"
                 onCardHover={handleCardHover}
               />
               <Card
