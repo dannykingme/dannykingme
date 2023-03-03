@@ -74,10 +74,10 @@ const Home = () => {
                 <div className="hero-case-cell">
                   <div className="hero-case-title">Summary</div>
                   <div className="hero-case-info">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                    maximus tortor varius semper luctus. Maecenas pellentesque
-                    lectus eget varius viverra. Fusce auctor porta libero nec
-                    tincidunt.
+                    Mauris viverra lorem eget hendrerit imperdiet. Maecenas
+                    tincidunt dignissim facilisis. Quisque sit amet facilisis
+                    nibh. Aenean vulputate erat libero, tristique gravida nunc
+                    vestibulum in.
                   </div>
                 </div>
                 <div className="hero-case-cell">
@@ -101,80 +101,64 @@ const Home = () => {
             </div>
 
             <p className="space">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              maximus tortor varius semper luctus. Maecenas pellentesque lectus
-              eget varius viverra. Fusce auctor porta libero nec tincidunt.
-              Maecenas pellentesque lectus eget varius viverra. Fusce auctor
-              porta libero nec tincidunt.
+              Netlify is the number one development platform for building,
+              deploying, hosting, and managing web applications. It offers a
+              suite of tools that streamline developer work flows and eliminate
+              repetitive engineering tasks. In 2021 they approached me to help
+              them build out their design team, redesign and integrate their
+              latest acquisition (OneGraph), and build them an integrations
+              marketplace, to make plugin discovery more accessible.
             </p>
-            {/* <div className="media">
-              <img
-                src="https://media.discordapp.net/attachments/684112676661755921/1079861698451751043/lANH7eKqhCmnXLgZUrlPwiyTJZUV4m62s9aaWbfN.png?width=1152&height=920"
-                alt=""
-              />
-            </div> */}
             <h1>Challenges</h1>
+            <h4>Redesigning Graph</h4>
             <p>
-              Curabitur nunc tellus, euismod at lectus vitae, vestibulum
-              efficitur libero. Mauris viverra lorem eget hendrerit imperdiet.
-              Maecenas tincidunt dignissim facilisis. Quisque sit amet facilisis
-              nibh. Aenean vulputate erat libero, tristique gravida nunc
-              vestibulum in.
+              In November 2021 Netlify acquired OneGraph, a product that
+              combines hundreds of APIs into a single GraphQL API. It makes
+              building integrations with services like Salesforce 100x faster.
+              It was rebranded as Netlify Graph and positioned into Netlify’s
+              suite of tools, but the product had never been touched by a
+              designer and needed to be properly integrated. I was responsible
+              for creating all of Netlify Graph’s new product design.
             </p>
             <div className="media two">
-              <img
-                src="https://media.discordapp.net/attachments/684112676661755921/1080578495236821082/CleanShot_2023-03-01_at_13.53.03.png?width=1227&height=920"
-                alt=""
-              />
-              <img
-                src="https://media.discordapp.net/attachments/684112676661755921/1080578495236821082/CleanShot_2023-03-01_at_13.53.03.png?width=1227&height=920"
-                alt=""
-              />
-              <img
-                src="https://media.discordapp.net/attachments/684112676661755921/1080578495236821082/CleanShot_2023-03-01_at_13.53.03.png?width=1227&height=920"
-                alt=""
-              />
-              <img
-                src="https://media.discordapp.net/attachments/684112676661755921/1080578495236821082/CleanShot_2023-03-01_at_13.53.03.png?width=1227&height=920"
-                alt=""
-              />
+              <div className="media-image">
+                <img src="/netlify/graph-before1.png" alt="" />
+                <div className="media-caption">The old dashboard</div>
+              </div>
+              <div className="media-image">
+                <img src="/netlify/graph-before2.png" alt="" />
+                <div className="media-caption">The old services</div>
+              </div>
+              <div className="media-image">
+                <img src="/netlify/graph-before3.png" alt="" />
+                <div className="media-caption">The old onboarding</div>
+              </div>
+              <div className="media-image">
+                <img src="/netlify/graph-before4.png" alt="" />
+                <div className="media-caption">The old editor</div>
+              </div>
             </div>
-            <h4>Consectetur Adipiscing</h4>
+            <h4>Connecting an Ecosystem</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              maximus tortor varius semper luctus. Maecenas pellentesque lectus
-              eget varius viverra. Fusce auctor porta libero nec tincidunt.
+              The future of Netlify is bringing developers closer to their
+              tools. With hundreds of partners, plugins, services, and tutorial
+              articles, Netlify has a vast ecosystem. They needed to create a
+              centralized location to maintain current integrations, encourage
+              innovation, and track usage. I was tasked with creating the design
+              for their marketplace.
             </p>
             <div className="media two">
-              <img
-                src="https://media.discordapp.net/attachments/684112676661755921/1080578495236821082/CleanShot_2023-03-01_at_13.53.03.png?width=1227&height=920"
-                alt=""
-              />
-              <img
-                src="https://media.discordapp.net/attachments/684112676661755921/1080578495236821082/CleanShot_2023-03-01_at_13.53.03.png?width=1227&height=920"
-                alt=""
-              />
+              <div className="media-image">
+                <img src="/netlify/integrations-before1.png" alt="" />
+                <div className="media-caption">Old plugin integrations</div>
+              </div>
+              <div className="media-image">
+                <img src="/netlify/integrations-before2.png" alt="" />
+                <div className="media-caption">Old web templates</div>
+              </div>
             </div>
-            <h4>Dolor Sit Amet</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              maximus tortor varius semper luctus. Maecenas pellentesque lectus
-              eget varius viverra. Fusce auctor porta libero nec tincidunt.
-            </p>
-            <div className="media">
-              <img
-                src="https://media.discordapp.net/attachments/684112676661755921/1080578495236821082/CleanShot_2023-03-01_at_13.53.03.png?width=1227&height=920"
-                alt=""
-              />
-            </div>
-            <h4>Fusce Auctor</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              maximus tortor varius semper luctus. Maecenas pellentesque lectus
-              eget varius viverra. Fusce auctor porta libero nec tincidunt.
-            </p>
 
-            <div className="quotes">
+            {/* <div className="quotes">
               <div className="quote">
                 <div className="quote-head">
                   <img
@@ -200,33 +184,169 @@ const Home = () => {
                   <img src="/netlify-logo.svg" alt="" />
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="section">
               <div className="section-title">
-                <h1>Wireframing</h1>
+                <h1>Prototyping</h1>
               </div>
               <div className="section-subtitle">
                 <div className="section-dash"></div>
                 <h5>Process</h5>
               </div>
             </div>
+            <h4>Wireframing Graph</h4>
             <p>
-              Curabitur nunc tellus, euismod at lectus vitae, vestibulum
-              efficitur libero. Mauris viverra lorem eget hendrerit imperdiet.
-              Maecenas tincidunt dignissim facilisis. Quisque sit amet facilisis
-              nibh. Aenean vulputate erat libero, tristique gravida nunc
-              vestibulum in.
+              The biggest challenge that Graph’s design initially offered was a
+              cumbersome onboarding wizard users were dragged through before
+              they were able to see any services Graph had to offer. The first
+              thing I experimented with was a unified interface that previewed
+              what Graph had to offer right away, but still offered a
+              step-by-step process to onboard into very technical product.
+            </p>
+            <div className="media">
+              <div className="media-wireframe">
+                <a
+                  href="https://precursorapp.com/document/Netlify-Graph-Settings-17592210682339"
+                  target="_blank"
+                >
+                  <img
+                    src="https://precursorapp.com/document/Netlify-Graph-Settings-17592210682339.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div className="media-caption">Graph Settings</div>
+            </div>
+            {/* <div className="media">
+              <div className="media-image">
+                <a
+                  href="https://precursorapp.com/document/Netlify-Graph-Example-Code-17592210681113"
+                  target="_blank"
+                >
+                  <img
+                    src="https://precursorapp.com/document/Netlify-Graph-Example-Code-17592210681113.svg"
+                    alt=""
+                  />
+                </a>
+                <div className="media-caption">Graph Example Code</div>
+              </div>
+            </div> */}
+            <div className="media">
+              <div className="media-wireframe">
+                <a
+                  href="https://precursorapp.com/document/Netlify-Graph-Services-Menu-17592210681300"
+                  target="_blank"
+                >
+                  <img
+                    src="https://precursorapp.com/document/Netlify-Graph-Services-Menu-17592210681300.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div className="media-caption">Graph Services Menu</div>
+            </div>
+            {/* <div className="media">
+              <div className="media-wireframe">
+                <a
+                  href="https://precursorapp.com/document/Netlify-Graph-Session-17592210681216"
+                  target="_blank"
+                >
+                  <img
+                    src="https://precursorapp.com/document/Netlify-Graph-Session-17592210681216.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div className="media-caption">Graph Sessions Dashboard</div>
+            </div> */}
+            <h4>Wireframing Integrations</h4>
+            <p>
+              For their marketplace, Netlify needed a gallery view with partner
+              logos, a details page with instructions, and a button to initiate
+              the integration. Integration marketplaces are fairly common today,
+              so I focused on what could differentiate us: the story. By
+              promoting all of these different tools, Netlify was, in a sense,
+              building a hardware store for people’s software; so I melded these
+              ideas to create the toolshop.
+            </p>
+            <div className="media">
+              <div className="media-wireframe">
+                <a
+                  href="https://precursorapp.com/document/Netlify-Integrations-Toolshop-17592210683186"
+                  target="_blank"
+                >
+                  <img
+                    src="https://precursorapp.com/document/Netlify-Integrations-Toolshop-17592210683186.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div className="media-caption">Integrations Homepage</div>
+            </div>
+            <div className="media">
+              <div className="media-wireframe">
+                <a
+                  href="https://precursorapp.com/document/Netlify-Integrations-Details-17592210683010"
+                  target="_blank"
+                >
+                  <img
+                    src="https://precursorapp.com/document/Netlify-Integrations-Details-17592210683010.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div className="media-caption">Integrations Details</div>
+            </div>
+
+            <div className="section">
+              <div className="section-title">
+                <h1>Solutions</h1>
+              </div>
+              <div className="section-subtitle">
+                <div className="section-dash"></div>
+                <h5>Production</h5>
+              </div>
+            </div>
+            <h4>A New Graph Experience</h4>
+            <p>
+              My first priority was putting the various API partners front and
+              center. Focusing on these established brands helped build trust
+              with new users and immediately gave partners a sense of belonging
+              in the app.
+            </p>
+            <div className="media">
+              <div className="media-video">
+                <video
+                  src="/netlify/graph-demo1.mp4"
+                  muted
+                  autoPlay
+                  loop
+                ></video>
+              </div>
+              <div className="media-caption">Integrations Homepage</div>
+            </div>
+            <p>
+              Searching for new services which were previously hidden became
+              delightfully simple, and exploring code examples became fun enough
+              to incentivize users to explore.
+            </p>
+            <p>
+              From there I built a toolbar to house many of the features that
+              were previously left floating on the page. This became Netlify’s
+              first foray into an app-oriented design, rather than a
+              content-oriented design.
+            </p>
+            <p>
+              Finally, I created a step-by-step onboarding flow that explained
+              the most important features, without ever removing you from the
+              product itself.
             </p>
           </div>
         </div>
 
         <div className="hero black">
           <div className="hero-background">
-            {/* <img
-              src="https://media.discordapp.net/attachments/684112676661755921/1079920361556148244/BOgRX3za8ngo2WP4Jd3cI3WkLubYXMocXoYxt5rv.png?width=1840&height=920"
-              alt=""
-            /> */}
             <video
               ref={videoRef}
               onCanPlay={() => setPlayBack()}
