@@ -936,3 +936,42 @@
     var(--offset) var(--offset), var(--offset) 50%, 50% 50%, 50% var(--offset),
     var(--offset) var(--offset);
 }
+
+.mason {
+  display: flex;
+  gap: var(--margin);
+  margin-bottom: var(--tile);
+}
+
+.mason-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin);
+  width: 50%;
+}
+
+.mason-block {
+  /* margin-bottom: var(--margin); */
+}
+
+.mason-figure {
+  border: var(--border);
+  border-radius: var(--border-radius);
+  /* background: var(--gray-50); */
+  img {
+    display: block;
+    opacity: 0.34;
+    border: none;
+    border-radius: 0;
+  }
+}
+
+.mason-caption {
+  text-align: center;
+  color: var(--gray-700);
+  font-size: var(--font-tiny);
+  /* margin-top: var(--xxs); */
+  /* margin-bottom: var(--xxs); */
+  /* margin-left: var(--margin); */
+  margin-bottom: var(--xs);
+}

@@ -204,62 +204,84 @@ const Home = () => {
               what Graph had to offer right away, but still offered a
               step-by-step process to onboard into very technical product.
             </p>
-            <div className="media">
-              <div className="media-wireframe">
-                <a
-                  href="https://precursorapp.com/document/Netlify-Graph-Settings-17592210682339"
-                  target="_blank"
-                >
-                  <img
-                    src="https://precursorapp.com/document/Netlify-Graph-Settings-17592210682339.svg"
-                    alt=""
-                  />
-                </a>
+            <div className="mason">
+              <div className="mason-column">
+                <div className="mason-block">
+                  <div className="mason-figure">
+                    <a
+                      href="https://precursorapp.com/document/Netlify-Graph-Settings-17592210682339"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://precursorapp.com/document/Netlify-Graph-Settings-17592210682339.svg"
+                        alt=""
+                      />
+                    </a>
+                    <div className="mason-caption">Graph Settings</div>
+                  </div>
+                </div>
+                <div className="mason-block">
+                  <div className="mason-figure">
+                    <a
+                      href="https://precursorapp.com/document/Netlify-Graph-Example-Code-17592210681113"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://precursorapp.com/document/Netlify-Graph-Example-Code-17592210681113.svg"
+                        alt=""
+                      />
+                    </a>
+                    <div className="mason-caption">Graph Example Code</div>
+                  </div>
+                </div>
+                <div className="mason-block">
+                  <div className="mason-figure">
+                    <a
+                      href="https://precursorapp.com/document/Netlify-Graph-Session-17592210681216"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://precursorapp.com/document/Netlify-Graph-Session-17592210681216.svg"
+                        alt=""
+                      />
+                    </a>
+                    <div className="mason-caption">
+                      Graph Sessions Dashboard
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="media-caption">Graph Settings</div>
+              <div className="mason-column">
+                <div className="mason-block">
+                  <div className="mason-figure">
+                    <a
+                      href="https://precursorapp.com/document/Netlify-Graph-Services-Menu-17592210681300"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://precursorapp.com/document/Netlify-Graph-Services-Menu-17592210681300.svg"
+                        alt=""
+                      />
+                    </a>
+                    <div className="mason-caption">Graph Services Menu</div>
+                  </div>
+                </div>
+                <div className="mason-block">
+                  <div className="mason-figure">
+                    <a
+                      href="https://precursorapp.com/document/Netlify-Graph-Service-Catalog-17592210684196"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://precursorapp.com/document/Netlify-Graph-Service-Catalog-17592210684196.svg"
+                        alt=""
+                      />
+                    </a>
+                    <div className="mason-caption">Graph Services Catalog</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            {/* <div className="media">
-              <div className="media-image">
-                <a
-                  href="https://precursorapp.com/document/Netlify-Graph-Example-Code-17592210681113"
-                  target="_blank"
-                >
-                  <img
-                    src="https://precursorapp.com/document/Netlify-Graph-Example-Code-17592210681113.svg"
-                    alt=""
-                  />
-                </a>
-                <div className="media-caption">Graph Example Code</div>
-              </div>
-            </div> */}
-            <div className="media">
-              <div className="media-wireframe">
-                <a
-                  href="https://precursorapp.com/document/Netlify-Graph-Services-Menu-17592210681300"
-                  target="_blank"
-                >
-                  <img
-                    src="https://precursorapp.com/document/Netlify-Graph-Services-Menu-17592210681300.svg"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <div className="media-caption">Graph Services Menu</div>
-            </div>
-            {/* <div className="media">
-              <div className="media-wireframe">
-                <a
-                  href="https://precursorapp.com/document/Netlify-Graph-Session-17592210681216"
-                  target="_blank"
-                >
-                  <img
-                    src="https://precursorapp.com/document/Netlify-Graph-Session-17592210681216.svg"
-                    alt=""
-                  />
-                </a>
-              </div>
-              <div className="media-caption">Graph Sessions Dashboard</div>
-            </div> */}
             <h4>Wireframing Integrations</h4>
             <p>
               For their marketplace, Netlify needed a gallery view with partner
