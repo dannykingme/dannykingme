@@ -574,7 +574,15 @@
   &.two {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--margin);
+    /* gap: var(--margin); */
+    gap: var(--xxs) var(--margin);
+  }
+
+  &.three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: var(--margin); */
+    gap: var(--xxs) var(--margin);
   }
 
   img {
@@ -604,6 +612,9 @@
   box-shadow: 0 2px 3px rgb(0 0 0 / 13%);
   box-shadow: 0 5px 8px rgb(0 0 0 / 13%);
   overflow: hidden;
+  video {
+    max-width: 100%;
+  }
 }
 
 .media-caption {
@@ -612,7 +623,9 @@
   /* font-weight: 600; */
   /* text-transform: uppercase; */
   margin-top: var(--xxs);
-  margin-bottom: var(--margin);
+  /* margin-bottom: var(--margin); */
+  margin-bottom: var(--xs);
+  margin-bottom: 0;
 }
 
 .hero-stats {

@@ -99,8 +99,7 @@ const Home = () => {
                 <h5>Background</h5>
               </div>
             </div>
-
-            <p className="space">
+            <p>
               Netlify is the number one development platform for building,
               deploying, hosting, and managing web applications. It offers a
               suite of tools that streamline developer work flows and eliminate
@@ -109,6 +108,24 @@ const Home = () => {
               latest acquisition (OneGraph), and build them an integrations
               marketplace, to make plugin discovery more accessible.
             </p>
+            <div className="media two">
+              <div className="media-image">
+                <img src="/netlify/graph-old-1.png" alt="" />
+                <div className="media-caption">Old Graph</div>
+              </div>
+              <div className="media-image">
+                <img src="/netlify/graph-new-1.png" alt="" />
+                <div className="media-caption">New Graph</div>
+              </div>
+              <div className="media-image">
+                <img src="/netlify/integrations-old-1.png" alt="" />
+                <div className="media-caption">Old Plugins</div>
+              </div>
+              <div className="media-image">
+                <img src="/netlify/integrations-new-1.png" alt="" />
+                <div className="media-caption">New Integrations Hub</div>
+              </div>
+            </div>
             <h1>Challenges</h1>
             <h4>Redesigning Graph</h4>
             <p>
@@ -122,20 +139,12 @@ const Home = () => {
             </p>
             <div className="media two">
               <div className="media-image">
-                <img src="/netlify/graph-before1.png" alt="" />
-                <div className="media-caption">The old dashboard</div>
+                <img src="/netlify/graph-old-2.png" alt="" />
+                <div className="media-caption">Old Graph Services Wizard</div>
               </div>
               <div className="media-image">
-                <img src="/netlify/graph-before2.png" alt="" />
-                <div className="media-caption">The old services</div>
-              </div>
-              <div className="media-image">
-                <img src="/netlify/graph-before3.png" alt="" />
-                <div className="media-caption">The old onboarding</div>
-              </div>
-              <div className="media-image">
-                <img src="/netlify/graph-before4.png" alt="" />
-                <div className="media-caption">The old editor</div>
+                <img src="/netlify/graph-old-1.png" alt="" />
+                <div className="media-caption">Old Graph Editor</div>
               </div>
             </div>
             <h4>Connecting an Ecosystem</h4>
@@ -147,14 +156,18 @@ const Home = () => {
               innovation, and track usage. I was tasked with creating the design
               for their marketplace.
             </p>
-            <div className="media two">
+            <div className="media three">
               <div className="media-image">
-                <img src="/netlify/integrations-before1.png" alt="" />
-                <div className="media-caption">Old plugin integrations</div>
+                <img src="/netlify/integrations-old-1.png" alt="" />
+                <div className="media-caption">Old Integrations Plugins</div>
               </div>
               <div className="media-image">
-                <img src="/netlify/integrations-before2.png" alt="" />
-                <div className="media-caption">Old web templates</div>
+                <img src="/netlify/integrations-old-2.png" alt="" />
+                <div className="media-caption">Old Integrations Plugins</div>
+              </div>
+              <div className="media-image">
+                <img src="/netlify/integrations-old-3.png" alt="" />
+                <div className="media-caption">Old Integrations Plugins</div>
               </div>
             </div>
 
@@ -292,35 +305,74 @@ const Home = () => {
               building a hardware store for people’s software; so I melded these
               ideas to create the toolshop.
             </p>
-            <div className="media">
-              <div className="media-wireframe">
-                <a
-                  href="https://precursorapp.com/document/Netlify-Integrations-Toolshop-17592210683186"
-                  target="_blank"
-                >
-                  <img
-                    src="https://precursorapp.com/document/Netlify-Integrations-Toolshop-17592210683186.svg"
-                    alt=""
-                  />
-                </a>
+            <div className="mason">
+              <div className="mason-column">
+                <div className="column-block">
+                  <div className="mason-figure">
+                    <a
+                      href="https://precursorapp.com/document/Netlify-Integrations-Toolshop-17592210683186"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://precursorapp.com/document/Netlify-Integrations-Toolshop-17592210683186.svg"
+                        alt=""
+                      />
+                    </a>
+                    <div className="mason-caption">
+                      Integrations Toolshop Homepage
+                    </div>
+                  </div>
+                </div>
+                <div className="column-block">
+                  <div className="mason-figure">
+                    <a
+                      href="https://precursorapp.com/document/Netlify-Integrations-Details-17592210683010"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://precursorapp.com/document/Netlify-Integrations-Details-17592210683010.svg"
+                        alt=""
+                      />
+                    </a>
+                    <div className="mason-caption">Integrations Details</div>
+                  </div>
+                </div>
               </div>
-              <div className="media-caption">Integrations Homepage</div>
-            </div>
-            <div className="media">
-              <div className="media-wireframe">
-                <a
-                  href="https://precursorapp.com/document/Netlify-Integrations-Details-17592210683010"
-                  target="_blank"
-                >
-                  <img
-                    src="https://precursorapp.com/document/Netlify-Integrations-Details-17592210683010.svg"
-                    alt=""
-                  />
-                </a>
+              <div className="mason-column">
+                <div className="column-block">
+                  <div className="mason-figure">
+                    <a
+                      href="https://precursorapp.com/document/Netlify-Integrations-Homepage-17592210682946"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://precursorapp.com/document/Netlify-Integrations-Homepage-17592210682946.svg"
+                        alt=""
+                      />
+                    </a>
+                    <div className="mason-caption">
+                      Integrations Simple Homepage
+                    </div>
+                  </div>
+                </div>
+                <div className="column-block">
+                  <div className="mason-figure">
+                    <a
+                      href="https://precursorapp.com/document/Netlify-Integrations-Gallery-17592210682405"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://precursorapp.com/document/Netlify-Integrations-Gallery-17592210682405.svg"
+                        alt=""
+                      />
+                    </a>
+                    <div className="mason-caption">
+                      Integrations API Services
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="media-caption">Integrations Details</div>
             </div>
-
             <div className="section">
               <div className="section-title">
                 <h1>Solutions</h1>
