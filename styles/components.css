@@ -243,6 +243,29 @@
     }
   }
 
+  &.google {
+    .card-background {
+      /* background-image: linear-gradient(
+        64.3deg,
+        hsl(217deg 89% 60%) 17.7%,
+        hsl(217deg 89% 55%) 64.7%,
+        hsl(217deg 89% 50%) 112.1%
+      ); */
+      background-image: linear-gradient(
+        90deg,
+        hsl(217deg 89% 60%) 17.7%,
+        hsl(217deg 89% 55%) 64.7%,
+        hsl(217deg 89% 50%) 112.1%
+      );
+      /* background-image: linear-gradient(
+        180deg,
+        hsl(217deg 89% 60%) 17.7%,
+        hsl(217deg 89% 55%) 64.7%,
+        hsl(217deg 89% 50%) 112.1%
+      ); */
+    }
+  }
+
   &.paygarden {
     background-image: linear-gradient(-90deg, #249a4e, #2cbb5f);
     background-image: linear-gradient(

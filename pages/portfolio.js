@@ -159,12 +159,12 @@ const Home = () => {
                 onCardHover={handleCardHover}
               />
               <Card
-                id="placeholder4"
-                name="Netlify"
-                date="2022"
-                thumbnail="/card-netlify-thumbnail.png"
-                wireframe="/card-netlify-wireframe.png"
-                animation="/card-netlify-animation.gif"
+                id="google"
+                name="Google"
+                date="2015-2016"
+                thumbnail="/card-google-thumbnail.png"
+                wireframe="/card-google-wireframe.png"
+                animation="/card-google-animation.gif"
                 onCardHover={handleCardHover}
               />
               <Card
