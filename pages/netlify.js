@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <>
       <div className="main">
-        <div className="hero">
+        <div className="hero small">
           <div className="header">
             <div className="nav">
               <div className="nav-items content">
@@ -74,10 +74,9 @@ const Home = () => {
                 <div className="hero-case-cell">
                   <div className="hero-case-title">Summary</div>
                   <div className="hero-case-info">
-                    Mauris viverra lorem eget hendrerit imperdiet. Maecenas
-                    tincidunt dignissim facilisis. Quisque sit amet facilisis
-                    nibh. Aenean vulputate erat libero, tristique gravida nunc
-                    vestibulum in.
+                    I redesigned Netlify Graph to make it easier for new user to
+                    understand and I built a new product to help Netlify
+                    organize and discover new integrations.
                   </div>
                 </div>
                 <div className="hero-case-cell">
@@ -126,6 +125,33 @@ const Home = () => {
                 <div className="media-caption">New Integrations Hub</div>
               </div>
             </div>
+            {/* <div className="quotes">
+              <div className="quote">
+                <div className="quote-head">
+                  <img
+                    src="https://pbs.twimg.com/profile_images/808330818380857346/xGfn8xA-_400x400.jpg"
+                    alt=""
+                  />
+                </div>
+                <div className="quote-body">
+                  <div className="quote-author">
+                    <div className="quote-name">Jason Santa-Maria</div>
+                    <div className="quote-role">Director of Product</div>
+                  </div>
+                  <div className="quote-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nam maximus tortor varius semper luctus. Maecenas
+                      pellentesque lectus eget varius viverra. Fusce auctor
+                      porta libero nec tincidunt.
+                    </p>
+                  </div>
+                </div>
+                <div className="quote-foot">
+                  <img src="/netlify-logo.svg" alt="" />
+                </div>
+              </div>
+            </div> */}
             <h1>Challenges</h1>
             <h4>Redesigning Graph</h4>
             <p>
@@ -170,34 +196,6 @@ const Home = () => {
                 <div className="media-caption">Old Integrations Plugins</div>
               </div>
             </div>
-
-            {/* <div className="quotes">
-              <div className="quote">
-                <div className="quote-head">
-                  <img
-                    src="https://pbs.twimg.com/profile_images/808330818380857346/xGfn8xA-_400x400.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="quote-body">
-                  <div className="quote-author">
-                    <div className="quote-name">Jason Santa-Maria</div>
-                    <div className="quote-role">Director of Product</div>
-                  </div>
-                  <div className="quote-text">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nam maximus tortor varius semper luctus. Maecenas
-                      pellentesque lectus eget varius viverra. Fusce auctor
-                      porta libero nec tincidunt.
-                    </p>
-                  </div>
-                </div>
-                <div className="quote-foot">
-                  <img src="/netlify-logo.svg" alt="" />
-                </div>
-              </div>
-            </div> */}
 
             <div className="section">
               <div className="section-title">
@@ -441,10 +439,7 @@ const Home = () => {
               Discovery and innovation became my main priority for integrations,
               so search was key. The amount of integrations could be
               overwhelming to a user, so designing an easy to use search would
-              encourage exploration. While I didn’t want to completely overhaul
-              the marketplace paradigm, I designed and built several
-              micro-interactions and delightful details to help Netlify’s
-              offering stand out against its competitors.
+              encourage exploration.
             </p>
             <div className="media">
               <div className="media-image">
@@ -452,6 +447,12 @@ const Home = () => {
                 <div className="media-caption">GitHub Integration Mobile</div>
               </div>
             </div>
+            <p>
+              While I didn’t want to completely overhaul the marketplace
+              paradigm, I designed and built several micro-interactions and
+              delightful details to help Netlify’s offering stand out against
+              its competitors.
+            </p>
             <div className="media">
               <div className="media-image">
                 <img src="/netlify/integrations-new-2.png" alt="" />
@@ -473,7 +474,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="hero black">
+        <div className="hero small black">
           <div className="hero-background">
             <video
               ref={videoRef}
