@@ -392,30 +392,84 @@ const Home = () => {
             <div className="media">
               <div className="media-video">
                 <video
-                  src="/netlify/graph-demo1.mp4"
+                  src="/netlify/graph-demo3.mp4"
                   muted
                   autoPlay
                   loop
                 ></video>
               </div>
-              <div className="media-caption">Integrations Homepage</div>
+              <div className="media-caption">Graph Operation Demo</div>
             </div>
             <p>
               Searching for new services which were previously hidden became
               delightfully simple, and exploring code examples became fun enough
               to incentivize users to explore.
             </p>
+            <div className="media">
+              <div className="media-image">
+                <img src="/netlify/graph-new-8.png" alt="" />
+                <div className="media-caption">Graph Code Examples</div>
+              </div>
+            </div>
             <p>
               From there I built a toolbar to house many of the features that
               were previously left floating on the page. This became Netlify’s
               first foray into an app-oriented design, rather than a
               content-oriented design.
             </p>
+            <div className="media">
+              <div className="media-image">
+                <img src="/netlify/graph-new-12.png" alt="" />
+                <div className="media-caption">Graph Toolbar Options</div>
+              </div>
+            </div>
             <p>
               Finally, I created a step-by-step onboarding flow that explained
               the most important features, without ever removing you from the
               product itself.
             </p>
+            <div className="media">
+              <div className="media-image">
+                <img src="/netlify/graph-new-15.png" alt="" />
+                <div className="media-caption">Graph Onboarding</div>
+              </div>
+            </div>
+            <p className="space"></p>
+
+            <h4>A New Hub for Integrations</h4>
+            <p>
+              Discovery and innovation became my main priority for integrations,
+              so search was key. The amount of integrations could be
+              overwhelming to a user, so designing an easy to use search would
+              encourage exploration. While I didn’t want to completely overhaul
+              the marketplace paradigm, I designed and built several
+              micro-interactions and delightful details to help Netlify’s
+              offering stand out against its competitors.
+            </p>
+            <div className="media">
+              <div className="media-image">
+                <img src="/netlify/integrations-mobile-1.png" alt="" />
+                <div className="media-caption">GitHub Integration Mobile</div>
+              </div>
+            </div>
+            <div className="media">
+              <div className="media-image">
+                <img src="/netlify/integrations-new-2.png" alt="" />
+                <div className="media-caption">Integrations Discover</div>
+              </div>
+            </div>
+            <div className="media">
+              <div className="media-image">
+                <img src="/netlify/integrations-new-3.png" alt="" />
+                <div className="media-caption">Integrations Search</div>
+              </div>
+            </div>
+            <div className="media">
+              <div className="media-image">
+                <img src="/netlify/integrations-new-5.png" alt="" />
+                <div className="media-caption">Algolia Integration</div>
+              </div>
+            </div>
           </div>
         </div>
 
