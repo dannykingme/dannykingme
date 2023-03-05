@@ -54,7 +54,6 @@ const Home = () => {
   };
   return (
     <>
-      {console.log(state)}
       <div className="main">
         <div
           className={c('hero', {
