@@ -266,6 +266,16 @@
     }
   }
 
+  &.circleci {
+    .card-background {
+      background-image: linear-gradient(
+        64.3deg,
+        hsl(195deg 100% 20%) 17.7%,
+        hsl(195deg 100% 25%) 64.7%
+      );
+    }
+  }
+
   &.paygarden {
     background-image: linear-gradient(-90deg, #249a4e, #2cbb5f);
     background-image: linear-gradient(
