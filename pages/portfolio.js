@@ -69,9 +69,9 @@ const Home = () => {
                   <div className="hero-name-last">King</div>
                 </div>
                 <div className="hero-paragraph">
-                  I use code to build developer tools and strengthen
-                  collaboration between designers and engineers. I've shipped
-                  code to billions of users worldwide.
+                  I’m a software engineer. I use code to solve problems that
+                  Figma can’t. I help bridge the gap between design and
+                  engineering so my team can unite around a singular vision.
                 </div>
                 <div className="hero-action">
                   <div className="curtain-block">See work</div>
@@ -107,9 +107,9 @@ const Home = () => {
               <div className="hero-name-last">King</div>
             </div>
             <div className="hero-paragraph">
-              I use research and prototypes to design products and lead teams.
-              Previously I simplified Search at Google and shaped the future of
-              the web at Netlify.
+              I’m a product designer. I use design to create user experiences
+              that delight. I have a sharp eye for detail and a deep
+              understanding of user behavior and micro-interactions.
             </div>
             <div className="hero-action">
               <button
