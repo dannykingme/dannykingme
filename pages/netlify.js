@@ -74,8 +74,8 @@ const Home = () => {
                 <div className="hero-case-cell">
                   <div className="hero-case-title">Summary</div>
                   <div className="hero-case-info">
-                    I redesigned Netlify Graph to make it easier for new user to
-                    understand and I built a new product to help Netlify
+                    I redesigned Netlify Graph to make it easier for new users
+                    to understand and I built a new product to help developers
                     organize and discover new integrations.
                   </div>
                 </div>
