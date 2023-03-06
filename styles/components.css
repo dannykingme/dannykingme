@@ -148,10 +148,10 @@
 }
 
 .hero-paragraph {
-  font-family: 'Roboto Slab'; /* TODO: add this font */
-  font-family: Bitter; /* TODO: add this font */
+  /* font-family: 'Roboto Slab'; */
+  /* font-family: Bitter; */
   font-size: calc(var(--xs) * 1.5);
-  max-width: var(--xxl);
+  /* max-width: var(--xxl); */
 }
 
 .hero-action {
