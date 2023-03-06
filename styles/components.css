@@ -1035,3 +1035,44 @@
   /* margin-left: var(--margin); */
   margin-bottom: var(--xs);
 }
+
+.bio {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.bio-content {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.bio-name {
+  font-family: 'Roboto Condensed'; /* TODO: add this font */
+  font-size: var(--tile);
+  font-weight: 600;
+  /* line-height: 0.9; */
+  /* text-transform: uppercase; */
+  /* position: relative; */
+  /* left: calc(var(--xs) * -0.75); */
+
+  /* max-width: calc(var(--xl) * 3); */
+  margin-left: calc(var(--xxs) * -1);
+
+  /* &::first-letter {
+    letter-spacing: -0.05em;
+  } */
+}
+
+.bio-paragraph {
+  /* font-family: 'Roboto Slab'; */
+  /* font-family: Bitter; */
+  /* font-size: calc(var(--xs) * 1.5); */
+  /* max-width: var(--xxl); */
+}
+
+.bio-action {
+  /* font-size: calc(var(--xs) * 1.5); */
+  margin-top: var(--tile);
+}
