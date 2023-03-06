@@ -1125,3 +1125,24 @@
   );
   background: var(--gray-900);
 }
+
+.icon {
+  display: flex;
+}
+
+.icon-shapes {
+  /* width: var(--margin); */
+  /* height: var(--margin); */
+  width: 1em;
+  height: 1em;
+  .stroke {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    vector-effect: non-scaling-stroke;
+  }
+  .fill {
+    fill: currentColor;
+    stroke: none;
+  }
+}
