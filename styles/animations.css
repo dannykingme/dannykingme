@@ -286,30 +286,39 @@
   .card:nth-child(1):not(.active) .card-thumb {
     animation: var(--dur01) var(--fadein) var(--del01) both to-see-thru;
   }
+
   .card:nth-child(2):not(.active) .card-thumb {
     animation: var(--dur02) var(--fadein) var(--del02) both to-see-thru;
   }
+
   .card:nth-child(3):not(.active) .card-thumb {
     animation: var(--dur03) var(--fadein) var(--del03) both to-see-thru;
   }
+
   .card:nth-child(4):not(.active) .card-thumb {
     animation: var(--dur04) var(--fadein) var(--del04) both to-see-thru;
   }
+
   .card:nth-child(5):not(.active) .card-thumb {
     animation: var(--dur05) var(--fadein) var(--del05) both to-see-thru;
   }
+
   .card:nth-child(6):not(.active) .card-thumb {
     animation: var(--dur06) var(--fadein) var(--del06) both to-see-thru;
   }
+
   .card:not(.active) .edge-n {
     animation: var(--dur07) var(--fadein) var(--del07) both shrink-x;
   }
+
   .card:not(.active) .edge-e {
     animation: var(--dur07) var(--fadein) var(--del07) both shrink-y;
   }
+
   .card:not(.active) .edge-s {
     animation: var(--dur08) var(--fadein) var(--del08) both shrink-x;
   }
+
   .card:not(.active) .edge-w {
     animation: var(--dur08) var(--fadein) var(--del08) both shrink-y;
   }
