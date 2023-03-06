@@ -163,7 +163,7 @@ h1 {
   font-size: 3.5rem;
   text-transform: uppercase;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: calc(var(--margin) * 2);
   margin-bottom: calc(var(--xs) / 2);
 }

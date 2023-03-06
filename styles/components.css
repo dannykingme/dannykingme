@@ -134,9 +134,9 @@
 }
 
 .hero-name {
-  font-family: 'Roboto Condensed'; /* TODO: add this font */
+  font-family: var(--font-cond); /* TODO: add this font */
   font-size: var(--xl);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 0.9;
   text-transform: uppercase;
   position: relative;
@@ -265,11 +265,10 @@
         rgb(254, 3, 104) 9.3%,
         rgb(103, 3, 255) 89.5%
       ); */
-      background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
       background-image: linear-gradient(
         89.8deg,
-        rgba(222, 74, 74, 1) 4.7%,
-        rgba(30, 29, 29, 1) 120.3%
+        rgb(222 74 74 / 100%) 4.7%,
+        rgb(30 29 29 / 100%) 120.3%
       );
       background: linear-gradient(25deg, #a70702, #fd5750 75%);
       /* background-image: linear-gradient(89.8deg, #fd5750 4.7%, #a70702 120.3%); */
@@ -1122,9 +1121,10 @@
 }
 
 .bio-name {
-  font-family: 'Roboto Condensed'; /* TODO: add this font */
+  font-family: var(--font-cond);
   font-size: var(--tile);
-  font-weight: 600;
+  font-weight: 700;
+  text-transform: uppercase;
   /* line-height: 0.9; */
   /* text-transform: uppercase; */
   /* position: relative; */
@@ -1160,8 +1160,8 @@
   background-color: var(--gray-50);
   background-image: linear-gradient(
     175deg,
-    rgba(255, 244, 228, 1) 7%,
-    rgba(240, 246, 238, 1) 67%
+    rgb(255 244 228 / 100%) 7%,
+    rgb(240 246 238 / 100%) 67%
   );
   background: var(--gray-900);
 }
