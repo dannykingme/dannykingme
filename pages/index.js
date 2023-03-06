@@ -71,7 +71,7 @@ const Home = () => {
                 </div>
                 <div className="hero-paragraph">
                   I’m a software engineer. I use code to solve problems that
-                  Figma can’t. I help bridge the gap between design and
+                  Photoshop can’t. I bridge the gap between design and
                   engineering so my team can unite around a singular vision.
                 </div>
                 <div className="hero-action">
