@@ -417,7 +417,7 @@ const Home = () => {
               <div className="hero-stats-row">
                 <div className="hero-stats-cell">
                   <div className="hero-stats-title">Product Integrations</div>
-                  <div className="hero-stats-subtitle">{'>'}150</div>
+                  <div className="hero-stats-subtitle">{'>'}320</div>
                 </div>
                 <div className="hero-stats-cell">
                   <div className="hero-stats-title">Pull Requests</div>
