@@ -107,7 +107,19 @@ const Home = () => {
               latest acquisition (OneGraph), and build them an integrations
               marketplace, to make plugin discovery more accessible.
             </p>
-            <div className="media two">
+
+            <div className="media">
+              <div className="media-video">
+                <video
+                  src="/netlify/graph-demo3.mp4"
+                  muted
+                  autoPlay
+                  loop
+                ></video>
+              </div>
+              <div className="media-caption">Graph Operation Demo</div>
+            </div>
+            {/* <div className="media two">
               <div className="media-image">
                 <img src="/netlify/graph-old-1.png" alt="" />
                 <div className="media-caption">Old Graph</div>
@@ -124,7 +136,7 @@ const Home = () => {
                 <img src="/netlify/integrations-new-1.png" alt="" />
                 <div className="media-caption">New Integrations Hub</div>
               </div>
-            </div>
+            </div> */}
             {/* <div className="quotes">
               <div className="quote">
                 <div className="quote-head">
@@ -165,12 +177,12 @@ const Home = () => {
             </p>
             <div className="media two">
               <div className="media-image">
-                <img src="/netlify/graph-old-2.png" alt="" />
-                <div className="media-caption">Old Graph Services Wizard</div>
-              </div>
-              <div className="media-image">
                 <img src="/netlify/graph-old-1.png" alt="" />
                 <div className="media-caption">Old Graph Editor</div>
+              </div>
+              <div className="media-image">
+                <img src="/netlify/graph-old-2.png" alt="" />
+                <div className="media-caption">Old Graph Services Wizard</div>
               </div>
             </div>
             <h4>Connecting an Ecosystem</h4>
@@ -182,7 +194,7 @@ const Home = () => {
               innovation, and track usage. I was tasked with creating the design
               for their marketplace.
             </p>
-            <div className="media three">
+            <div className="media two">
               <div className="media-image">
                 <img src="/netlify/integrations-old-1.png" alt="" />
                 <div className="media-caption">Old Integrations Plugins</div>
@@ -191,10 +203,10 @@ const Home = () => {
                 <img src="/netlify/integrations-old-2.png" alt="" />
                 <div className="media-caption">Old Integrations Plugins</div>
               </div>
-              <div className="media-image">
+              {/* <div className="media-image">
                 <img src="/netlify/integrations-old-3.png" alt="" />
                 <div className="media-caption">Old Integrations Plugins</div>
-              </div>
+              </div> */}
             </div>
 
             <div className="section">
