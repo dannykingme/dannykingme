@@ -188,6 +188,13 @@
   gap: var(--margin);
   &.active {
     border-radius: 0;
+    .card {
+      &:not(.active) {
+        .card-thumb {
+          background: none; /* KILL ME */
+        }
+      }
+    }
   }
 }
 
@@ -387,12 +394,20 @@
   width: 100%;
   height: 100%; */
 
+  display: flex;
+  align-items: center;
+  height: 100%;
+
   position: absolute;
   top: 0;
   left: 0;
+  background-color: var(--background);
 }
 
 .card-mock {
+  display: flex;
+  align-items: center;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
