@@ -1,5 +1,6 @@
 import '../styles/app.css';
 import Head from 'next/head';
+import Script from 'next/script';
 
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {
@@ -17,6 +18,19 @@ export default function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-KJE0KVYZ01"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-KJE0KVYZ01');
+        `}
+      </Script>
       <Component {...pageProps} />
     </div>
   );
