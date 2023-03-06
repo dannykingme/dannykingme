@@ -5,7 +5,7 @@ export const Header = () => (
   <div className="header">
     <div className="nav">
       <div className="nav-items content">
-        <Link className="nav-item nav-brand" href="/portfolio">
+        <Link className="nav-item nav-brand" href="/">
           <Icon dkme />
         </Link>
         <Link className="nav-item" href="/about">

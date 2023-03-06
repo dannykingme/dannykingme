@@ -23,12 +23,12 @@
 
 .button {
   color: var(--gray-900);
+  display: inline-block;
   min-width: calc(var(--xl) * 0.75);
   padding: var(--padding) var(--tile);
   background-color: var(--white);
   border: var(--border);
   border-radius: var(--border-radius);
-  transition: var(--run) var(--run) var(--fadein);
 
   &:hover {
     color: var(--white);
@@ -37,7 +37,13 @@
     /* border-color: var(--gray-900); */
 
     /* transition-duration: var(--run-fast); */
-    transition: var(--run-fast) var(--now) var(--fadein);
+    /* transition: var(--run-fast) var(--now) var(--fadein); */
+  }
+  &.curtain-button {
+    transition: var(--run) var(--run) var(--fadein);
+    &:hover {
+      transition: var(--run-fast) var(--now) var(--fadein);
+    }
   }
 }
 
@@ -60,6 +66,7 @@
   /* display: flex; */
   /* align-items: center; */
   position: relative;
+  margin-top: auto;
   /* height: var(--tile); */
   /* border-top: var(--border); */
   box-shadow: 0 -1px var(--border-color);
@@ -161,12 +168,14 @@
 
 .gallery {
   /* margin-top: var(--tile); */
-  margin-bottom: var(--xl);
-  padding-top: var(--tile);
+  margin-bottom: calc(var(--xl) - var(--margin));
+  padding-top: calc(var(--xl) - var(--padding));
 }
 
 .gallery-content {
   min-height: 100vh;
+  padding-top: var(--margin);
+  padding-bottom: var(--margin);
 }
 
 .cards {
@@ -1156,5 +1165,34 @@
   .fill {
     fill: currentColor;
     stroke: none;
+  }
+}
+
+.press-items {
+  /* max-width: var(--xxl); */
+}
+
+.press-item {
+  margin-bottom: var(--xxs);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.press-item-date {
+  font: var(--code);
+}
+
+.press-item-title {
+  /*  */
+}
+
+.coming-soon {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  .button {
+    margin-top: var(--margin);
   }
 }
