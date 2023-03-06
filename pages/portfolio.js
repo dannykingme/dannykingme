@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import Link from 'next/link';
 import c from 'classnames';
+import { Header, Footer } from '../components/nav';
 
 const Home = () => {
   const cancelAnimation = useRef(0);
@@ -79,27 +80,7 @@ const Home = () => {
               </div>
             </div>
           ) : null}
-          <div className="header">
-            <div className="nav">
-              <div className="nav-items content">
-                <Link className="nav-item nav-brand" href="/portfolio">
-                  Danny King
-                </Link>
-                <Link className="nav-item" href="/about">
-                  About
-                </Link>
-                <Link className="nav-item" href="/press">
-                  Press
-                </Link>
-                <Link className="nav-item" href="/resume">
-                  Resume
-                </Link>
-                <Link className="nav-item" href="/contact">
-                  Contact
-                </Link>
-              </div>
-            </div>
-          </div>
+          <Header />
 
           <div className="hero-content content">
             <div className="hero-name">
@@ -187,6 +168,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );

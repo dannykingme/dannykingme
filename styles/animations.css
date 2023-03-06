@@ -148,7 +148,7 @@
 
 @keyframes curtain-header {
   100% {
-    border-bottom-color: var(--border-color);
+    box-shadow: 0 1px var(--border-color);
   }
 }
 
@@ -166,7 +166,7 @@
 
 @keyframes curtain-header-rev {
   0% {
-    border-bottom-color: var(--border-color);
+    box-shadow: 0 1px var(--border-color);
   }
 }
 

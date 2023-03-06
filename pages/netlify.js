@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Header, Footer } from '../components/nav';
 
 const Home = () => {
   return (
@@ -9,27 +10,7 @@ const Home = () => {
             <video src="netlify-graph-broll-2.mp4" muted autoPlay loop />
             <div className="hero-background-shade"></div>
           </div>
-          <div className="header">
-            <div className="nav">
-              <div className="nav-items content">
-                <Link className="nav-item nav-brand" href="/portfolio">
-                  Danny King
-                </Link>
-                <Link className="nav-item" href="/about">
-                  About
-                </Link>
-                <Link className="nav-item" href="/press">
-                  Press
-                </Link>
-                <Link className="nav-item" href="/resume">
-                  Resume
-                </Link>
-                <Link className="nav-item" href="/contact">
-                  Contact
-                </Link>
-              </div>
-            </div>
-          </div>
+          <Header />
           <div className="hero-content content">
             <div className="hero-case">
               <div className="hero-case-row">
@@ -466,11 +447,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="footer">
-            <div className="content">
-              <div className="footer-item">DK</div>
-            </div>
-          </div>
+          <Footer />
         </div>
       </div>
     </>

@@ -1,33 +1,14 @@
 import { useState, useRef } from 'react';
 import Link from 'next/link';
+import { Header, Footer } from '../components/nav';
 import c from 'classnames';
 
 const About = () => {
   return (
     <>
       <div className="main">
-        <div className="hero">
-          <div className="header">
-            <div className="nav">
-              <div className="nav-items content">
-                <Link className="nav-item nav-brand" href="/portfolio">
-                  Danny King
-                </Link>
-                <Link className="nav-item" href="/about">
-                  About
-                </Link>
-                <Link className="nav-item" href="/press">
-                  Press
-                </Link>
-                <Link className="nav-item" href="/resume">
-                  Resume
-                </Link>
-                <Link className="nav-item" href="/contact">
-                  Contact
-                </Link>
-              </div>
-            </div>
-          </div>
+        <div className="hero dark">
+          <Header />
 
           <div className="bio content">
             <div className="bio-content">
@@ -36,7 +17,7 @@ const About = () => {
                 <div className="hero-name-last">King</div>
               </div> */}
               <div className="bio-name">
-                <div className="bio-name-first">Hey, I'm Danny.</div>
+                <div className="bio-name-first">Hey, I'm Danny</div>
                 {/* <div className="hero-name-last">King</div> */}
               </div>
               <p className="bio-paragraph">
@@ -57,7 +38,7 @@ const About = () => {
                 chat.
               </p>
               <div className="bio-action">
-                <a href="#" className="link">
+                <a href="mailto:contact@dannyking.me" className="link">
                   Email me
                 </a>
               </div>
@@ -78,6 +59,7 @@ const About = () => {
               </div>
             </div>
           </div>
+          <Footer />
         </div>
       </div>
     </>
