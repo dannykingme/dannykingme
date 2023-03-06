@@ -1,17 +1,14 @@
-import { useState, useRef } from 'react';
-
 import Link from 'next/link';
-import c from 'classnames';
 
 const Home = () => {
-  const videoRef = useRef();
-  const setPlayBack = () => {
-    videoRef.current.playbackRate = 4;
-  };
   return (
     <>
       <div className="main">
-        <div className="hero small">
+        <div className="hero small black">
+          <div className="hero-background">
+            <video src="netlify-graph-broll-2.mp4" muted autoPlay loop />
+            <div className="hero-background-shade"></div>
+          </div>
           <div className="header">
             <div className="nav">
               <div className="nav-items content">
@@ -430,17 +427,7 @@ const Home = () => {
 
         <div className="hero small black">
           <div className="hero-background">
-            <video
-              ref={videoRef}
-              onCanPlay={() => setPlayBack()}
-              width="3840"
-              height="1970"
-              muted
-              autoPlay
-              loop
-            >
-              <source src="/test-vid2.mp4" type="video/mp4" />
-            </video>
+            <video src="netlify-graph-broll-1.mp4" muted autoPlay loop />
             <div className="hero-background-shade"></div>
           </div>
           <div className="hero-content content">
