@@ -1,49 +1,28 @@
 {
-  "name": "dannykingme",
-  "version": "0.1.0",
-  "description": "personal website",
+  "private": true,
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dannykingme/dannykingme.git"
-  },
-  "author": "Danny King",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dannykingme/dannykingme/issues"
-  },
-  "homepage": "https://github.com/dannykingme/dannykingme#readme",
   "dependencies": {
-    "classnames": "^2.2.6",
-    "gatsby": "^2.24.67",
-    "gatsby-plugin-cname": "^1.0.0",
-    "gatsby-plugin-google-analytics": "^2.3.17",
-    "gatsby-plugin-less": "^4.0.5",
-    "gatsby-plugin-manifest": "^2.4.33",
-    "gatsby-plugin-react-helmet": "^3.3.12",
-    "gatsby-plugin-sharp": "^2.6.38",
-    "gatsby-plugin-sitemap": "^2.4.15",
-    "gatsby-source-filesystem": "^2.3.32",
-    "gatsby-transformer-sharp": "^2.5.16",
-    "gh-pages": "^3.1.0",
-    "moment": "^2.29.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-body-classname": "^1.3.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0",
-    "react-portal": "^4.2.1"
+    "classnames": "^2.3.2",
+    "moment": "^2.29.4",
+    "next": "latest",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "prettier": "^2.1.2"
+    "postcss-advanced-variables": "^3.0.1",
+    "postcss-comment": "^2.0.0",
+    "postcss-extend-rule": "^4.0.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.0",
+    "postcss-preset-env": "^7.8.3",
+    "postcss-property-lookup": "^3.0.0",
+    "prettier": "^2.8.1",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^29.0.0"
   }
 }

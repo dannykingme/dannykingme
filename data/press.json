@@ -1,0 +1,172 @@
+[
+  {
+    "section": "Precursor",
+    "articles": [
+      {
+        "title": "Product Hunt: Precursor",
+        "url": "https://www.producthunt.com/posts/precursor",
+        "date": 1416040860000
+      },
+      {
+        "title": "Show HN: Mockups fixed by making collaboration effortless, built with React ",
+        "url": "https://news.ycombinator.com/item?id=9659167",
+        "date": 1433407260000
+      },
+      {
+        "title": "Product Hunt: Precursor for Teams",
+        "url": "https://www.producthunt.com/posts/precursor-for-teams",
+        "date": 1430296860000
+      },
+      {
+        "title": "ByPeople: Intuitive Wireframing Online Tool",
+        "url": "https://www.bypeople.com/intuitive-wireframing-online-tool/",
+        "date": 1444360485000
+      },
+      {
+        "title": "Product Hunt: A real-time collaborative prototyping tool",
+        "url": "https://twitter.com/producthunt/status/533630762168635392",
+        "date": 1416040860000
+      },
+      {
+        "title": "Web Designer Depot: What's new for designers",
+        "url": "http://www.webdesignerdepot.com/2015/03/whats-new-for-designers-march-2015/",
+        "date": 1425976860000
+      },
+      {
+        "title": "CSS Design Awards: Precursor",
+        "url": "https://cssdesignawards.com/sites/precursor/26292/",
+        "date": 1429432860000
+      },
+      {
+        "title": "CSS Winner: Precursor",
+        "url": "https://www.csswinner.com/details/precursor/9020",
+        "date": 1428568860000
+      },
+      {
+        "title": "30 Best Resources for Web Designers of May 2015",
+        "url": "https://devzum.com/2015/05/30-best-resources-for-web-designers-of-may-2015/",
+        "date": 1430988060000
+      },
+      {
+        "title": "Designer News: Precursor",
+        "url": "https://www.designernews.co/stories/45124-precursor",
+        "date": 1425026460000
+      },
+      {
+        "title": "We were asleep when we got featured on Product Hunt. This is how it went.",
+        "url": "https://www.designernews.co/stories/41698-we-were-asleep-when-we-got-featured-on-product-hunt-this-is-how-it-went",
+        "date": 1420792860000
+      },
+      {
+        "title": "Smart Ways to Become an eLearning Productivity Ninja",
+        "url": "https://www.shiftelearning.com/blog/become-an-elearning-productivity-ninja",
+        "date": 1435826460000
+      },
+      {
+        "title": "Wire Flow Wireframe Design",
+        "url": "https://play.google.com/store/apps/details?id=com.ludomade.blueprint",
+        "date": 1435567260000
+      },
+      {
+        "title": "Go Board",
+        "url": "https://goboard.com/",
+        "date": 1427618460000
+      },
+      {
+        "title": "Come make awesome web apps with me!",
+        "url": "http://prabhasp.com/blog/come-make-web-apps/",
+        "date": 1426063260000
+      },
+      {
+        "title": "PolyConf 15: Programming Web UI with Database in a Browser / Nikita Prokopov",
+        "url": "https://www.youtube.com/watch?v=1dr-CzMMDD8&feature=youtu.be&t=27m37s",
+        "date": 1436690460000
+      },
+      {
+        "title": "Precursor is now open source.",
+        "url": "https://www.reddit.com/r/Clojure/comments/59panq/precursor_is_now_open_source/",
+        "date": 1477557660000
+      },
+      {
+        "title": "Clojure Success Stories",
+        "url": "https://clojure.org/community/success_stories",
+        "date": 1428651360000
+      }
+    ]
+  },
+  {
+    "section": "Adaptive Placeholders",
+    "articles": [
+      {
+        "title": "The Treehouse Show Episode 98: CSS Blend Modes, Parallax Scrolling, Adaptive Placeholders",
+        "url": "https://www.youtube.com/watch?v=ZXHHzmZeVXc",
+        "date": 1404841680000
+      },
+      {
+        "title": "Little Big Details: CircleCI Once activated the input placeholders",
+        "url": "https://littlebigdetails.com/post/82478225432/circleci-once-activated-the-input-placeholders",
+        "date": 1397264400000
+      },
+      {
+        "title": "CircleCI Blog: Adaptive Placeholders",
+        "url": "https://circleci.com/blog/adaptive-placeholders/",
+        "date": 1398733200000
+      },
+      {
+        "title": "Designer News: Adaptive Placeholders",
+        "url": "https://www.designernews.co/stories/24237-adaptive-placeholders",
+        "date": 1401066000000
+      },
+      {
+        "title": "usabilitypost: Issues with Form Field Placeholders",
+        "url": "https://usabilitypost.com/2014/05/13/issues-with-form-field-placeholders/",
+        "date": 1400979600000
+      },
+      {
+        "title": "@aza: An ingenious solution to placeholder text that delights",
+        "url": "https://twitter.com/aza/status/461275922184683520",
+        "date": 1398793680000
+      },
+      {
+        "title": "Zellwk: A Sexier Float Label Pattern",
+        "url": "https://zellwk.com/blog/adaptive-placeholders/",
+        "date": 1401711060000
+      },
+      {
+        "title": "Liechtenecker: Moderne Formularelemente",
+        "url": "https://liechtenecker.at/blog/moderne-formularelemente/",
+        "date": 1410284880000
+      },
+      {
+        "title": "Bram.us: Adaptive Placeholders",
+        "url": "https://www.bram.us/2014/05/28/adaptive-placeholders/",
+        "date": 1401299280000
+      },
+      {
+        "title": "WisdmLabs: How to Create Adaptive Placeholders using CSS",
+        "url": "https://wisdmlabs.com/blog/create-adaptive-placeholders-using-css/",
+        "date": 1403200080000
+      },
+      {
+        "title": "@kimmobrunfeldt: Password strength meter using ProgressBar.js, @circleci's adaptive placeholder",
+        "url": "https://twitter.com/kimmobrunfeldt/status/528871679884525568",
+        "date": 1414906200000
+      },
+      {
+        "title": "@cameronmoll: Adaptive placeholders, i.e. floating labels",
+        "url": "https://twitter.com/cameronmoll/status/471700222213500928",
+        "date": 1401279060000
+      },
+      {
+        "title": "NN/g: Placeholders in Form Fields Are Harmful",
+        "url": "https://www.nngroup.com/articles/form-design-placeholders/",
+        "date": 1399810260000
+      },
+      {
+        "title": "Create an Adaptive Sketch Symbol for Material Design’s Outlined Text Field",
+        "url": "https://medium.com/sketch-app-sources/create-an-adaptive-sketch-symbol-for-material-designs-outlined-text-field-6a4e0ad20ae9",
+        "date": 1537877460000
+      }
+    ]
+  }
+]
