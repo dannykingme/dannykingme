@@ -38,9 +38,10 @@
    *  Typography
    */
 
-  --font-sans: 'Roboto', sans-serif;
+  --font-sans: 'Poppins', sans-serif;
   --font-mono: 'Roboto Mono', monospace;
   --font-slab: 'Roboto Slab', serif;
+  --font-cond: 'Roboto Condensed', serif;
   --font-weight: normal;
   --font-size: 16px;
   --font-tiny: 13px;

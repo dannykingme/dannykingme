@@ -581,26 +581,21 @@
     }
   }
 
-  h1 {
-    /* text-align: center; */
-    font-family: Bitter; /* TODO: add this font */
-    font-family: 'Roboto Condensed'; /* TODO: add this font */
+  /* h1 {
+    font-family: 'Roboto Condensed';
     text-transform: uppercase;
     margin-top: calc(var(--margin) * 2);
-    /* margin-bottom: calc(var(--margin) * 2); */
-  }
+  } */
 
-  h4 {
-    font-family: Bitter; /* TODO: add this font */
+  /* h4 {
+    font-family: Bitter;
     font-family: 'Poppins';
     margin-bottom: var(--xs);
-  }
+  } */
 
-  p {
+  /* p {
     font-family: 'Poppins';
-    /* margin-top: var(--xxs); */
-    /* margin-bottom: var(--xl); */
-  }
+  } */
 }
 
 .section {
