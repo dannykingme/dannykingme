@@ -19,6 +19,10 @@
   max-width: var(--content-width);
   margin-left: auto;
   margin-right: auto;
+  &:not(.bleed) {
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+  }
 }
 
 .button {
