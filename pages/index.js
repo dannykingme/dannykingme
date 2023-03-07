@@ -219,7 +219,6 @@ const Card = ({
   const [state, setState] = useState(() => {
     return {
       active: false,
-      border: false,
     };
   });
   const handleMouseEnter = () => {
@@ -228,7 +227,6 @@ const Card = ({
     setState((oldState) => ({
       ...oldState,
       active: true,
-      border: true,
     }));
     onCardHover(id, id);
   };
@@ -238,25 +236,18 @@ const Card = ({
     setState((oldState) => ({
       ...oldState,
       active: false,
-      // border: true,
     }));
     onCardHover(null, id);
     setTimeout(() => {
       preserveAnimation.current = 0;
       preservingAnimation(preserveAnimation.current);
-
-      // setState((oldState) => ({
-      //   ...oldState,
-      //   border: false,
-      // }));
     }, 750);
   };
   return (
     <div
       className={c('card', id, {
         active: state.active,
-        // border: state.active || state.border === id,
-        border: id === lastActiveCard,
+        last: id === lastActiveCard,
       })}
     >
       {state.active ? (
