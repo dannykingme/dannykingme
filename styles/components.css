@@ -128,6 +128,16 @@
     }
   }
 
+  &.intro {
+    /*  */
+  }
+
+  &.outro {
+    .hero-action {
+      font-size: var(--font-size);
+    }
+  }
+
   .header {
     /* position: relative; */
 
@@ -190,6 +200,19 @@
 .hero-action {
   font-size: calc(var(--xs) * 1.5);
   margin-top: var(--tile);
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: space-between;
+
+  /* font-size: calc(var(--xs) * 1.5); */
+  margin-top: var(--tile);
+
+  .icon {
+    font-size: 12px;
+    margin: 0 var(--xxs);
+  }
 }
 
 .gallery {
@@ -1208,7 +1231,7 @@
 }
 
 .icon {
-  display: flex;
+  display: inline-flex;
 }
 
 .icon-shapes {

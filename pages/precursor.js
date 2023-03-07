@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 
 import Link from 'next/link';
+import Icon from '../components/icon';
 import c from 'classnames';
 import { Footer, Header } from '../components/nav';
 
@@ -275,7 +276,7 @@ const Precursor = () => {
           </div>
         </div>
 
-        <div className="hero small black">
+        <div className="hero small black outro">
           <div className="hero-background">
             <video src="precursor-broll-4.mp4" muted autoPlay loop />
             <div className="hero-background-shade"></div>
@@ -322,6 +323,14 @@ const Precursor = () => {
                   .
                 </div>
               </div>
+            </div>
+            <div className="hero-actions">
+              <Link className="link" href="/">
+                <Icon arrow-left /> Back home
+              </Link>
+              <Link className="link" href="/netlify">
+                Next project: Netlify <Icon arrow-right />
+              </Link>
             </div>
           </div>
 

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Icon from '../components/icon';
 import { Header, Footer } from '../components/nav';
 
 const Home = () => {
@@ -402,7 +403,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="hero small black">
+        <div className="hero small black outro">
           <div className="hero-background">
             <video src="netlify-graph-broll-1.mp4" muted autoPlay loop />
             <div className="hero-background-shade"></div>
@@ -436,6 +437,14 @@ const Home = () => {
                   redesign in three months.
                 </div>
               </div>
+            </div>
+            <div className="hero-actions">
+              <Link className="link" href="/">
+                <Icon arrow-left /> Back home
+              </Link>
+              <Link className="link" href="/precursor">
+                Next project: Precursor <Icon arrow-right />
+              </Link>
             </div>
           </div>
 
