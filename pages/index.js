@@ -119,7 +119,6 @@ const Home = () => {
               className={c('cards', {
                 active: state.activeCard,
                 inactive: state.activeCard === null,
-                preserving: state.preserving,
                 'animate-out': state.activeCard || state.preserving,
                 'animate-in': state.activeCard === null && !state.preserving,
               })}
