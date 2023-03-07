@@ -14,7 +14,7 @@ const Press = () => {
         <div className="hero dark">
           <Header />
 
-          <div className="content">
+          <div className="press-content content">
             <h1>Press</h1>
             <div className="press-items">
               {press.map((item, i) => [

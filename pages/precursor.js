@@ -23,37 +23,32 @@ const Precursor = () => {
   return (
     <>
       <div className="main">
-        <div className="hero small black">
+        <div className="hero small black intro">
           <div className="hero-background">
             <video src="precursor-broll-3.mp4" muted autoPlay loop />
             <div className="hero-background-shade"></div>
           </div>
           <Header />
           <div className="hero-content content">
-            <div className="hero-case">
-              <div className="hero-case-row">
-                <div className="hero-case-cell">
-                  <div className="hero-case-title">Company</div>
-                  <div className="hero-case-subtitle">Precursor</div>
+            <div className="breakdown">
+              <div className="breakdown-cell full">
+                <div className="breakdown-title">Company</div>
+                <div className="breakdown-subtitle">Precursor</div>
+              </div>
+              <div className="breakdown-cell">
+                <div className="breakdown-title">Projects</div>
+                <div className="breakdown-subtitle">All Projects</div>
+              </div>
+              <div className="breakdown-cell">
+                <div className="breakdown-title">Summary</div>
+                <div className="breakdown-info">
+                  I built Precursor to solve a need in my own workflow and ~200k
+                  designers and developers came looking for the same solution.
                 </div>
               </div>
-              <div className="hero-case-row">
-                <div className="hero-case-cell">
-                  <div className="hero-case-title">Projects</div>
-                  <div className="hero-case-subtitle">All Projects</div>
-                </div>
-                <div className="hero-case-cell">
-                  <div className="hero-case-title">Summary</div>
-                  <div className="hero-case-info">
-                    I built Precursor to solve a need in my own workflow and
-                    ~200k designers and developers came looking for the same
-                    solution.
-                  </div>
-                </div>
-                <div className="hero-case-cell">
-                  <div className="hero-case-title">Role</div>
-                  <div className="hero-case-info">Founder</div>
-                </div>
+              <div className="breakdown-cell">
+                <div className="breakdown-title">Role</div>
+                <div className="breakdown-info">Founder</div>
               </div>
             </div>
           </div>
@@ -286,49 +281,45 @@ const Precursor = () => {
             <div className="hero-background-shade"></div>
           </div>
           <div className="hero-content content">
-            <div className="hero-stats">
-              <h1>Results</h1>
-              <div className="hero-stats-row">
-                <div className="hero-stats-cell">
-                  <div className="hero-stats-title">New users</div>
-                  <div className="hero-stats-subtitle">~200k</div>
-                </div>
-                <div className="hero-stats-cell">
-                  <div className="hero-stats-title">Sign ups</div>
-                  <div className="hero-stats-subtitle">{'>'} 1,200</div>
-                </div>
-                <div className="hero-stats-cell">
-                  <div className="hero-stats-title">Monthly growth</div>
-                  <div className="hero-stats-subtitle">+110%</div>
+            <h1>Results</h1>
+            <div className="breakdown">
+              <div className="breakdown-cell">
+                <div className="breakdown-title">New users</div>
+                <div className="breakdown-subtitle">~200k</div>
+              </div>
+              <div className="breakdown-cell">
+                <div className="breakdown-title">Sign ups</div>
+                <div className="breakdown-subtitle">{'>'} 1,200</div>
+              </div>
+              <div className="breakdown-cell">
+                <div className="breakdown-title">Monthly growth</div>
+                <div className="breakdown-subtitle">+110%</div>
+              </div>
+              <div className="breakdown-cell">
+                <div className="breakdown-title">Popularity</div>
+                <div className="breakdown-info">
+                  Precursor was feature as the #1 trending story on Hacker News,
+                  Product Hunt, and Designer News.
                 </div>
               </div>
-              <div className="hero-stats-row">
-                <div className="hero-stats-cell">
-                  <div className="hero-stats-title">Popularity</div>
-                  <div className="hero-stats-info">
-                    Precursor was feature as the #1 trending story on Hacker
-                    News, Product Hunt, and Designer News.
-                  </div>
+              <div className="breakdown-cell">
+                <div className="breakdown-title">Big teams</div>
+                <div className="breakdown-info">
+                  Precursor was adopted by teams at Google, Facebook, Dropbox,
+                  Blizzard, and Ivy League schools.
                 </div>
-                <div className="hero-stats-cell">
-                  <div className="hero-stats-title">Big teams</div>
-                  <div className="hero-stats-info">
-                    Precursor was adopted by teams at Google, Facebook, Dropbox,
-                    AAA game studios, and ivy league schools.
-                  </div>
-                </div>
-                <div className="hero-stats-cell">
-                  <div className="hero-stats-title">Clojure success</div>
-                  <div className="hero-stats-info">
-                    Precursor was listed as one of Clojure's official{' '}
-                    <Link
-                      className="link"
-                      href="https://clojure.org/community/success_stories"
-                    >
-                      success stories
-                    </Link>
-                    .
-                  </div>
+              </div>
+              <div className="breakdown-cell">
+                <div className="breakdown-title">Clojure success</div>
+                <div className="breakdown-info">
+                  Precursor was listed as one of Clojure's official{' '}
+                  <Link
+                    className="link"
+                    href="https://clojure.org/community/success_stories"
+                  >
+                    success stories
+                  </Link>
+                  .
                 </div>
               </div>
             </div>

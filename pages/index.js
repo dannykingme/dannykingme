@@ -57,7 +57,7 @@ const Home = () => {
     <>
       <div className="main">
         <div
-          className={c('hero', {
+          className={c('hero', 'intro', {
             active: state.heroActive,
             inactive: state.heroActive === false,
             null: state.heroActive == null,

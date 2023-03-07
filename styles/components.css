@@ -77,7 +77,8 @@
 
   /* align-items: center; */
   position: relative;
-  margin-top: auto;
+
+  /* margin-top: auto; */
 
   /* height: var(--tile); */
 
@@ -144,6 +145,12 @@
   position: relative;
   margin-top: auto;
   margin-bottom: auto;
+
+  h1 {
+    + .breakdown {
+      margin-top: calc(var(--margin) * 2);
+    }
+  }
 }
 
 .hero-name {
@@ -548,13 +555,13 @@
   transform-origin: bottom right;
 } */
 
-.hero-case {
-  /* h1 {
-    margin-bottom: var(--tile);
-  } */
+.breakdown {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--margin);
 }
 
-.hero-case-row {
+.breakdown-row {
   /* display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--margin); */
@@ -566,26 +573,33 @@
   }
 }
 
-.hero-case-cell {
-  flex: 1;
-  max-width: calc(100% / 3);
-  margin-right: var(--margin);
+.breakdown-cell {
+  /* flex: 1; */
+
+  /* max-width: calc(100% / 3); */
+
+  /* margin-right: var(--margin); */
+  width: 100%;
+
+  &.full {
+    grid-column: 1 / 4;
+  }
 }
 
-.hero-case-title {
+.breakdown-title {
   color: var(--gray-500);
   font-size: var(--font-tiny);
   text-transform: uppercase;
   margin-bottom: var(--margin);
 }
 
-.hero-case-subtitle {
+.breakdown-subtitle {
   font-family: 'Roboto Condensed';
   font-size: calc(var(--xs) * 2);
   font-weight: 600;
   text-transform: uppercase;
 
-  .hero-case-info {
+  .breakdown-info {
     /*  */
   }
 }
@@ -777,45 +791,6 @@
   margin-bottom: var(--xs);
   margin-bottom: 0;
   display: none;
-}
-
-.hero-stats {
-  h1 {
-    margin-bottom: var(--tile);
-  }
-}
-
-.hero-stats-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--margin);
-
-  /* min-height: 20vh; */
-  &:not(:last-child) {
-    margin-bottom: var(--tile);
-  }
-}
-
-.hero-stats-cell {
-  /* max-width: calc(100% / 3); */
-  margin-right: var(--margin);
-}
-
-.hero-stats-title {
-  color: var(--gray-500);
-  font-size: var(--font-tiny);
-  text-transform: uppercase;
-  margin-bottom: var(--margin);
-}
-
-.hero-stats-subtitle {
-  font-size: calc(var(--xs) * 1.5);
-  font-weight: 600;
-  text-transform: uppercase;
-
-  .hero-stats-info {
-    /*  */
-  }
 }
 
 .hero-background {
@@ -1250,6 +1225,10 @@
     fill: currentcolor;
     stroke: none;
   }
+}
+
+.press-content {
+  margin-bottom: auto;
 }
 
 .press-items {

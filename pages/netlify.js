@@ -5,38 +5,34 @@ const Home = () => {
   return (
     <>
       <div className="main">
-        <div className="hero small black">
+        <div className="hero small black intro">
           <div className="hero-background">
             <video src="netlify-graph-broll-2.mp4" muted autoPlay loop />
             <div className="hero-background-shade"></div>
           </div>
           <Header />
           <div className="hero-content content">
-            <div className="hero-case">
-              <div className="hero-case-row">
-                <div className="hero-case-cell">
-                  <div className="hero-case-title">Company</div>
-                  <div className="hero-case-subtitle">Netlify</div>
+            <div className="breakdown">
+              <div className="breakdown-cell full">
+                <div className="breakdown-title">Company</div>
+                <div className="breakdown-subtitle">Netlify</div>
+              </div>
+              <div className="breakdown-cell">
+                <div className="breakdown-title">Projects</div>
+                <div className="breakdown-subtitle">Graph</div>
+                <div className="breakdown-subtitle">Integrations Hub</div>
+              </div>
+              <div className="breakdown-cell">
+                <div className="breakdown-title">Summary</div>
+                <div className="breakdown-info">
+                  I redesigned Netlify Graph to make it easier for new users to
+                  understand and I built a new product to help developers
+                  organize and discover new integrations.
                 </div>
               </div>
-              <div className="hero-case-row">
-                <div className="hero-case-cell">
-                  <div className="hero-case-title">Projects</div>
-                  <div className="hero-case-subtitle">Graph</div>
-                  <div className="hero-case-subtitle">Integrations Hub</div>
-                </div>
-                <div className="hero-case-cell">
-                  <div className="hero-case-title">Summary</div>
-                  <div className="hero-case-info">
-                    I redesigned Netlify Graph to make it easier for new users
-                    to understand and I built a new product to help developers
-                    organize and discover new integrations.
-                  </div>
-                </div>
-                <div className="hero-case-cell">
-                  <div className="hero-case-title">Role</div>
-                  <div className="hero-case-info">Staff Product Designer</div>
-                </div>
+              <div className="breakdown-cell">
+                <div className="breakdown-title">Role</div>
+                <div className="breakdown-info">Staff Product Designer</div>
               </div>
             </div>
           </div>
@@ -412,36 +408,32 @@ const Home = () => {
             <div className="hero-background-shade"></div>
           </div>
           <div className="hero-content content">
-            <div className="hero-stats">
-              <h1>Results</h1>
-              <div className="hero-stats-row">
-                <div className="hero-stats-cell">
-                  <div className="hero-stats-title">Product Integrations</div>
-                  <div className="hero-stats-subtitle">{'>'}320</div>
-                </div>
-                <div className="hero-stats-cell">
-                  <div className="hero-stats-title">Pull Requests</div>
-                  <div className="hero-stats-subtitle">+ 134</div>
-                </div>
-                <div className="hero-stats-cell">
-                  <div className="hero-stats-title">Lines of Code</div>
-                  <div className="hero-stats-subtitle">{'>'}60,000</div>
+            <h1>Results</h1>
+            <div className="breakdown">
+              <div className="breakdown-cell">
+                <div className="breakdown-title">Product Integrations</div>
+                <div className="breakdown-subtitle">{'>'}320</div>
+              </div>
+              <div className="breakdown-cell">
+                <div className="breakdown-title">Pull Requests</div>
+                <div className="breakdown-subtitle">+ 134</div>
+              </div>
+              <div className="breakdown-cell">
+                <div className="breakdown-title">Lines of Code</div>
+                <div className="breakdown-subtitle">{'>'}60,000</div>
+              </div>
+              <div className="breakdown-cell">
+                <div className="breakdown-title">Onboarding</div>
+                <div className="breakdown-info">
+                  Netlify Graph's onboarding interaction was Netlify's first
+                  interactive onboarding user-experience.
                 </div>
               </div>
-              <div className="hero-stats-row">
-                <div className="hero-stats-cell">
-                  <div className="hero-stats-title">Onboarding</div>
-                  <div className="hero-stats-info">
-                    Netlify Graph's onboarding interaction was Netlify's first
-                    interactive onboarding user-experience.
-                  </div>
-                </div>
-                <div className="hero-stats-cell">
-                  <div className="hero-stats-title">Efficiency</div>
-                  <div className="hero-stats-info">
-                    Graph's five-year-old interface received a 90% rewrite and
-                    redesign in three months.
-                  </div>
+              <div className="breakdown-cell">
+                <div className="breakdown-title">Efficiency</div>
+                <div className="breakdown-info">
+                  Graph's five-year-old interface received a 90% rewrite and
+                  redesign in three months.
                 </div>
               </div>
             </div>
