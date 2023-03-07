@@ -32,6 +32,7 @@ export const Footer = () => (
         <Link
           className="nav-item nav-brand"
           href="https://precursorapp.com/blog"
+          target="_blank"
         >
           {/* <Icon dkme /> */}
           Writings
