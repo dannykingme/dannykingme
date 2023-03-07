@@ -38,10 +38,11 @@
    *  Typography
    */
 
-  --font-sans: 'Poppins', sans-serif;
+  --font-sans: 'Poppins', 'Avenir Next', sans-serif;
   --font-mono: 'Roboto Mono', monospace;
   --font-slab: 'Roboto Slab', serif;
-  --font-cond: 'Roboto Condensed', serif;
+  --font-cond: 'Roboto Condensed', 'HelveticaNeue-CondensedBold', 'Arial Narrow',
+    serif;
   --font-weight: normal;
   --font-size: 16px;
   --font-tiny: 13px;
