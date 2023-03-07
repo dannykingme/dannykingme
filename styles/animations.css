@@ -667,7 +667,7 @@
     animation: var(--dur8) var(--fadein) var(--del8) forwards curtain-header;
   }
 
-  .header-item {
+  .nav-item {
     animation: var(--dur9) var(--fadein) var(--del9) forwards curtain-nav;
   }
 }
@@ -697,7 +697,7 @@
     animation: var(--dur1) var(--fadein) var(--del1) both curtain-rev;
   }
 
-  .header-item {
+  .nav-item {
     animation: var(--dur2) var(--fadein) var(--del2) both curtain-nav-rev;
   }
 
