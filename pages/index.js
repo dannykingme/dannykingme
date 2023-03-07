@@ -60,6 +60,7 @@ const Home = () => {
           className={c('hero', {
             active: state.heroActive,
             inactive: state.heroActive === false,
+            null: state.heroActive == null,
           })}
         >
           {state.heroActive || state.heroActive === false ? (

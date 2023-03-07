@@ -639,3 +639,83 @@
     animation: var(--dur9) var(--fadein) var(--del9) both tile-in-t2b;
   }
 }
+
+.hero.null {
+  --dur1: var(--run);
+  --dur2: var(--run);
+  --dur3: var(--run);
+  --dur4: var(--run);
+
+  --del1: 0ms;
+  --del2: calc((var(--dur1) * 0.34) + var(--del1));
+  --del3: calc((var(--dur2) * 0.21) + var(--del2));
+  --del4: calc((var(--dur3) * 0.13) + var(--del3));
+
+  .hero-name-first {
+    animation: var(--dur1) var(--fadein) var(--del1) backwards tile-in-b2t;
+  }
+
+  .hero-name-last {
+    animation: var(--dur2) var(--fadein) var(--del2) backwards tile-in-b2t;
+  }
+
+  .hero-paragraph {
+    animation: var(--dur3) var(--fadein) var(--del3) backwards tile-in-b2t;
+  }
+
+  .hero-action {
+    animation: var(--dur4) var(--fadein) var(--del4) backwards tile-in-b2t;
+  }
+}
+
+/* .nav {
+  --dur1: var(--run);
+  --dur2: var(--run);
+  --dur3: var(--run);
+  --dur4: var(--run);
+  --dur5: var(--run);
+  --dur6: var(--run);
+  --dur7: var(--run);
+  --dur8: var(--run);
+
+  --del1: 0ms;
+  --del2: calc((var(--dur1) * 0.34) + var(--del1));
+  --del3: calc((var(--dur2) * 0.21) + var(--del2));
+  --del4: calc((var(--dur3) * 0.13) + var(--del3));
+  --del5: calc((var(--dur4) * 0.08) + var(--del4));
+  --del6: calc((var(--dur5) * 0.05) + var(--del5));
+  --del7: calc((var(--dur6) * 0.89) + var(--del6));
+  --del8: calc((var(--dur7) * 0.55) + var(--del7));
+
+  .nav-item:nth-child(1) {
+    animation: var(--dur1) var(--fadein) var(--del1) both tile-in-t2b;
+  }
+
+  .nav-item:nth-child(2) {
+    animation: var(--dur2) var(--fadein) var(--del2) both tile-in-t2b;
+  }
+
+  .nav-item:nth-child(3) {
+    animation: var(--dur3) var(--fadein) var(--del3) both tile-in-t2b;
+  }
+
+  .nav-item:nth-child(4) {
+    animation: var(--dur4) var(--fadein) var(--del4) both tile-in-t2b;
+  }
+
+  .nav-item:nth-child(5) {
+    animation: var(--dur5) var(--fadein) var(--del5) both tile-in-t2b;
+  }
+
+  .nav-item:nth-child(6) {
+    animation: var(--dur6) var(--fadein) var(--del6) both tile-in-t2b;
+  }
+
+  .nav-item:nth-child(7) {
+    animation: var(--dur7) var(--fadein) var(--del7) both tile-in-t2b;
+  }
+
+  .nav-item:nth-child(8) {
+    animation: var(--dur8) var(--fadein) var(--del8) both tile-in-t2b;
+  }
+} */
