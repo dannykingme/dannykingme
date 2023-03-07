@@ -11,6 +11,7 @@ const Home = () => {
     return {
       heroActive: null,
       activeCard: null,
+      preserving: false,
     };
   });
   const handleClickHero = () => {
@@ -47,10 +48,17 @@ const Home = () => {
       heroActive: cancelAnimation.current ? null : false,
     }));
   };
-  const handleCardHover = (id) => {
+  const handleCardHover = (active, lastActive) => {
     setState((oldState) => ({
       ...oldState,
-      activeCard: id,
+      activeCard: active,
+      lastActiveCard: lastActive,
+    }));
+  };
+  const preservingAnimation = (answer) => {
+    setState((oldState) => ({
+      ...oldState,
+      preserving: answer,
     }));
   };
   return (
@@ -110,6 +118,10 @@ const Home = () => {
             <div
               className={c('cards', {
                 active: state.activeCard,
+                inactive: state.activeCard === null,
+                preserving: state.preserving,
+                'animate-out': state.activeCard || state.preserving,
+                'animate-in': state.activeCard === null && !state.preserving,
               })}
             >
               <Card
@@ -120,6 +132,8 @@ const Home = () => {
                 wireframe="/card-netlify-wireframe.png"
                 animation="/card-netlify-animation.gif"
                 onCardHover={handleCardHover}
+                preservingAnimation={preservingAnimation}
+                lastActiveCard={state.lastActiveCard}
               />
               <Card
                 id="precursor"
@@ -129,6 +143,8 @@ const Home = () => {
                 wireframe="/card-precursor-wireframe.png"
                 animation="/card-precursor-animation.gif"
                 onCardHover={handleCardHover}
+                preservingAnimation={preservingAnimation}
+                lastActiveCard={state.lastActiveCard}
               />
               <Card
                 id="serverless"
@@ -138,6 +154,8 @@ const Home = () => {
                 wireframe="/card-serverless-wireframe.png"
                 animation="/card-serverless-animation.gif"
                 onCardHover={handleCardHover}
+                preservingAnimation={preservingAnimation}
+                lastActiveCard={state.lastActiveCard}
                 comingSoon
               />
               <Card
@@ -148,6 +166,8 @@ const Home = () => {
                 wireframe="/card-google-wireframe.png"
                 animation="/card-google-animation.gif"
                 onCardHover={handleCardHover}
+                preservingAnimation={preservingAnimation}
+                lastActiveCard={state.lastActiveCard}
                 comingSoon
               />
               <Card
@@ -158,6 +178,8 @@ const Home = () => {
                 wireframe="/card-circleci-wireframe.png"
                 animation="/card-circleci-animation.gif"
                 onCardHover={handleCardHover}
+                preservingAnimation={preservingAnimation}
+                lastActiveCard={state.lastActiveCard}
                 comingSoon
               />
               <Card
@@ -168,6 +190,8 @@ const Home = () => {
                 wireframe="/card-paygarden-wireframe.png"
                 animation="/card-paygarden-animation.gif"
                 onCardHover={handleCardHover}
+                preservingAnimation={preservingAnimation}
+                lastActiveCard={state.lastActiveCard}
                 comingSoon
               />
             </div>
@@ -187,31 +211,52 @@ const Card = ({
   wireframe,
   animation,
   onCardHover,
+  preservingAnimation,
+  lastActiveCard,
   comingSoon,
 }) => {
+  const preserveAnimation = useRef(0);
   const [state, setState] = useState(() => {
     return {
       active: false,
+      border: false,
     };
   });
   const handleMouseEnter = () => {
+    preserveAnimation.current = 1;
+    preservingAnimation(preserveAnimation.current);
     setState((oldState) => ({
       ...oldState,
       active: true,
+      border: true,
     }));
-    onCardHover(id);
+    onCardHover(id, id);
   };
   const handleMouseLeave = () => {
+    preserveAnimation.current = 1;
+    preservingAnimation(preserveAnimation.current);
     setState((oldState) => ({
       ...oldState,
       active: false,
+      // border: true,
     }));
-    onCardHover(null);
+    onCardHover(null, id);
+    setTimeout(() => {
+      preserveAnimation.current = 0;
+      preservingAnimation(preserveAnimation.current);
+
+      // setState((oldState) => ({
+      //   ...oldState,
+      //   border: false,
+      // }));
+    }, 750);
   };
   return (
     <div
       className={c('card', id, {
         active: state.active,
+        // border: state.active || state.border === id,
+        border: id === lastActiveCard,
       })}
     >
       {state.active ? (
