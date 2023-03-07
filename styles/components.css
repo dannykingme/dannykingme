@@ -5,7 +5,9 @@
 
   /* --item-h: 380px; */
   --item-h: calc(var(--item-w) * 0.75);
-  --content-width: calc((var(--item-w) * var(--cols)) + var(--gap));
+  --content-width: calc(
+    (var(--item-w) * var(--cols)) + var(--gap) + (var(--padding) * 2)
+  );
 }
 
 .app {
