@@ -24,7 +24,7 @@ const Press = () => {
                 item.articles
                   .sort((a, b) => a.date - b.date)
                   .map((item, i) => (
-                    <div className="press-item nth" key={item.title + i}>
+                    <div className="press-item" key={item.title + i}>
                       <span className="press-item-date">
                         {pressTime(item.date).format('DD MMM YYYY')}
                       </span>
