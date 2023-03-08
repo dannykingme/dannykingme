@@ -1325,6 +1325,7 @@
 
 .press-items {
   /* max-width: var(--xxl); */
+  margin-bottom: calc(var(--margin) * 2);
 }
 
 .press-item {
