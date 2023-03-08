@@ -2,9 +2,8 @@
   --cols: 2;
   --gap: var(--margin);
   --item-w: 560px;
-
-  /* --item-h: 380px; */
   --item-h: calc(var(--item-w) * 0.75);
+  --nav-height: calc(var(--tile) * 1.5);
   --content-width: calc(
     (var(--item-w) * var(--cols)) + var(--gap) + (var(--padding) * 2)
   );
@@ -69,6 +68,7 @@
   position: relative;
 
   /* height: var(--tile); */
+  background-image: linear-gradient(rgb(0 0 0 / 13%), rgb(0 0 0 / 0%));
 
   /* border-bottom: var(--border); */
   box-shadow: 0 1px rgb(255 255 255 / 8%), inset 0 -1px var(--black);
@@ -675,10 +675,10 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: var(--tile);
+  top: var(--nav-height);
   left: 0;
   width: 100%;
-  height: calc(100% - var(--tile));
+  height: calc(100% - var(--nav-height));
   user-select: none;
   pointer-events: none;
 
@@ -1007,7 +1007,9 @@
 .nav-items {
   display: flex;
   align-items: center;
-  min-height: var(--tile);
+
+  /* min-height: var(--tile); */
+  min-height: var(--nav-height);
 }
 
 .nav-item {
@@ -1020,6 +1022,7 @@
 
   &:first-of-type {
     margin-left: calc(var(--padding) / -2);
+    margin-right: auto;
   }
 
   &:last-of-type {
@@ -1040,7 +1043,11 @@
 }
 
 .nav-brand {
-  margin-right: auto;
+  /* margin-right: auto; */
+
+  &:hover {
+    color: var(--gray-500);
+  }
 
   .icon {
     font-size: var(--margin);

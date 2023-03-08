@@ -30,7 +30,7 @@ export const Footer = () => (
     <div className="nav">
       <div className="nav-items content">
         <Link
-          className="nav-item nav-brand"
+          className="nav-item"
           href="https://precursorapp.com/blog"
           target="_blank"
         >
