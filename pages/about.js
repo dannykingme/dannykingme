@@ -30,7 +30,13 @@ const About = () => {
               <p className="bio-paragraph">
                 At Google, I was the first UX Engineer to ship code to billions
                 of users. At Netlify, I was in the top 1% of hundreds of code
-                contributors. At CircleCI, I invented Adaptive Placeholders
+                contributors. At CircleCI, I invented{' '}
+                <Link
+                  className="link"
+                  href="https://codepen.io/dannykingme/pen/LYZgQY"
+                >
+                  Adaptive Placeholders
+                </Link>{' '}
                 which later ended up in Google Material Design.
               </p>
               <p className="bio-paragraph">

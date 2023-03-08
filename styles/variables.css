@@ -108,3 +108,10 @@
   --outline-offset: 1px;
   --outline: var(--outline-color) var(--outline-style) var(--outline-width);
 }
+
+@custom-media --xxs (max-width: 512px);
+@custom-media --xs (max-width: 768px);
+@custom-media --s (max-width: 1024px);
+@custom-media --l (max-width: 1280px);
+@custom-media --xl (max-width: 1600px);
+@custom-media --xxl (max-width: 2048px);
