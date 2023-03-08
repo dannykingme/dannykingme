@@ -1061,6 +1061,8 @@
   height: 726px;
   margin-left: var(--margin);
 
+  /* animation: var(--run-slow) var(--fadein) 0ms backwards twirl-in; */
+
   @media (--s) {
     display: none;
   }
@@ -1083,18 +1085,22 @@
   &:nth-child(1) {
     top: var(--margin);
     left: var(--margin);
-    transform: rotate(-3deg);
+
+    /* transform: rotate(-3deg); */
+    transform: rotate3d(0, 0, 1, -3deg);
 
     .photo-image {
       img {
-        object-fit: none;
-        object-position: 49% 43%;
+        /* object-fit: none;
+        object-position: 49% 43%; */
+        object-fit: cover;
       }
     }
   }
 
   &:nth-child(2) {
-    transform: rotate(2deg);
+    /* transform: rotate(2deg); */
+    transform: rotate3d(0, 0, 1, 2deg);
 
     .photo-image {
       img {

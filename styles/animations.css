@@ -208,7 +208,7 @@
 
 @keyframes twirl-in {
   0% {
-    opacity: 0;
+    /* opacity: 0; */
     transform: rotateY(90deg);
   }
 }
@@ -220,6 +220,13 @@
   }
 }
 
+@keyframes twirl-in-rev {
+  0% {
+    opacity: 0;
+    transform: rotateY(-90deg);
+  }
+}
+
 @keyframes twirl-out-rev {
   100% {
     opacity: 0;
@@ -227,11 +234,50 @@
   }
 }
 
-@keyframes twirl-in-rev {
+@keyframes photo-back {
   0% {
-    opacity: 0;
-    transform: rotateY(-90deg);
+    top: 0;
+    left: 0;
+    transform: rotate3d(0, 1, 0, -90deg);
+
+    /* transform: rotate3d(0, 0, 0, 0); */
+
+    /* transform: rotate3d(0, 0, 0, 0); */
   }
+
+  40% {
+    top: 0;
+    left: 0;
+    transform: rotate3d(0, 0, 1, 2deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, -3deg);
+  }
+}
+
+@keyframes photo-front {
+  0% {
+    transform: rotate3d(0, 1, 0, -90deg);
+  }
+
+  /* 80% {
+    transform: rotate3d(0, 0, 0, 0);
+  } */
+
+  /* 100% {
+    transform: rotate3d(0, 0, 1, 2deg);
+  } */
+}
+
+@keyframes photo-grow-in {
+  0% {
+    transform: rotate3d(0, 0, 0, 0) scale(0);
+  }
+
+  /* 100% {
+    transform: scale(1);
+  } */
 }
 
 /*
@@ -859,5 +905,51 @@
 
   .breakdown-cell:nth-child(4) .breakdown-info {
     animation: var(--dur08) var(--fadein) var(--del08) backwards tile-in-b2t;
+  }
+}
+
+.bio {
+  --dur01: var(--run);
+  --dur02: var(--run);
+  --dur03: var(--run);
+  --dur04: var(--run);
+  --dur05: var(--run);
+  --dur06: var(--run-slow);
+  --dur07: var(--run);
+
+  --del01: 0ms;
+  --del02: calc((var(--dur01) * 0.34) + var(--del01));
+  --del03: calc((var(--dur02) * 0.21) + var(--del02));
+  --del04: calc((var(--dur03) * 0.13) + var(--del03));
+  --del05: calc((var(--dur04) * 0.08) + var(--del04));
+  --del06: calc((var(--dur05) * 0.21) + var(--del05));
+  --del07: calc((var(--dur06) * 0.13) + var(--del06));
+
+  .bio-name {
+    animation: var(--dur01) var(--fadein) var(--del01) backwards tile-in-b2t;
+  }
+
+  .bio-paragraph:nth-of-type(1) {
+    animation: var(--dur02) var(--fadein) var(--del02) backwards tile-in-b2t;
+  }
+
+  .bio-paragraph:nth-of-type(2) {
+    animation: var(--dur03) var(--fadein) var(--del03) backwards tile-in-b2t;
+  }
+
+  .bio-paragraph:nth-of-type(3) {
+    animation: var(--dur04) var(--fadein) var(--del04) backwards tile-in-b2t;
+  }
+
+  .bio-action {
+    animation: var(--dur05) var(--fadein) var(--del05) backwards tile-in-b2t;
+  }
+
+  .photo:nth-child(2) {
+    animation: var(--dur06) var(--fadein) var(--del06) backwards twirl-in;
+  }
+
+  .photo:nth-child(1) {
+    animation: var(--dur07) var(--fadein) var(--del07) backwards photo-grow-in;
   }
 }

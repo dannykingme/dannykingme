@@ -53,7 +53,7 @@ const About = () => {
             <div className="photos">
               <div className="photo">
                 <div className="photo-image">
-                  <img src="/photo-2.jpg" alt="" />
+                  <img src="/photo-1.jpg" alt="" />
                 </div>
                 <div className="photo-folds"></div>
               </div>
