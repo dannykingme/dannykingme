@@ -1,5 +1,15 @@
 [
   {
+    "section": "Netlify",
+    "articles": [
+      {
+        "title": "New Integrations Hub to quickly discover and connect 150+ integrations to Netlify",
+        "url": "https://www.netlify.com/blog/new-integrations-hub-to-quickly-connect-dev-tools/",
+        "date": 1695957000000
+      }
+    ]
+  },
+  {
     "section": "Precursor",
     "articles": [
       {
@@ -166,6 +176,16 @@
         "title": "Create an Adaptive Sketch Symbol for Material Design’s Outlined Text Field",
         "url": "https://medium.com/sketch-app-sources/create-an-adaptive-sketch-symbol-for-material-designs-outlined-text-field-6a4e0ad20ae9",
         "date": 1537877460000
+      }
+    ]
+  },
+  {
+    "section": "CircleCI",
+    "articles": [
+      {
+        "title": "People are Accusing Uber of Stealing This Startup’s Logo",
+        "url": "https://fortune.com/2016/02/19/people-are-accusing-uber-of-stealing-this-startups-logo/",
+        "date": 1455926400000
       }
     ]
   }
