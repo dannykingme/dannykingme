@@ -10,6 +10,7 @@ const Home = () => {
   const [state, setState] = useState(() => {
     return {
       heroActive: null,
+      heroUntouched: true,
       activeCard: null,
       preserving: false,
     };
@@ -37,6 +38,7 @@ const Home = () => {
     setState((oldState) => ({
       ...oldState,
       heroActive: true,
+      heroUntouched: false,
     }));
     setTimeout(() => {
       cancelAnimation.current = 0;
@@ -68,7 +70,7 @@ const Home = () => {
           className={c('hero', 'intro', {
             active: state.heroActive,
             inactive: state.heroActive === false,
-            null: state.heroActive == null,
+            untouched: state.heroUntouched,
           })}
         >
           {state.heroActive || state.heroActive === false ? (

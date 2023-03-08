@@ -776,7 +776,7 @@
   }
 }
 
-.hero.null {
+.hero.untouched {
   --dur1: var(--run);
   --dur2: var(--run);
   --dur3: var(--run);
