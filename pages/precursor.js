@@ -83,11 +83,34 @@ const Precursor = () => {
               Precursor is a wireframing tool that helps people focus on their
               work and collaborate with their team. I started the company in
               2014 with my cofounder, Daniel Woelfel. After launch, Precursor
-              was featured as the #1 story on Hacker News, Product Hunt, and
-              Designer News, and reached over 100k new users in its first six
-              months with no marketing. In 2015 we decided to open-source the
-              product and have kept it running for ourselves and many other
-              users that are still active.
+              was featured as the #1 story on{' '}
+              <Link
+                className="link"
+                href="https://news.ycombinator.com/item?id=9659167"
+                target="_blank"
+              >
+                Hacker News
+              </Link>
+              ,{' '}
+              <Link
+                className="link"
+                href="https://twitter.com/producthunt/status/533630762168635392"
+                target="_blank"
+              >
+                Product Hunt
+              </Link>
+              , and{' '}
+              <Link
+                className="link"
+                href="https://www.designernews.co/stories/45124-precursor"
+                target="_blank"
+              >
+                Designer News
+              </Link>
+              , and reached over 100k new users in its first six months with no
+              marketing. In 2015 we decided to open-source the product and have
+              kept it running for ourselves and many other users that are still
+              active.
             </p>
             {/* <div className="media">
               <div className="media-video">
