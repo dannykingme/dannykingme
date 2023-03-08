@@ -68,7 +68,6 @@
   position: relative;
 
   /* height: var(--tile); */
-  background-image: linear-gradient(rgb(0 0 0 / 13%), rgb(0 0 0 / 0%));
 
   /* border-bottom: var(--border); */
   box-shadow: 0 1px rgb(255 255 255 / 8%), inset 0 -1px var(--black);
@@ -128,6 +127,10 @@
 
   &.black {
     background-color: var(--black);
+
+    .header {
+      background-image: linear-gradient(rgb(0 0 0 / 13%), rgb(0 0 0 / 0%));
+    }
 
     .footer {
       box-shadow: 0 -1px var(--black), inset 0 1px rgb(255 255 255 / 8%);
