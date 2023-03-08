@@ -1047,6 +1047,10 @@
   min-width: 500px;
   height: 726px;
   margin-left: var(--margin);
+
+  @media (--s) {
+    display: none;
+  }
 }
 
 .photo {
@@ -1213,8 +1217,8 @@
 
 .bio-content {
   position: relative;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: var(--tile);
+  margin-bottom: var(--tile);
 }
 
 .bio-name {
