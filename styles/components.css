@@ -645,6 +645,9 @@
   &.full {
     grid-column: 1 / 4;
   }
+  @media (--xs) {
+    grid-column: 1 / 4;
+  }
 }
 
 .breakdown-title {
