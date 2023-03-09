@@ -2,7 +2,6 @@ import { useState, useRef } from 'react';
 
 import Link from 'next/link';
 import Icon from '../components/icon';
-import c from 'classnames';
 import { Footer, Header } from '../components/nav';
 
 const Precursor = () => {

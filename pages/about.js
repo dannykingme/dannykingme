@@ -1,7 +1,5 @@
-import { useState, useRef } from 'react';
 import Link from 'next/link';
 import { Header, Footer } from '../components/nav';
-import c from 'classnames';
 
 const About = () => {
   return (
