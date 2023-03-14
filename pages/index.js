@@ -6,7 +6,6 @@ import { Header, Footer } from '../components/nav';
 const Home = () => {
   const cancelAnimation = useRef(0);
   const galleryRef = useRef();
-  // const [count, activateNetlify] = useState(false);
   const [state, setState] = useState(() => {
     return {
       heroActive: null,
@@ -16,21 +15,6 @@ const Home = () => {
     };
   });
   const handleClickHero = () => {
-    // 👇 Will wait until the DOM is updated with the new state
-    // flushSync(() => {
-    //   setPeople((people) => [
-    //     ...people,
-    //     {
-    //       id: uuid(),
-    //       name: uniqueNamesGenerator({
-    //         dictionaries: [names],
-    //       }),
-    //     },
-    //   ]);
-    // });
-
-    // 👇 Scroll to the last element in the list
-    // listRef.current?.lastElementChild?.scrollIntoView();
     galleryRef.current.scrollIntoView({ behavior: 'smooth' });
   };
   const handleActivateHero = () => {

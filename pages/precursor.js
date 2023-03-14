@@ -2,7 +2,6 @@ import { useState, useRef } from 'react';
 
 import Link from 'next/link';
 import Icon from '../components/icon';
-import c from 'classnames';
 import { Footer, Header } from '../components/nav';
 
 const Precursor = () => {
@@ -56,15 +55,6 @@ const Precursor = () => {
         </div>
         <div className="article">
           <div className="content">
-            {/* <div className="section">
-              <div className="section-title">
-                <h1>Introduction</h1>
-              </div>
-              <div className="section-subtitle">
-                <div className="section-dash"></div>
-                <h5>Background</h5>
-              </div>
-            </div> */}
             <h1>Introduction</h1>
 
             <h4>Fixing collaboration for product teams</h4>
@@ -112,62 +102,6 @@ const Precursor = () => {
               kept it running for ourselves and many other users that are still
               active.
             </p>
-            {/* <div className="media">
-              <div className="media-video">
-                <video
-                  src="/precursor/main-menu.mp4"
-                  muted
-                  autoPlay
-                  loop
-                ></video>
-              </div>
-              <div className="media-caption">Main Menu</div>
-            </div> */}
-            {/* <div className="media two">
-              <div className="media-image">
-                <img src="/netlify/graph-old-1.png" alt="" />
-                <div className="media-caption">Old Graph</div>
-              </div>
-              <div className="media-image">
-                <img src="/netlify/graph-new-1.png" alt="" />
-                <div className="media-caption">New Graph</div>
-              </div>
-              <div className="media-image">
-                <img src="/netlify/integrations-old-1.png" alt="" />
-                <div className="media-caption">Old Plugins</div>
-              </div>
-              <div className="media-image">
-                <img src="/netlify/integrations-new-1.png" alt="" />
-                <div className="media-caption">New Integrations Hub</div>
-              </div>
-            </div> */}
-            {/* <div className="quotes">
-              <div className="quote">
-                <div className="quote-head">
-                  <img
-                    src="https://pbs.twimg.com/profile_images/808330818380857346/xGfn8xA-_400x400.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="quote-body">
-                  <div className="quote-author">
-                    <div className="quote-name">Jason Santa-Maria</div>
-                    <div className="quote-role">Director of Product</div>
-                  </div>
-                  <div className="quote-text">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nam maximus tortor varius semper luctus. Maecenas
-                      pellentesque lectus eget varius viverra. Fusce auctor
-                      porta libero nec tincidunt.
-                    </p>
-                  </div>
-                </div>
-                <div className="quote-foot">
-                  <img src="/netlify-logo.svg" alt="" />
-                </div>
-              </div>
-            </div> */}
           </div>
           <div className="content-highlight">
             <div className="content">
@@ -203,15 +137,6 @@ const Precursor = () => {
           </div>
 
           <div className="content">
-            {/* <div className="section">
-              <div className="section-title">
-                <h1>Solutions</h1>
-              </div>
-              <div className="section-subtitle">
-                <div className="section-dash"></div>
-                <h5>Production</h5>
-              </div>
-            </div> */}
             <h1>Solutions</h1>
 
             <h4>Multiplayer collaboration</h4>

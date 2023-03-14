@@ -1,9 +1,6 @@
-import { useState, useRef } from 'react';
 import Link from 'next/link';
 import { Header, Footer } from '../components/nav';
-import c from 'classnames';
 import moment from 'moment';
-import press from '../data/press.json';
 
 const pressTime = (string) => moment(string);
 
