@@ -145,7 +145,7 @@ const Paygarden = () => {
             expectation and regional constraints.
           </p>
 
-          <h4>Hit the target</h4>
+          <h4>Improving search</h4>
           <div className="media">
             <div className="media-video">
               <video src="/paygarden/search.mp4" muted autoPlay loop></video>
