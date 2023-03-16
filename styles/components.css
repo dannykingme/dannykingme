@@ -461,6 +461,10 @@
     gap: var(--xxs) var(--margin);
   }
 
+  &.space {
+    margin-top: var(--margin);
+  }
+
   img {
     display: block;
   }
@@ -505,18 +509,18 @@
   }
 }
 
-.media-frame-video {
+.media-frame-inner {
   position: absolute;
   top: 0;
   left: 0;
-  margin: 24px 28px;
+  margin: 5.5% 6.5%;
 
   video {
     max-width: 100%;
   }
 }
 
-.media-frame-template {
+.media-frame-outer {
   position: relative;
   z-index: var(--z-index-up);
 }

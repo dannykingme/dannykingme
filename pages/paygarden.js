@@ -42,13 +42,7 @@ const Paygarden = () => {
           <h1>Introduction</h1>
 
           <h4>The billion dollar gift card garden</h4>
-          <div className="media">
-            <div className="media-video">
-              <video src="/paygarden/payflow.mp4" muted autoPlay loop></video>
-            </div>
-            <div className="media-caption">Payflow Tour</div>
-          </div>
-          <p className="space">
+          <p>
             There’s over $45 billion in unused retail gift cards in the world.
             PayGarden enables companies to accept gift cards from retail stores
             like Starbucks, Target, and Walmart as payment for products and
@@ -56,6 +50,30 @@ const Paygarden = () => {
             payflow product, redesign their visual language, and break into the
             gaming industry with a new product offering.
           </p>
+          <div className="media space">
+            <div className="media-frame">
+              <div className="media-frame-inner">
+                <img src="/paygarden/mobile-start.png" alt="" />
+              </div>
+              <div className="media-frame-outer">
+                <img src="/paygarden/iphone.png" alt="" />
+              </div>
+            </div>
+            <div className="media-frame">
+              <div className="media-frame-inner">
+                <video
+                  src="/paygarden/mobile-details.mov"
+                  muted
+                  autoPlay
+                  loop
+                ></video>
+              </div>
+              <div className="media-frame-outer">
+                <img src="/paygarden/iphone.png" alt="" />
+              </div>
+            </div>
+            <div className="media-caption">Payflow Overview</div>
+          </div>
         </div>
         <div className="content-highlight">
           <div className="content">
@@ -114,14 +132,9 @@ const Paygarden = () => {
           <h4>Building trust</h4>
           <div className="media">
             <div className="media-video">
-              <video
-                src="/paygarden/recommended.mp4"
-                muted
-                autoPlay
-                loop
-              ></video>
+              <video src="/paygarden/payflow.mp4" muted autoPlay loop></video>
             </div>
-            <div className="media-caption">Promoted Brands</div>
+            <div className="media-caption">PayGarden Payflow</div>
           </div>
           <p className="space">
             My strategy for building trust with our users started by leveraging
@@ -169,7 +182,7 @@ const Paygarden = () => {
           <h4>Adapting to mobile</h4>
           <div className="media">
             <div className="media-frame">
-              <div className="media-frame-video">
+              <div className="media-frame-inner">
                 <video
                   src="/paygarden/mobile-start.mov"
                   muted
@@ -177,20 +190,15 @@ const Paygarden = () => {
                   loop
                 ></video>
               </div>
-              <div className="media-frame-template">
+              <div className="media-frame-outer">
                 <img src="/paygarden/iphone.png" alt="" />
               </div>
             </div>
             <div className="media-frame">
-              <div className="media-frame-video">
-                <video
-                  src="/paygarden/mobile-details.mov"
-                  muted
-                  autoPlay
-                  loop
-                ></video>
+              <div className="media-frame-inner">
+                <img src="/paygarden/mobile-details.png" alt="" />
               </div>
-              <div className="media-frame-template">
+              <div className="media-frame-outer">
                 <img src="/paygarden/iphone.png" alt="" />
               </div>
             </div>
