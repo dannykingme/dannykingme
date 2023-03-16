@@ -167,13 +167,6 @@ const Paygarden = () => {
           </p>
 
           <h4>Adapting to mobile</h4>
-          {/* <div className="media">
-            <div className="media-video">
-              <video src="/paygarden/details.mp4" muted autoPlay loop></video>
-              <img src="/paygarden/iphone.png" alt="" />
-            </div>
-            <div className="media-caption">Gift Card Details</div>
-          </div> */}
           <div className="media">
             <div className="media-frame">
               <div className="media-frame-video">
