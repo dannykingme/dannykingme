@@ -670,6 +670,7 @@
     .photo-image {
       img {
         object-fit: cover;
+        transform: rotate(180deg);
       }
     }
   }

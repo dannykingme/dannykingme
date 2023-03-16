@@ -660,7 +660,7 @@
   --dur03: var(--run);
   --dur04: var(--run);
   --dur05: var(--run);
-  --dur06: var(--run-slow);
+  --dur06: var(--run);
   --dur07: var(--run);
 
   --del01: 0ms;
