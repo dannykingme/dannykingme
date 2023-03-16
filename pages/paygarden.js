@@ -41,7 +41,7 @@ const Paygarden = () => {
         <div className="content">
           <h1>Introduction</h1>
 
-          <h4>The free money garden</h4>
+          <h4>The billion dollar gift card garden</h4>
           <div className="media">
             <div className="media-video">
               <video src="/paygarden/payflow.mp4" muted autoPlay loop></video>
@@ -73,14 +73,12 @@ const Paygarden = () => {
               </div>
             </div>
             <p>
-              PayGarden acts as a secondary or tertiary payment method for
-              partners, so the opportunity to build user trust is inherently
-              limited. The old payflow’s visual aesthetic was becoming
-              increasingly dated, it didn’t adapt well to mobile, and our
-              research pointed to the fact that our users didn’t trust the
-              product handling their gift card balance. We also had a lot of
-              data on what gift card brands perform better with which partners,
-              but no way to promote them.
+              PayGarden acts as an alternative payment method for partners, so
+              the opportunity to build user trust is inherently limited. The old
+              payflow’s visual aesthetic was becoming increasingly dated, it
+              didn’t adapt well to mobile, and our research pointed to the fact
+              that our users didn’t trust the product handling their gift card
+              balance.
             </p>
           </div>
         </div>
@@ -99,18 +97,21 @@ const Paygarden = () => {
               <Doc id="17592210701590" caption="Example Trades" />
             </div>
           </div>
-          <p className="space">
+          <p>
             We had a lot of analytics telling us most of our users were on their
-            phones, but no mobile version for our payflow. We had a lot of data
+            phones, but no mobile version for the payflow. We had a lot of data
             on what gift card brands perform better with which partners, but no
-            way to promote them. My first step was to start experimenting with
-            how we could promote the right gift cards with the right partners
-            and make sure every feature, old and new, flowed well on mobile.
+            way to promote them.
+          </p>
+          <p className="space">
+            My first step was to start experimenting with how we could promote
+            the right gift cards with the right partners and make sure every
+            feature, old and new, flowed well on mobile.
           </p>
 
           <h1>Solutions</h1>
 
-          <h4>Promote high-performers</h4>
+          <h4>Building trust</h4>
           <div className="media">
             <div className="media-video">
               <video
@@ -124,11 +125,11 @@ const Paygarden = () => {
           </div>
           <p className="space">
             My strategy for building trust with our users started by leveraging
-            the brand recognition they already experience for their favorite
-            retail stores. We curated a list of the six highest-performing gift
-            card brands for each partner and put them right in front of the
-            user. This gave us an opportunity to optimize our user experience
-            based on user expectation and regional constraints.
+            the brand recognition they already had for popular retail stores. We
+            curated a list of the six highest-performing gift card brands for
+            each partner and put them right in front of the user. This gave us
+            an opportunity to optimize our user experience based on user
+            expectation and regional constraints.
           </p>
 
           <h4>Hit the target</h4>
@@ -139,12 +140,11 @@ const Paygarden = () => {
             <div className="media-caption">Search</div>
           </div>
           <p className="space">
-            According to our data, most of our users were able to complete their
-            session using one of the six gift card brands we promoted for that
-            partner, but the other users needed a simple and efficient way to
-            find the brand they needed. This led to a new search feature that
-            empowers users to find the retail brand matching their gift card 10x
-            faster than the old payflow.
+            While most users were able to complete their transaction using one
+            of the six gift card brands we promoted, the others needed a simple
+            and efficient way to find the brand they needed. This led to a new
+            search feature that empowers users to find the retail brand matching
+            their gift card 10x faster than the old payflow.
           </p>
 
           <h4>Attention to details</h4>
@@ -155,15 +155,15 @@ const Paygarden = () => {
             <div className="media-caption">Gift Card Details</div>
           </div>
           <p>
-            The retail brands extend themselves to the second page of the
-            payflow where users enter details from their gift card. I created
-            adaptive inputs and responsive animations to give users feedback
-            about what’s coming next, and I created illustrations to show users
-            where to find their gift card numbers.
+            The retail branding experience extends itself to the second page of
+            the payflow where users enter details from their gift card. I
+            created adaptive inputs and responsive animations to give users
+            feedback about what’s coming next, and I created illustrations to
+            show users where to find their gift card numbers.
           </p>
           <p className="space">
-            Our level of polish and our attention to detail further enhances the
-            amount of trust we establish at the beginning.
+            The level of polish and our attention to detail further enhances the
+            amount of trust we establish at the beginning of the transaction.
           </p>
 
           <h4>Adapting to mobile</h4>
@@ -200,7 +200,7 @@ const Paygarden = () => {
             To solve PayGarden’s performance issues on mobile devices, I
             inverted our entire design process and designed every feature with a
             mobile-first approach. Instead of designing things on desktop and
-            adjusting them to mobile, we designed them on mobile and adjusted
+            adjusting them to mobile, I designed them on mobile and adjusted
             them to desktop.
           </p>
         </div>
