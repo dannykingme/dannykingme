@@ -344,6 +344,7 @@
 
 .breakdown-row {
   display: flex;
+
   &:not(:last-child) {
     margin-bottom: var(--tile);
   }
@@ -445,6 +446,9 @@
 }
 
 .media {
+  display: flex;
+  justify-content: center;
+
   &.two {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -483,6 +487,7 @@
 }
 
 .media-video {
+  position: relative;
   border-radius: calc(var(--border-radius) * 3);
   box-shadow: 0 5px 8px rgb(0 0 0 / 13%);
   overflow: hidden;
@@ -490,6 +495,30 @@
   video {
     max-width: 100%;
   }
+}
+
+.media-frame {
+  position: relative;
+
+  + .media-frame {
+    margin-left: calc(var(--margin) * 2);
+  }
+}
+
+.media-frame-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 24px 28px;
+
+  video {
+    max-width: 100%;
+  }
+}
+
+.media-frame-template {
+  position: relative;
+  z-index: var(--z-index-up);
 }
 
 .media-caption {
@@ -745,6 +774,7 @@
 .mason-figure {
   border: var(--border);
   border-radius: var(--border-radius);
+
   img {
     display: block;
     opacity: 0.5;
