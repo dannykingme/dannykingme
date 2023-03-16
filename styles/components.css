@@ -59,6 +59,8 @@
   position: relative;
   margin-top: auto;
   margin-bottom: auto;
+  padding-top: var(--tile);
+  padding-bottom: var(--tile);
 
   h1 {
     + .breakdown {
