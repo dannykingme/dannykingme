@@ -253,8 +253,8 @@ const Precursor = () => {
             <Link className="link" href="/">
               <Icon arrow-left /> Back home
             </Link>
-            <Link className="link" href="/netlify">
-              Next project: Netlify <Icon arrow-right />
+            <Link className="link" href="/paygarden">
+              Next project: PayGarden <Icon arrow-right />
             </Link>
           </div>
         </div>
