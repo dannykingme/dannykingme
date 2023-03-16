@@ -117,14 +117,14 @@ const Paygarden = () => {
           </div>
           <p>
             We had a lot of analytics telling us most of our users were on their
-            phones, but no mobile version for the payflow. We had a lot of data
-            on what gift card brands perform better with which partners, but no
-            way to promote them.
+            phones, but there was no mobile version for the payflow. We had a
+            lot of data on what gift card brands perform better with which
+            partners, but no way to promote them.
           </p>
           <p className="space">
             My first step was to start experimenting with how we could promote
             the right gift cards with the right partners and make sure every
-            feature, old and new, flowed well on mobile.
+            feature, old and new, performed well on mobile.
           </p>
 
           <h1>Solutions</h1>
