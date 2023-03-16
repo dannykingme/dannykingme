@@ -132,6 +132,17 @@ const Home = () => {
                 lastActiveCard={state.lastActiveCard}
               />
               <Card
+                id="paygarden"
+                name="Paygarden"
+                date="2017-2022"
+                thumbnail="/card-paygarden-thumbnail.png"
+                wireframe="/card-paygarden-wireframe.png"
+                animation="/card-paygarden-animation.gif"
+                onCardHover={handleCardHover}
+                preservingAnimation={preservingAnimation}
+                lastActiveCard={state.lastActiveCard}
+              />
+              <Card
                 id="serverless"
                 name="Serverless"
                 date="2016-2017"
@@ -162,18 +173,6 @@ const Home = () => {
                 thumbnail="/card-circleci-thumbnail.png"
                 wireframe="/card-circleci-wireframe.png"
                 animation="/card-circleci-animation.gif"
-                onCardHover={handleCardHover}
-                preservingAnimation={preservingAnimation}
-                lastActiveCard={state.lastActiveCard}
-                comingSoon
-              />
-              <Card
-                id="paygarden"
-                name="Paygarden"
-                date="2017-2022"
-                thumbnail="/card-paygarden-thumbnail.png"
-                wireframe="/card-paygarden-wireframe.png"
-                animation="/card-paygarden-animation.gif"
                 onCardHover={handleCardHover}
                 preservingAnimation={preservingAnimation}
                 lastActiveCard={state.lastActiveCard}
