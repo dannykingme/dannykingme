@@ -199,10 +199,8 @@
       animation: 750ms var(--fadein) 250ms both fade-out;
     }
 
-    &.precursor {
-      .card-mock {
-        filter: drop-shadow(0 3px 5px rgb(0 0 0 / 34%));
-      }
+    .card-mock {
+      filter: drop-shadow(0 1px 3px rgb(0 0 0 / 21%));
     }
 
     &:active {
