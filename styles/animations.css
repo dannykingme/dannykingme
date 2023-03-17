@@ -280,6 +280,26 @@
   } */
 }
 
+@keyframes card-video {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes card-background {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .cards.animate-out {
   --dur01: var(--run-slower);
   --dur02: var(--run-slower);

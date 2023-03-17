@@ -101,7 +101,8 @@ hr {
   width: 100%;
 }
 
-img {
+img,
+video {
   max-width: 100%;
 }
 

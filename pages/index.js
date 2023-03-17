@@ -2,6 +2,7 @@ import { useState, useRef } from 'react';
 import Link from 'next/link';
 import c from 'classnames';
 import { Header, Footer } from '../components/nav';
+import thumbnails from '../data/thumbnails.json';
 
 const Home = () => {
   const cancelAnimation = useRef(0);
@@ -110,69 +111,45 @@ const Home = () => {
               })}
             >
               <Card
-                id="netlify"
                 name="Netlify"
                 date="2022"
-                thumbnail="/card-netlify-thumbnail.png"
-                wireframe="/card-netlify-wireframe.png"
-                animation="/card-netlify-animation.gif"
                 onCardHover={handleCardHover}
                 preservingAnimation={preservingAnimation}
                 lastActiveCard={state.lastActiveCard}
               />
               <Card
-                id="precursor"
                 name="Precursor"
                 date="2014-2015"
-                thumbnail="/card-precursor-thumbnail.png"
-                wireframe="/card-precursor-wireframe.png"
-                animation="/card-precursor-animation.gif"
                 onCardHover={handleCardHover}
                 preservingAnimation={preservingAnimation}
                 lastActiveCard={state.lastActiveCard}
               />
               <Card
-                id="paygarden"
                 name="PayGarden"
                 date="2017-2022"
-                thumbnail="/card-paygarden-thumbnail.png"
-                wireframe="/card-paygarden-wireframe.png"
-                animation="/card-paygarden-animation.gif"
                 onCardHover={handleCardHover}
                 preservingAnimation={preservingAnimation}
                 lastActiveCard={state.lastActiveCard}
               />
               <Card
-                id="serverless"
                 name="Serverless"
                 date="2016-2017"
-                thumbnail="/card-serverless-thumbnail.png"
-                wireframe="/card-serverless-wireframe.png"
-                animation="/card-serverless-animation.gif"
                 onCardHover={handleCardHover}
                 preservingAnimation={preservingAnimation}
                 lastActiveCard={state.lastActiveCard}
                 comingSoon
               />
               <Card
-                id="google"
                 name="Google"
                 date="2015-2016"
-                thumbnail="/card-google-thumbnail.png"
-                wireframe="/card-google-wireframe.png"
-                animation="/card-google-animation.gif"
                 onCardHover={handleCardHover}
                 preservingAnimation={preservingAnimation}
                 lastActiveCard={state.lastActiveCard}
                 comingSoon
               />
               <Card
-                id="circleci"
                 name="CircleCI"
                 date="2013-2014"
-                thumbnail="/card-circleci-thumbnail.png"
-                wireframe="/card-circleci-wireframe.png"
-                animation="/card-circleci-animation.gif"
                 onCardHover={handleCardHover}
                 preservingAnimation={preservingAnimation}
                 lastActiveCard={state.lastActiveCard}
@@ -188,17 +165,15 @@ const Home = () => {
 };
 
 const Card = ({
-  id,
   name,
   date,
-  thumbnail,
-  wireframe,
-  animation,
   onCardHover,
   preservingAnimation,
   lastActiveCard,
   comingSoon,
 }) => {
+  const id = name.toLowerCase();
+  const videoRef = useRef();
   const preserveAnimation = useRef(0);
   const [state, setState] = useState(() => {
     return {
@@ -213,6 +188,7 @@ const Card = ({
       active: true,
     }));
     onCardHover(id, id);
+    videoRef.current.play();
   };
   const handleMouseLeave = () => {
     preserveAnimation.current = 1;
@@ -226,6 +202,8 @@ const Card = ({
       preserveAnimation.current = 0;
       preservingAnimation(preserveAnimation.current);
     }, 750);
+    videoRef.current.pause();
+    videoRef.current.currentTime = 0;
   };
   return (
     <div
@@ -234,20 +212,19 @@ const Card = ({
         last: id === lastActiveCard,
       })}
     >
-      {state.active ? (
-        <>
-          <div className="card-background"></div>
-          <div className="card-mock">
-            <img src={thumbnail} alt="" />
-          </div>
-        </>
-      ) : null}
+      <div className="card-background"></div>
+      <div className="card-video">
+        <video src={`/${id}/thumbnail.mp4`} ref={videoRef} muted></video>
+      </div>
       <div className="card-thumb">
-        {state.active ? (
-          <img src={animation} alt="" />
-        ) : (
-          <img src={wireframe} alt="" />
-        )}
+        <svg
+          className="card-art"
+          width="1120"
+          height="840"
+          viewBox="0 0 1120 840"
+        >
+          <path className="card-path" d={thumbnails[id]} />
+        </svg>
       </div>
       <div className="edge">
         <div className="edge-n"></div>
