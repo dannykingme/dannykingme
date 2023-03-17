@@ -219,7 +219,7 @@
 
   &.precursor {
     .card-background {
-      background: linear-gradient(
+      background-image: linear-gradient(
         -225deg,
         #ff057c 0%,
         #7c64d5 48%,
@@ -231,12 +231,6 @@
   &.serverless {
     .card-background {
       background-image: linear-gradient(
-        89.8deg,
-        rgb(222 74 74 / 100%) 4.7%,
-        rgb(30 29 29 / 100%) 120.3%
-      );
-      background: linear-gradient(25deg, #a70702, #fd5750 75%);
-      background: linear-gradient(
         25deg,
         hsl(2deg 98% 50%),
         hsl(2deg 98% 65%) 65%
@@ -267,13 +261,6 @@
 
   &.paygarden {
     .card-background {
-      background-image: linear-gradient(-90deg, #249a4e, #2cbb5f);
-      background-image: linear-gradient(
-        30deg,
-        rgb(36 154 78 / 100%) 0%,
-        rgb(36 154 78 / 100%) 13%,
-        rgb(44 187 95 / 100%) 100%
-      );
       background-image: linear-gradient(
         195deg,
         hsl(141deg 62% 45%) 0%,
@@ -369,7 +356,7 @@
 }
 
 .breakdown-subtitle {
-  font-family: 'Roboto Condensed';
+  font-family: var(--font-cond);
   font-size: calc(var(--xs) * 2);
   font-weight: 600;
   text-transform: uppercase;
@@ -826,13 +813,7 @@
   padding: var(--tile) 0;
   border-top: var(--border);
   border-bottom: var(--border);
-  background-color: var(--gray-50);
-  background-image: linear-gradient(
-    175deg,
-    rgb(255 244 228 / 100%) 7%,
-    rgb(240 246 238 / 100%) 67%
-  );
-  background: var(--gray-900);
+  background-color: var(--gray-900);
 }
 
 .icon {
