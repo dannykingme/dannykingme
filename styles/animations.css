@@ -424,22 +424,10 @@
   --dur1: var(--run);
   --dur2: var(--run);
   --dur3: var(--run-slower);
-  --dur4: var(--run-slow);
-  --dur5: var(--run);
-  --dur6: var(--run);
-  --dur7: var(--run);
-  --dur8: var(--run);
-  --dur9: var(--run);
 
   --del1: 100ms;
   --del2: calc((var(--dur1) * 0.34) + var(--del1));
   --del3: calc((var(--dur2) * 0.34) + var(--del2));
-  --del4: calc((var(--dur3) * 0.89) + var(--del3));
-  --del5: calc((var(--dur4) * 0.08) + var(--del4));
-  --del6: calc((var(--dur5) * 0.05) + var(--del5));
-  --del7: calc((var(--dur6) * 0.03) + var(--del6));
-  --del8: calc((var(--dur7) * 0.02) + var(--del7));
-  --del9: calc((var(--dur8) * 0.01) + var(--del8));
 
   .card-title {
     animation: var(--dur1) var(--fadein) var(--del1) both tile-in-b2t;
@@ -451,30 +439,6 @@
 
   .card-info {
     animation: var(--dur3) var(--fadein) var(--del3) both to-white;
-  }
-
-  .example-4 {
-    animation: var(--dur4) var(--fadein) var(--del4) both to-white;
-  }
-
-  .example-5 {
-    animation: slip-in-b2t var(--dur5) var(--fadein) var(--del5) backwards;
-  }
-
-  .example-6 {
-    animation: slip-in-b2t var(--dur6) var(--fadein) var(--del6) backwards;
-  }
-
-  .example-7 {
-    animation: slip-in-b2t var(--dur7) var(--fadein) var(--del7) backwards;
-  }
-
-  .example-8 {
-    animation: slip-in-b2t var(--dur8) var(--fadein) var(--del8) backwards;
-  }
-
-  .example-9 {
-    animation: slip-in-b2t var(--dur9) var(--fadein) var(--del9) backwards;
   }
 }
 
