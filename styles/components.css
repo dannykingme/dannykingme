@@ -146,6 +146,10 @@
 .gallery {
   margin-bottom: calc(var(--xl) - var(--margin));
   padding-top: calc(var(--xl) - var(--padding));
+  @media (--xs) {
+    margin-bottom: var(--tile);
+    padding-top: var(--tile);
+  }
 }
 
 .gallery-content {
@@ -223,6 +227,19 @@
     &:active {
       box-shadow: 0 5px 8px 0 rgb(0 0 0 / 21%);
       transition-duration: var(--run-faster);
+      @media (--xs) {
+        box-shadow: none;
+      }
+    }
+
+    @media (--xs) {
+      box-shadow: none;
+
+      .card-background,
+      .card-thumb,
+      .card-video {
+        animation: none;
+      }
     }
   }
 
@@ -282,6 +299,27 @@
         hsl(141deg 62% 45%) 13%,
         hsl(141deg 62% 35%) 100%
       );
+    }
+  }
+  @media (--xs) {
+    .card-background {
+      opacity: 1;
+    }
+
+    .card-thumb {
+      animation: none !important;
+    }
+
+    .card-video,
+    .card-info,
+    .edge {
+      display: none;
+    }
+
+    .card-path {
+      fill: var(--white);
+      stroke-width: 0;
+      filter: drop-shadow(0 1px 3px rgb(0 0 0 / 21%));
     }
   }
 }
