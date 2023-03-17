@@ -7,7 +7,7 @@ const Precursor = () => {
     <div className="main">
       <div className="hero small black intro">
         <div className="hero-background">
-          <video src="/precursor/broll-3.mp4" muted autoPlay loop />
+          <video src="/precursor/broll-3.mp4" muted autoPlay loop playsInline />
           <div className="hero-background-shade"></div>
         </div>
         <Header />
@@ -42,7 +42,13 @@ const Precursor = () => {
           <h4>Fixing collaboration for product teams</h4>
           <div className="media">
             <div className="media-video">
-              <video src="/precursor/app-tour.mp4" muted autoPlay loop></video>
+              <video
+                src="/precursor/app-tour.mp4"
+                muted
+                autoPlay
+                loop
+                playsInline
+              ></video>
             </div>
             <div className="media-caption">App Tour</div>
           </div>
@@ -124,6 +130,7 @@ const Precursor = () => {
                 muted
                 autoPlay
                 loop
+                playsInline
               ></video>
             </div>
             <div className="media-caption">Multiplayer Collaboration</div>
@@ -148,6 +155,7 @@ const Precursor = () => {
                 muted
                 autoPlay
                 loop
+                playsInline
               ></video>
             </div>
             <div className="media-caption">Radial Menu</div>
@@ -181,6 +189,7 @@ const Precursor = () => {
                 muted
                 autoPlay
                 loop
+                playsInline
               ></video>
             </div>
             <div className="media-caption">Document Replay</div>
@@ -203,7 +212,7 @@ const Precursor = () => {
 
       <div className="hero small black outro">
         <div className="hero-background">
-          <video src="/precursor/broll-4.mp4" muted autoPlay loop />
+          <video src="/precursor/broll-4.mp4" muted autoPlay loop playsInline />
           <div className="hero-background-shade"></div>
         </div>
         <div className="hero-content content">

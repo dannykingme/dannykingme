@@ -214,7 +214,12 @@ const Card = ({
     >
       <div className="card-background"></div>
       <div className="card-video">
-        <video src={`/${id}/thumbnail.mp4`} ref={videoRef} muted></video>
+        <video
+          src={`/${id}/thumbnail.mp4`}
+          ref={videoRef}
+          muted
+          playsInline
+        ></video>
       </div>
       <div className="card-thumb">
         <svg
