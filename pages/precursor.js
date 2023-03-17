@@ -7,7 +7,7 @@ const Precursor = () => {
     <div className="main">
       <div className="hero small black intro">
         <div className="hero-background">
-          <video src="precursor-broll-3.mp4" muted autoPlay loop />
+          <video src="/precursor/broll-3.mp4" muted autoPlay loop />
           <div className="hero-background-shade"></div>
         </div>
         <Header />
@@ -203,7 +203,7 @@ const Precursor = () => {
 
       <div className="hero small black outro">
         <div className="hero-background">
-          <video src="precursor-broll-4.mp4" muted autoPlay loop />
+          <video src="/precursor/broll-4.mp4" muted autoPlay loop />
           <div className="hero-background-shade"></div>
         </div>
         <div className="hero-content content">

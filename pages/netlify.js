@@ -8,7 +8,7 @@ const Home = () => {
       <div className="main">
         <div className="hero small black intro">
           <div className="hero-background">
-            <video src="netlify-graph-broll-2.mp4" muted autoPlay loop />
+            <video src="netlify/broll-2.mp4" muted autoPlay loop />
             <div className="hero-background-shade"></div>
           </div>
           <Header />
@@ -405,7 +405,7 @@ const Home = () => {
 
         <div className="hero small black outro">
           <div className="hero-background">
-            <video src="netlify-graph-broll-1.mp4" muted autoPlay loop />
+            <video src="netlify/broll-1.mp4" muted autoPlay loop />
             <div className="hero-background-shade"></div>
           </div>
           <div className="hero-content content">
