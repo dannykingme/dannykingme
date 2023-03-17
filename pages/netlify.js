@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Icon from '../components/icon';
 import { Header, Footer } from '../components/nav';
+import Docs from '../components/docs';
 
 const Home = () => {
   return (
@@ -8,7 +9,7 @@ const Home = () => {
       <div className="main">
         <div className="hero small black intro">
           <div className="hero-background">
-            <video src="netlify-graph-broll-2.mp4" muted autoPlay loop />
+            <video src="netlify/broll-2.mp4" muted autoPlay loop playsInline />
             <div className="hero-background-shade"></div>
           </div>
           <Header />
@@ -50,6 +51,7 @@ const Home = () => {
                   muted
                   autoPlay
                   loop
+                  playsInline
                 ></video>
               </div>
               <div className="media-caption">Graph Final Result</div>
@@ -93,84 +95,19 @@ const Home = () => {
             <h1>Process</h1>
 
             <h4>Brainstorming API interactions</h4>
-            <div className="mason">
-              <div className="mason-column">
-                <div className="mason-block">
-                  <div className="mason-figure">
-                    <a
-                      href="https://precursorapp.com/document/Netlify-Graph-Settings-17592210682339"
-                      target="_blank"
-                    >
-                      <img
-                        src="https://precursorapp.com/document/Netlify-Graph-Settings-17592210682339.svg"
-                        alt=""
-                      />
-                    </a>
-                    <div className="mason-caption">Graph Settings</div>
-                  </div>
-                </div>
-                <div className="mason-block">
-                  <div className="mason-figure">
-                    <a
-                      href="https://precursorapp.com/document/Netlify-Graph-Example-Code-17592210681113"
-                      target="_blank"
-                    >
-                      <img
-                        src="https://precursorapp.com/document/Netlify-Graph-Example-Code-17592210681113.svg"
-                        alt=""
-                      />
-                    </a>
-                    <div className="mason-caption">Graph Example Code</div>
-                  </div>
-                </div>
-                <div className="mason-block">
-                  <div className="mason-figure">
-                    <a
-                      href="https://precursorapp.com/document/Netlify-Graph-Session-17592210681216"
-                      target="_blank"
-                    >
-                      <img
-                        src="https://precursorapp.com/document/Netlify-Graph-Session-17592210681216.svg"
-                        alt=""
-                      />
-                    </a>
-                    <div className="mason-caption">
-                      Graph Sessions Dashboard
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="mason-column">
-                <div className="mason-block">
-                  <div className="mason-figure">
-                    <a
-                      href="https://precursorapp.com/document/Netlify-Graph-Services-Menu-17592210681300"
-                      target="_blank"
-                    >
-                      <img
-                        src="https://precursorapp.com/document/Netlify-Graph-Services-Menu-17592210681300.svg"
-                        alt=""
-                      />
-                    </a>
-                    <div className="mason-caption">Graph Services Menu</div>
-                  </div>
-                </div>
-                <div className="mason-block">
-                  <div className="mason-figure">
-                    <a
-                      href="https://precursorapp.com/document/Netlify-Graph-Service-Catalog-17592210684196"
-                      target="_blank"
-                    >
-                      <img
-                        src="https://precursorapp.com/document/Netlify-Graph-Service-Catalog-17592210684196.svg"
-                        alt=""
-                      />
-                    </a>
-                    <div className="mason-caption">Graph Services Catalog</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Docs
+              docs={[
+                [
+                  { id: 17592210682339, name: 'Graph Settings' },
+                  { id: 17592210681113, name: 'Graph Example Code' },
+                  { id: 17592210681216, name: 'Graph Sessions Dashboard' },
+                ],
+                [
+                  { id: 17592210681300, name: 'Graph Services Menu' },
+                  { id: 17592210684196, name: 'Graph Services Catalog' },
+                ],
+              ]}
+            />
             <p className="space">
               The biggest challenge that Graph’s design initially offered was a
               cumbersome onboarding wizard users were dragged through before
@@ -267,74 +204,21 @@ const Home = () => {
             <h1>Process</h1>
 
             <h4>Prototyping a vast ecosystem</h4>
-            <div className="mason">
-              <div className="mason-column">
-                <div className="column-block">
-                  <div className="mason-figure">
-                    <a
-                      href="https://precursorapp.com/document/Netlify-Integrations-Toolshop-17592210683186"
-                      target="_blank"
-                    >
-                      <img
-                        src="https://precursorapp.com/document/Netlify-Integrations-Toolshop-17592210683186.svg"
-                        alt=""
-                      />
-                    </a>
-                    <div className="mason-caption">
-                      Integrations Toolshop Homepage
-                    </div>
-                  </div>
-                </div>
-                <div className="column-block">
-                  <div className="mason-figure">
-                    <a
-                      href="https://precursorapp.com/document/Netlify-Integrations-Details-17592210683010"
-                      target="_blank"
-                    >
-                      <img
-                        src="https://precursorapp.com/document/Netlify-Integrations-Details-17592210683010.svg"
-                        alt=""
-                      />
-                    </a>
-                    <div className="mason-caption">Integrations Details</div>
-                  </div>
-                </div>
-              </div>
-              <div className="mason-column">
-                <div className="column-block">
-                  <div className="mason-figure">
-                    <a
-                      href="https://precursorapp.com/document/Netlify-Integrations-Homepage-17592210682946"
-                      target="_blank"
-                    >
-                      <img
-                        src="https://precursorapp.com/document/Netlify-Integrations-Homepage-17592210682946.svg"
-                        alt=""
-                      />
-                    </a>
-                    <div className="mason-caption">
-                      Integrations Simple Homepage
-                    </div>
-                  </div>
-                </div>
-                <div className="column-block">
-                  <div className="mason-figure">
-                    <a
-                      href="https://precursorapp.com/document/Netlify-Integrations-Gallery-17592210682405"
-                      target="_blank"
-                    >
-                      <img
-                        src="https://precursorapp.com/document/Netlify-Integrations-Gallery-17592210682405.svg"
-                        alt=""
-                      />
-                    </a>
-                    <div className="mason-caption">
-                      Integrations API Services
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Docs
+              docs={[
+                [
+                  {
+                    id: 17592210683186,
+                    name: 'Integrations Toolshop Homepage',
+                  },
+                  { id: 17592210683010, name: 'Integrations Details' },
+                ],
+                [
+                  { id: 17592210682946, name: 'Integrations Simple Homepage' },
+                  { id: 17592210682405, name: 'Integrations API Services' },
+                ],
+              ]}
+            />
             <p className="space">
               For their marketplace, Netlify needed a gallery view with partner
               logos, a details page with instructions, and a button to initiate
@@ -405,7 +289,7 @@ const Home = () => {
 
         <div className="hero small black outro">
           <div className="hero-background">
-            <video src="netlify-graph-broll-1.mp4" muted autoPlay loop />
+            <video src="netlify/broll-1.mp4" muted autoPlay loop playsInline />
             <div className="hero-background-shade"></div>
           </div>
           <div className="hero-content content">

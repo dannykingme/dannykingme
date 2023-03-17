@@ -3,13 +3,14 @@ import { useState, useRef } from 'react';
 import Link from 'next/link';
 import Icon from '../components/icon';
 import { Footer, Header } from '../components/nav';
+import Docs from '../components/docs';
 
 const Paygarden = () => {
   return (
     <div className="main">
       <div className="hero small black intro">
         <div className="hero-background">
-          <video src="/paygarden/broll-1.mp4" muted autoPlay loop />
+          <video src="/paygarden/broll-1.mp4" muted autoPlay loop playsInline />
           <div className="hero-background-shade"></div>
         </div>
         <Header />
@@ -66,6 +67,7 @@ const Paygarden = () => {
                   muted
                   autoPlay
                   loop
+                  playsInline
                 ></video>
               </div>
               <div className="media-frame-outer">
@@ -105,16 +107,18 @@ const Paygarden = () => {
           <h1>Process</h1>
 
           <h4>Userflow wireframes</h4>
-          <div className="mason">
-            <div className="mason-column">
-              <Doc id="17592210700934" caption="End-to-end Userflow" />
-              <Doc id="17592210700296" caption="Multi-card Userflow" />
-            </div>
-            <div className="mason-column">
-              <Doc id="17592210701663" caption="Card Details" />
-              <Doc id="17592210701590" caption="Example Trades" />
-            </div>
-          </div>
+          <Docs
+            docs={[
+              [
+                { id: 17592210700934, name: 'End-to-end Userflow' },
+                { id: 17592210700296, name: 'Multi-card Userflow' },
+              ],
+              [
+                { id: 17592210701663, name: 'Card Details' },
+                { id: 17592210701590, name: 'Example Trades' },
+              ],
+            ]}
+          />
           <p>
             We had a lot of analytics telling us most of our users were on their
             phones, but there was no mobile version for the payflow. We had a
@@ -132,7 +136,13 @@ const Paygarden = () => {
           <h4>Building trust</h4>
           <div className="media">
             <div className="media-video">
-              <video src="/paygarden/payflow.mp4" muted autoPlay loop></video>
+              <video
+                src="/paygarden/payflow.mp4"
+                muted
+                autoPlay
+                loop
+                playsInline
+              ></video>
             </div>
             <div className="media-caption">PayGarden Payflow</div>
           </div>
@@ -148,7 +158,13 @@ const Paygarden = () => {
           <h4>Improving search</h4>
           <div className="media">
             <div className="media-video">
-              <video src="/paygarden/search.mp4" muted autoPlay loop></video>
+              <video
+                src="/paygarden/search.mp4"
+                muted
+                autoPlay
+                loop
+                playsInline
+              ></video>
             </div>
             <div className="media-caption">Search</div>
           </div>
@@ -163,7 +179,13 @@ const Paygarden = () => {
           <h4>Attention to details</h4>
           <div className="media">
             <div className="media-video">
-              <video src="/paygarden/details.mp4" muted autoPlay loop></video>
+              <video
+                src="/paygarden/details.mp4"
+                muted
+                autoPlay
+                loop
+                playsInline
+              ></video>
             </div>
             <div className="media-caption">Gift Card Details</div>
           </div>
@@ -188,6 +210,7 @@ const Paygarden = () => {
                   muted
                   autoPlay
                   loop
+                  playsInline
                 ></video>
               </div>
               <div className="media-frame-outer">
@@ -216,7 +239,7 @@ const Paygarden = () => {
 
       <div className="hero small black outro">
         <div className="hero-background">
-          <video src="/paygarden/broll-2.mp4" muted autoPlay loop />
+          <video src="/paygarden/broll-2.mp4" muted autoPlay loop playsInline />
           <div className="hero-background-shade"></div>
         </div>
         <div className="hero-content content">
@@ -266,16 +289,3 @@ const Paygarden = () => {
 };
 
 export default Paygarden;
-
-const Doc = ({ id, caption }) => {
-  return (
-    <div className="mason-block">
-      <div className="mason-figure">
-        <a href={`https://precursorapp.com/document/${id}`} target="_blank">
-          <img src={`https://precursorapp.com/document/${id}.svg`} alt="" />
-        </a>
-        <div className="mason-caption">{caption}</div>
-      </div>
-    </div>
-  );
-};
