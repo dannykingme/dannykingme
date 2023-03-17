@@ -3,6 +3,7 @@ import { useState, useRef } from 'react';
 import Link from 'next/link';
 import Icon from '../components/icon';
 import { Footer, Header } from '../components/nav';
+import Docs from '../components/docs';
 
 const Paygarden = () => {
   return (
@@ -105,16 +106,18 @@ const Paygarden = () => {
           <h1>Process</h1>
 
           <h4>Userflow wireframes</h4>
-          <div className="mason">
-            <div className="mason-column">
-              <Doc id="17592210700934" caption="End-to-end Userflow" />
-              <Doc id="17592210700296" caption="Multi-card Userflow" />
-            </div>
-            <div className="mason-column">
-              <Doc id="17592210701663" caption="Card Details" />
-              <Doc id="17592210701590" caption="Example Trades" />
-            </div>
-          </div>
+          <Docs
+            docs={[
+              [
+                { id: 17592210700934, name: 'End-to-end Userflow' },
+                { id: 17592210700296, name: 'Multi-card Userflow' },
+              ],
+              [
+                { id: 17592210701663, name: 'Card Details' },
+                { id: 17592210701590, name: 'Example Trades' },
+              ],
+            ]}
+          />
           <p>
             We had a lot of analytics telling us most of our users were on their
             phones, but there was no mobile version for the payflow. We had a
@@ -266,16 +269,3 @@ const Paygarden = () => {
 };
 
 export default Paygarden;
-
-const Doc = ({ id, caption }) => {
-  return (
-    <div className="mason-block">
-      <div className="mason-figure">
-        <a href={`https://precursorapp.com/document/${id}`} target="_blank">
-          <img src={`https://precursorapp.com/document/${id}.svg`} alt="" />
-        </a>
-        <div className="mason-caption">{caption}</div>
-      </div>
-    </div>
-  );
-};

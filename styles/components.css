@@ -758,25 +758,21 @@
     var(--offset) var(--offset);
 }
 
-.mason {
+.docs {
   display: flex;
   gap: var(--margin);
   margin-top: var(--margin);
   margin-bottom: var(--margin);
 }
 
-.mason-column {
+.docs-column {
   display: flex;
   flex-direction: column;
   gap: var(--margin);
   width: 50%;
 }
 
-.mason-block {
-  /* */
-}
-
-.mason-figure {
+.doc {
   border: var(--border);
   border-radius: var(--border-radius);
 
@@ -788,7 +784,7 @@
   }
 }
 
-.mason-caption {
+.doc-caption {
   text-align: center;
   color: var(--gray-700);
   font-size: var(--font-tiny);
