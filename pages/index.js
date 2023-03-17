@@ -133,7 +133,7 @@ const Home = () => {
               />
               <Card
                 id="paygarden"
-                name="Paygarden"
+                name="PayGarden"
                 date="2017-2022"
                 thumbnail="/card-paygarden-thumbnail.png"
                 wireframe="/card-paygarden-wireframe.png"
