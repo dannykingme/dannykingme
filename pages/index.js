@@ -4,6 +4,8 @@ import c from 'classnames';
 import { Header, Footer } from '../components/nav';
 import thumbnails from '../data/thumbnails.json';
 
+// NOTE: For some reason Netlify returns a 400 for everything on the path '/serverless/*'
+
 const Home = () => {
   const cancelAnimation = useRef(0);
   const galleryRef = useRef();
@@ -215,7 +217,7 @@ const Card = ({
       <div className="card-background"></div>
       <div className="card-video">
         <video
-          src={`/${id}/thumbnail.mp4`}
+          src={`/thumbnails/thumbnail-${id}.mp4`}
           ref={videoRef}
           muted
           playsInline
