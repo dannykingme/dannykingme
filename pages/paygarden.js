@@ -16,7 +16,7 @@ const Paygarden = () => {
         <Header />
         <div className="hero-content content">
           <div className="breakdown">
-            <div className="breakdown-cell full">
+            <div className="breakdown-cell">
               <div className="breakdown-title">Company</div>
               <div className="breakdown-subtitle">PayGarden</div>
             </div>
@@ -24,16 +24,20 @@ const Paygarden = () => {
               <div className="breakdown-title">Projects</div>
               <div className="breakdown-subtitle">Payflow 2.0</div>
             </div>
+            {/* <div className="breakdown-cell">
+              <div className="breakdown-title">Role</div>
+              <div className="breakdown-info">Head of Product</div>
+            </div> */}
+            <div className="breakdown-cell">
+              <div className="breakdown-title">Impact</div>
+              <div className="breakdown-subtitle">{'>'} $1.4 million ARR</div>
+            </div>
             <div className="breakdown-cell">
               <div className="breakdown-title">Summary</div>
               <div className="breakdown-info">
                 I redesigned PayGarden's gift card payflow to make it more
                 trustworthy and perform well on mobile devices.
               </div>
-            </div>
-            <div className="breakdown-cell">
-              <div className="breakdown-title">Role</div>
-              <div className="breakdown-info">Head of Product</div>
             </div>
           </div>
         </div>
@@ -87,9 +91,31 @@ const Paygarden = () => {
                 <img src="/paygarden/payflow-old-1.png" alt="" />
                 <div className="media-caption">Old Start Page</div>
               </div>
-              <div className="media-image">
-                <img src="/paygarden/payflow-old-2.png" alt="" />
-                <div className="media-caption">Old Gift Card Details</div>
+              <div className="media-image stack">
+                <div className="media-frame">
+                  <div className="media-frame-inner">
+                    <img src="/paygarden/mobile-start-old.png" alt="" />
+                  </div>
+                  <div className="media-frame-outer">
+                    <img src="/paygarden/iphone.png" alt="" />
+                  </div>
+                </div>
+                <div className="media-frame">
+                  <div className="media-frame-inner">
+                    <img src="/paygarden/mobile-details-old.png" alt="" />
+                  </div>
+                  <div className="media-frame-outer">
+                    <img src="/paygarden/iphone.png" alt="" />
+                  </div>
+                </div>
+                <div className="media-frame">
+                  <div className="media-frame-inner">
+                    <img src="/paygarden/mobile-offer-old.png" alt="" />
+                  </div>
+                  <div className="media-frame-outer">
+                    <img src="/paygarden/iphone.png" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
             <p>
@@ -99,6 +125,10 @@ const Paygarden = () => {
               didn’t adapt well to mobile, and our research pointed to the fact
               that our users didn’t trust the product handling their gift card
               balance.
+            </p>
+            <p>
+              My goal was to convert 2.5% more users, acquire 1% more preferred
+              gift card brands, and lower support tickets.
             </p>
           </div>
         </div>
@@ -129,6 +159,53 @@ const Paygarden = () => {
             My first step was to start experimenting with how we could promote
             the right gift cards with the right partners and make sure every
             feature, old and new, performed well on mobile.
+          </p>
+
+          <h4>Early iterations</h4>
+          <div className="media two">
+            <div className="media-image">
+              <img src="/paygarden/start-alt.png" alt="" />
+              <div className="media-caption">Alt Start Page</div>
+            </div>
+            <div className="media-image stack">
+              <div className="media-frame">
+                <div className="media-frame-inner">
+                  <img src="/paygarden/mobile-start-alt.png" alt="" />
+                </div>
+                <div className="media-frame-outer">
+                  <img src="/paygarden/iphone.png" alt="" />
+                </div>
+              </div>
+              <div className="media-frame">
+                <div className="media-frame-inner">
+                  <img src="/paygarden/mobile-details-alt.png" alt="" />
+                </div>
+                <div className="media-frame-outer">
+                  <img src="/paygarden/iphone.png" alt="" />
+                </div>
+              </div>
+              <div className="media-frame">
+                <div className="media-frame-inner">
+                  <img src="/paygarden/mobile-offer-alt.png" alt="" />
+                </div>
+                <div className="media-frame-outer">
+                  <img src="/paygarden/iphone.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>
+            My first iterations simply tried to clean up existing components. My
+            goal was to stop the bleeding that was being caused by lack of
+            polish and unresponsiveness in the layout. Color usage started to
+            mean something and you no longer had to zoom in to read text on
+            mobile.
+          </p>
+          <p className="space">
+            This iteration served as proof of concept for something better and
+            allowed us to ship something right away while still supporting our
+            all of our partners' unique use cases. From there I started working
+            towards a long-term vision of the user experience.
           </p>
 
           <h1>Solutions</h1>
@@ -246,11 +323,11 @@ const Paygarden = () => {
           <h1>Results</h1>
           <div className="breakdown">
             <div className="breakdown-cell">
-              <div className="breakdown-title">Conversion rate</div>
+              <div className="breakdown-title">Conversion Rate</div>
               <div className="breakdown-subtitle">+10%</div>
             </div>
             <div className="breakdown-cell">
-              <div className="breakdown-title">Partner sign ups</div>
+              <div className="breakdown-title">Partner Sign Ups</div>
               <div className="breakdown-subtitle">+5.2%</div>
             </div>
             <div className="breakdown-cell">
@@ -258,18 +335,19 @@ const Paygarden = () => {
               <div className="breakdown-subtitle">{'>'} $1.4 million</div>
             </div>
             <div className="breakdown-cell">
-              <div className="breakdown-title">Pioneer</div>
+              <div className="breakdown-title">Innovation</div>
               <div className="breakdown-info">
                 PayGarden Payflow 2.0 marked the product's first major rewrite
                 since its inception.
               </div>
             </div>
             <div className="breakdown-cell">
-              <div className="breakdown-title">Customer Service</div>
-              <div className="breakdown-info">
-                Support tickets related to checkout decreased after launching
-                Payflow 2.0.
-              </div>
+              <div className="breakdown-title">Preferred Brands</div>
+              <div className="breakdown-subtitle">+8%</div>
+            </div>
+            <div className="breakdown-cell">
+              <div className="breakdown-title">Support Tickets</div>
+              <div className="breakdown-subtitle">-4%</div>
             </div>
           </div>
           <div className="hero-actions">
