@@ -15,26 +15,26 @@ const Home = () => {
           <Header />
           <div className="hero-content content">
             <div className="breakdown">
-              <div className="breakdown-cell full">
+              <div className="breakdown-cell">
                 <div className="breakdown-title">Company</div>
                 <div className="breakdown-subtitle">Netlify</div>
               </div>
               <div className="breakdown-cell">
                 <div className="breakdown-title">Projects</div>
                 <div className="breakdown-subtitle">Graph</div>
-                <div className="breakdown-subtitle">Integrations Hub</div>
+                <div className="breakdown-subtitle">Integrations</div>
+              </div>
+              <div className="breakdown-cell">
+                <div className="breakdown-title">Impact</div>
+                <div className="breakdown-subtitle">{'>'}320 integrations</div>
               </div>
               <div className="breakdown-cell">
                 <div className="breakdown-title">Summary</div>
                 <div className="breakdown-info">
-                  I redesigned Netlify Graph to make it easier for new users to
-                  understand and I built a new product to help developers
-                  organize and discover new integrations.
+                  I redesigned Netlify Graph to improve the user experience and
+                  I built Netlify Integrations to help developers discover new
+                  tools.
                 </div>
-              </div>
-              <div className="breakdown-cell">
-                <div className="breakdown-title">Role</div>
-                <div className="breakdown-info">Staff Product Designer</div>
               </div>
             </div>
           </div>
@@ -308,7 +308,7 @@ const Home = () => {
                 <div className="breakdown-subtitle">{'>'}60,000</div>
               </div>
               <div className="breakdown-cell">
-                <div className="breakdown-title">Onboarding</div>
+                <div className="breakdown-title">Innovation</div>
                 <div className="breakdown-info">
                   Netlify Graph's onboarding interaction was Netlify's first
                   interactive onboarding user-experience.
