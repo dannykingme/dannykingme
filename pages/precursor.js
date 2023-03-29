@@ -280,7 +280,14 @@ const Precursor = () => {
             Every action you make in Precursor is stored in our database as a
             part of an immutable data structure. This means we have data on
             which actions happened in which order, for every event, which gave
-            us the ability to replay wireframes being built by users
+            us the ability to replay{' '}
+            <Link
+              className="link"
+              href="https://precursorapp.com/blog/ideas-are-made-with-precursor"
+              target="_blank"
+            >
+              wireframes built by users
+            </Link>{' '}
             automatically.
           </p>
           <p className="space">
