@@ -625,7 +625,7 @@
     animation: var(--dur05) var(--fadein) var(--del05) backwards tile-in-b2t;
   }
 
-  .breakdown-cell:nth-child(3) .breakdown-info {
+  .breakdown-cell:nth-child(3) .breakdown-subtitle {
     animation: var(--dur06) var(--fadein) var(--del06) backwards tile-in-b2t;
   }
 
