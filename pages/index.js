@@ -86,8 +86,8 @@ const Home = () => {
               <div className="hero-name-last">King</div>
             </div>
             <div className="hero-paragraph">
-              I’m a product designer. I use design to create user experiences
-              that delight. I have a sharp eye for detail and a deep
+              I’m a product designer. I use design to create meaningful user
+              experiences. I have a sharp eye for detail and a deep
               understanding of user behavior and micro-interactions.
             </div>
             <div className="hero-action">
